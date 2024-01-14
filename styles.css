@@ -454,9 +454,23 @@ mouvement non essentiel
 /* FIN SEC1 - LEFT */
 
 /* SEC1 - RIGHT */
+
+.right {
+     position: relative;
+}
+
 .right,
 .rgImg {
      width: 422px;
+}
+
+.right .rgPat {
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: -1;
+     width: 120%;
+     height: 110%;
 }
 
 /* FIN SEC1 - RIGHT */
