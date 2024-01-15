@@ -596,6 +596,7 @@ mouvement non essentiel
 .expPro .illExpPro {
      width: 464px;
      border-radius: 35px;
+     display: flex;
      align-self: stretch;
 }
 
