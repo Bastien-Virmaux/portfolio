@@ -118,6 +118,7 @@ body {
      padding: 0 32px;
      background: #344e47;
      transform: translateX(-100%);
+     transition: transform 0.5s;
 }
 
 .navigation ul {
@@ -140,20 +141,9 @@ body {
      background-color: #3F6258;
 }
 
-.navigation .linkNav {
-     font-size: 1.25rem;
-     opacity: 0;
-     visibility: hidden;
-}
-
 .hamburger:checked+.containerButton~.navigation {
      /*on revient à l'état initial*/
      transform: unset;
-}
-
-.hamburger:checked+.containerButton~.navigation .linkNav {
-     visibility: visible;
-     opacity: 1;
 }
 
 .hamburger+.containerButton span::before,
@@ -165,11 +155,6 @@ body {
 .hamburger:checked+.containerButton span::before {
      transition: top 300ms 50ms, transform 300ms 350ms;
 }
-
-.navigation {
-     transition: transform 0.5s;
-}
-
 
 /* NAVIGATION RESPONSIVE */
 @media screen and (max-width: 840px) {
