@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
 
 * {
      margin: 0;
@@ -108,33 +107,6 @@ body {
      transform: rotate(-45deg);
 }
 
-/*
-prefers-reduced-motion: no-preference
-
-détecter si un utilisateur a activé un paramètre 
-sur son appareil afin de minimiser la quantité de 
-mouvement non essentiel
-*/
-@media (prefers-reduced-motion: no-preference) {
-     .hamburger+.containerButton span {
-          transition: background 10ms 300ms;
-     }
-
-     .hamburger+.containerButton span::before,
-     .hamburger+.containerButton span::after {
-          transition: top 300ms 350ms, transform 300ms 50ms;
-     }
-
-     .hamburger:checked+.containerButton span::after,
-     .hamburger:checked+.containerButton span::before {
-          transition: top 300ms 50ms, transform 300ms 350ms;
-     }
-
-     .hamburger:focus-visible~.containerButton {
-          transition: outline-offset .25s ease;
-     }
-}
-
 /*  NAVIGATION */
 
 .navigation {
@@ -175,8 +147,8 @@ mouvement non essentiel
 }
 
 .hamburger:checked+.containerButton~.navigation {
-     transform: unset;
      /*on revient à l'état initial*/
+     transform: unset;
 }
 
 .hamburger:checked+.containerButton~.navigation .linkNav {
@@ -184,35 +156,20 @@ mouvement non essentiel
      opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-     .hamburger+.containerButton span {
-          transition: background 10ms 300ms;
-     }
-
-     .hamburger+.containerButton span::before,
-     .hamburger+.containerButton span::after {
-          transition: top 300ms 350ms, transform 300ms 50ms;
-     }
-
-     .hamburger:checked+.containerButton span::after,
-     .hamburger:checked+.containerButton span::before {
-          transition: top 300ms 50ms, transform 300ms 350ms;
-     }
-
-     .hamburger:focus-visible~.containerButton,
-     .navigation .linkNav:focus-visible,
-     .navigation .linkNav:focus {
-          transition: outline-offset .25s ease;
-     }
-
-     .navigation {
-          transition: transform 0.5s;
-     }
-
-     .navigation .linkNav {
-          transition: visibility 500ms, opacity 500ms 300ms;
-     }
+.hamburger+.containerButton span::before,
+.hamburger+.containerButton span::after {
+     transition: top 300ms 350ms, transform 300ms 50ms;
 }
+
+.hamburger:checked+.containerButton span::after,
+.hamburger:checked+.containerButton span::before {
+     transition: top 300ms 50ms, transform 300ms 350ms;
+}
+
+.navigation {
+     transition: transform 0.5s;
+}
+
 
 /* NAVIGATION RESPONSIVE */
 @media screen and (max-width: 840px) {
