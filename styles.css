@@ -29,7 +29,8 @@ body {
      position: sticky;
      top: 0;
      padding: 24px 32px;
-     background-color: #F5F8F6;
+     background: rgba(245, 248, 246, 0.24);
+     backdrop-filter: blur(16px);
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -114,7 +115,7 @@ body {
      top: 0;
      left: 0;
      width: 24%;
-     height: 100%;
+     height: 100vh;
      padding: 0 32px;
      background: #344e47;
      transform: translateX(-100%);
