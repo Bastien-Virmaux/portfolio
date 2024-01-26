@@ -1,9 +1,0 @@
-.containerCv {
-     @include flex(32px, column);
-     align-self: stretch;
-
-     .cv {
-          width: 422px;
-          height: 573px;
-     }
-}
