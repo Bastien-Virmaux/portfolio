@@ -1,0 +1,127 @@
+.containerQualité {
+     @include flex(24px, column);
+     flex: 1 0 0;
+     align-self: stretch;
+
+     .lg1,
+     .lg2 {
+          @include flex(24px, row);
+          flex-wrap: wrap;
+          flex: 1 0 0;
+          align-self: stretch;
+     }
+
+     .card {
+          padding: 16px 32px;
+          border-radius: 16px;
+          background: $color-100;
+          @include flex(32px, column);
+          flex: 1 0 0;
+          align-self: stretch;
+
+          .cdTitle {
+               @include text($color-950, $paragraphe1, $semibold1);
+               text-transform: uppercase;
+          }
+
+          .cdText {
+               @include flex(16px, column);
+               align-self: stretch;
+
+               .cdPara {
+                    @include text($color-950, $paragraphe2, $regular);
+                    align-self: stretch;
+               }
+          }
+
+          .cdIcon {
+               width: 124px;
+               height: 124px;
+          }
+     }
+}
+
+.compTechniques {
+     width: 100%;
+     @include flex(24px, column);
+
+     .compTechnique {
+          position: relative;
+          padding: 24px;
+          background: $color-100;
+          border-radius: 24px;
+          @include flex(16px, row);
+          justify-content: flex-start;
+
+          .titleCompTechnique {
+               @include text($color-950, $paragraphe1, $semibold);
+          }
+
+          .paraCompTechnique {
+               @include text($color-950, $paragraphe2, $regular);
+          }
+     }
+
+     .note {
+          position: relative;
+
+          .noteSvg {
+               width: 230px;
+               height: 230px;
+
+               .noteCirleNiv1,
+               .noteCirleNiv2 {
+                    fill: none;
+                    stroke-width: 24px;
+                    transform: translate(25px, 25px);
+
+                    .noteCirleNiv1 {
+                         stroke: $color-700;
+                         stroke-dasharray: 565px;
+                         stroke-linecap: round;
+                    }
+
+                    .noteCirleNiv2 {
+                         stroke: $color-200;
+                    }
+               }
+          }
+
+          .noteText {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               @include text($color-700, 40px, $extrabold);
+          }
+     }
+}
+
+.otherComps {
+     @include flex(16px, row);
+     flex-wrap: wrap;
+
+     .otherComp {
+          padding: 24px;
+          border: 4px solid $color-700;
+          border-radius: 48px;
+          @include flex(24px, row);
+          align-self: stretch;
+
+          .comp {
+               padding: 24px;
+               background: $color-100;
+               border-radius: 24px;
+               @include flex(8px, column);
+               justify-content: flex-start;
+
+               .level {
+                    @include text($color-700, 40px, $extrabold);
+               }
+
+               .titleCompLanguage {
+                    @include text($color-950, $titre, $semibold);
+               }
+          }
+     }
+}

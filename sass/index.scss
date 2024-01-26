@@ -1,0 +1,38 @@
+//importation web
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+//importation des tools
+@import "tools/variables";
+@import "tools/reset";
+@import "tools/mixin";
+
+//importation des layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/responsive";
+@import "layout/section";
+@import "layout/section1";
+@import "layout/section2";
+@import "layout/section3";
+@import "layout/section4";
+@import "layout/section5";
+@import "layout/section6";
+@import "layout/section7";
+@import "layout/section8";
+
+//importationd des components
+@import "components/button";
+@import "components/logo";
+@import "components/tags";
+@import "components/title";
+
+* {
+     font-family: 'Inter', sans-serif;
+}
+
+body {
+     position: relative;
+     height: 100%;
+     background-color: #F5F8F6;
+     z-index: 0;
+}

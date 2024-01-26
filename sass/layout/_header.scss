@@ -1,0 +1,10 @@
+/* ==HEADER== */
+.header {
+     position: sticky;
+     top: 0;
+     padding: 24px 32px;
+     background: $color-bg-blur;
+     backdrop-filter: blur(16px);
+     @include flex(0px, row);
+     justify-content: space-between;
+}
