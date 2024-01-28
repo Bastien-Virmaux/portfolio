@@ -1,0 +1,23 @@
+.divers {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     grid-column-gap: 32px;
+     grid-row-gap: 32px;
+
+     .diver {
+          padding: 16px;
+          border-radius: 16px;
+          border: 2px solid $color-950;
+          box-shadow: 8px 8px 4px 0px rgba(20, 31, 29, 0.25);
+          @include flex(1px, column);
+
+          .diverTitle {
+               @include text($color-700, $paragraphe1, $extrabold);
+          }
+
+          .diverParagraphe {
+               @include text($color-950, $paragraphe1, $regular);
+          }
+     }
+}

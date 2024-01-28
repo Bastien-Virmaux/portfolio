@@ -1,0 +1,42 @@
+.sec1Container1 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     .left {
+          width: 64%;
+          @include flex(24px, column);
+          align-items: flex-start;
+
+          .lfTitle {
+               @include text($color-700, 42px, $semibold1);
+               text-transform: uppercase;
+          }
+
+          .lfTitleSecond {
+               @include text($color-700, $titre, $semibold);
+          }
+
+          .lfTextPara {
+               @include text($color-950, $paragraphe1, $regular);
+          }
+     }
+
+     .right {
+          position: relative;
+
+          .rgPat {
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 120%;
+               height: 110%;
+               z-index: -1;
+          }
+     }
+
+     .right,
+     .rgImg {
+          width: 422px;
+     }
+}

@@ -1,0 +1,10 @@
+/* BUTTON */
+.btn {
+     padding: 8px 16px;
+     border-radius: 8px;
+     border: 8px solid $color-700;
+     background: $color-700;
+     @include text($color-50, $paragraphe2, 600);
+     @include flex(0px, row);
+     cursor: pointer;
+}

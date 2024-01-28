@@ -1,0 +1,41 @@
+.messageContact {
+     padding: 24px;
+     border-left: 8px solid $color-700;
+     background: $color-100;
+     @include flex(0px, row);
+     justify-content: flex-start;
+     align-self: stretch;
+
+     .textMessage {
+          @include text($color-950, $paragraphe1, $regular);
+     }
+}
+
+.contacts {
+     @include flex(0px, column);
+     align-self: stretch;
+
+     .contact {
+          border-top: 3px solid $color-100;
+          padding: 24px;
+          @include flex(0px, row);
+          justify-content: space-between;
+          align-self: stretch;
+
+          .contactContainerText {
+               @include flex(8px, row);
+
+               .contactText {
+                    @include text($color-950, $paragraphe1, $semibold1);
+               }
+          }
+
+          .informationContact {
+               @include text($color-950, $paragraphe1, $semibold1)
+          }
+
+          .networkSocial {
+               @include flex(8px, row);
+          }
+     }
+}

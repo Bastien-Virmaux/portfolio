@@ -1,0 +1,26 @@
+/* TAGS */
+.tags {
+     @include flex(8px, row);
+     flex-wrap: wrap;
+
+     .tag {
+          padding: 8px 16px;
+          border-radius: 40px;
+          background: $color-700;
+          @include flex(0px, row);
+
+          .tagText {
+               @include text($color-50, $paragraphe2, $regular)
+          }
+     }
+
+     .tagButton {
+          padding: 8px 16px;
+          border: none;
+          border-radius: 40px;
+          background: #344E47;
+          @include flex(0px, row);
+          @include text($color-50, $paragraphe2, $regular);
+          cursor: pointer;
+     }
+}
