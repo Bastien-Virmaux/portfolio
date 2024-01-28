@@ -140,8 +140,11 @@ a {
 }
 /* SEC5 - Repsonsive */
 @media screen and (max-width: 440px) {
+  .expPro {
+    width: 100% !important;
+  }
   .projet {
-    width: 100%;
+    width: 100% !important;
     background-position: center !important;
   }
   .contact {
