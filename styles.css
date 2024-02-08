@@ -694,6 +694,7 @@ a {
   gap: 0px;
   flex-direction: row;
   align-items: flex-end;
+  background-size: cover;
 }
 .containerProjet .projet:nth-child(1) {
   background-image: linear-gradient(180deg, rgba(20, 31, 29, 0) 49.51%, rgba(20, 31, 29, 0.8) 100%), url(assets/images/image_illProjet1.jpg);
@@ -703,6 +704,9 @@ a {
 }
 .containerProjet .projet:nth-child(3) {
   background-image: linear-gradient(180deg, rgba(20, 31, 29, 0) 49.51%, rgba(20, 31, 29, 0.8) 100%), url(assets/images/image_illProjet3.jpg);
+}
+.containerProjet .projet:nth-child(4) {
+  background-image: linear-gradient(180deg, rgba(20, 31, 29, 0) 49.51%, rgba(20, 31, 29, 0.8) 100%), url(assets/images/image_illProjet4.jpg);
 }
 .containerProjet .projet .informationsProjet {
   width: 100%;
