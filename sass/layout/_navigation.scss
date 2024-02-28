@@ -106,8 +106,9 @@
      }
 }
 
-.navigation ul .linkNav:focus{
+.navigation ul .linkNav:focus {
      background-color: red;
+     transform: unset;
 }
 
 .hamburger:checked+.containerButton~.navigation {

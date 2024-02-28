@@ -295,6 +295,7 @@ a {
 
 .navigation ul .linkNav:focus {
   background-color: red;
+  transform: unset;
 }
 
 .hamburger:checked + .containerButton ~ .navigation {
@@ -1015,7 +1016,7 @@ a {
 
 .headerPrj {
   position: relative;
-  background-image: url(../../assets/images/image_wave.jpg);
+  background-image: url(assets/images/image_wave.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
