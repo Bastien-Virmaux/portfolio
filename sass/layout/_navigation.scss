@@ -106,6 +106,10 @@
      }
 }
 
+.navigation ul .linkNav:focus{
+     background-color: red;
+}
+
 .hamburger:checked+.containerButton~.navigation {
      /*on revient à l'état initial*/
      transform: unset;
@@ -120,5 +124,3 @@
 .hamburger:checked+.containerButton span::before {
      transition: top 300ms 50ms, transform 300ms 350ms;
 }
-
-/* FIN NAVIGATION RESPONSIVE */

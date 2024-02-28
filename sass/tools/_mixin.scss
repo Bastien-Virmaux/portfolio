@@ -25,7 +25,7 @@
 @mixin flex($gap, $direction) {
      display: flex;
      justify-content: center;
-     align-items: center;w
+     align-items: center;
      gap: $gap;
      flex-direction: $direction;
 }

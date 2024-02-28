@@ -293,6 +293,10 @@ a {
   border-top: 1px solid #F5F8F6;
 }
 
+.navigation ul .linkNav:focus {
+  background-color: red;
+}
+
 .hamburger:checked + .containerButton ~ .navigation {
   /*on revient à l'état initial*/
   transform: unset;
@@ -308,7 +312,6 @@ a {
   transition: top 300ms 50ms, transform 300ms 350ms;
 }
 
-/* FIN NAVIGATION RESPONSIVE */
 /* ==HEADER== */
 .header {
   position: sticky;
@@ -1012,7 +1015,7 @@ a {
 
 .headerPrj {
   position: relative;
-  background-image: url(../../assets/images/image_wave.svg);
+  background-image: url(../../assets/images/image_wave.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
