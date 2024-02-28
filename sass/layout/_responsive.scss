@@ -25,10 +25,6 @@
           width: 100% !important;
           height: unset !important;
      }
-
-     .navigation {
-          width: 54% !important;
-     }
 }
 
 /* SEC3 - RESPONSIVE */
@@ -59,10 +55,6 @@
 
      .otherComp {
           width: 100% !important;
-     }
-
-     .navigation {
-          width: 32% !important;
      }
 }
 
@@ -99,18 +91,6 @@
      }
 }
 
-@media screen and (max-width: 545px) {
-     .navigation {
-          width: 48% !important;
-     }
-}
-
-@media screen and (max-width: 375px) {
-     .navigation {
-          width: 64% !important;
-     }
-}
-
 @media screen and (max-width: 640px) {
      .container {
           flex-direction: column !important;
@@ -118,5 +98,23 @@
 
      .cardBloc {
           width: 100%;
+     }
+
+     .headerPrj .left .navProjet {
+          display: none !important;
+     }
+
+     .container {
+          margin: 24px;
+     }
+
+     .container .left .cardBloc {
+          border-left: 8px solid #344E47;
+     }
+}
+
+@media screen and (max-width: 1200px) {
+     .headerPrj .right {
+          display: none;
      }
 }

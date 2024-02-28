@@ -1,52 +1,53 @@
 .headerPrj {
      position: relative;
-     margin: 32px 32px 0 32px;
+     background-image: url(../../assets/images/image_wave.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     @include flex(0px, row);
+     justify-content: space-between;
+     align-items: flex-start;
 
-     .banner {
-          padding: 64px;
-          background-image: linear-gradient(45deg,
-                    hsl(140deg 18% 97%) 0%,
-                    hsl(146deg 20% 94%) 8%,
-                    hsl(152deg 22% 92%) 17%,
-                    hsl(157deg 24% 89%) 25%,
-                    hsl(157deg 23% 86%) 33%,
-                    hsl(156deg 23% 82%) 42%,
-                    hsl(156deg 23% 78%) 50%,
-                    hsl(157deg 21% 74%) 58%,
-                    hsl(158deg 20% 69%) 67%,
-                    hsl(158deg 20% 64%) 75%,
-                    hsl(160deg 19% 60%) 83%,
-                    hsl(161deg 18% 55%) 92%,
-                    hsl(162deg 17% 50%) 100%);
-          border-radius: 32px;
-          @include flex(0px, row);
+     .left {
+          padding: 32px 0 0 32px;
+          @include flex(64px, column);
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          .navProjet,
+          .navProjetLink {
+               @include text($color-50, $paragraphe2, $regular);
+               @include flex(4px, row);
+          }
+
+          .navProjetLink {
+               text-decoration: underline;
+          }
 
           .titleProjet {
-               @include text($color-950, 40px, $semibold1);
-               color: #141F1D;
-               text-align: center;
+               @include text($color-50, 42px, $semibold1)
+          }
+
+          .btnHome {
+               padding: 16px;
+               background-color: $color-700;
+               border-radius: 8px;
+               @include text($color-50, $paragraphe2, $regular);
+               @include flex(8px, row);
+               cursor: pointer;
           }
      }
-}
 
-.linkHome {
-     position: absolute;
-     top: 85%;
-     left: 7%;
-
-     .btnHome {
-          padding: 16px 16px;
-          border: none;
-          border-radius: 40px;
-          background: $color-700;
-          @include flex(0px, row);
-          @include text($color-50, $paragraphe1, $regular);
-          cursor: pointer;
+     .right {
+          margin: 56px 72px 0 0;
+          width: 387px;
+          height: 387px;
+          border-radius: 200px;
+          filter: drop-shadow(0px 14px 48px rgba(20, 31, 29, 50%));
      }
 }
 
 .container {
-     padding: 32px;
      display: flex;
      flex-direction: row;
      gap: 32px;
@@ -59,28 +60,31 @@
 
           .cardBloc {
                padding: 24px;
-               border-radius: 32px;
-               background: $color-100;
-               @include flex(24px, column);
+               border-radius: 0 40px 40px 0;
+               border-top: 8px solid $color-700;
+               border-right: 8px solid $color-700;
+               border-bottom: 8px solid $color-700;
+               @include flex(16px, column);
                align-items: flex-start;
 
                a {
                     width: 100%;
                }
 
-               .containerButton {
+               .containerButtonPrj {
                     width: 100%;
                     @include flex(8px, column);
                }
 
                .btnDownload {
                     width: 100%;
-                    padding: 8px 16px;
+                    padding: 8px;
                     border-radius: 8px;
                     border: 8px solid $color-700;
                     background: $color-700;
                     @include text($color-50, $paragraphe1, $semibold);
                     @include flex(8px, row);
+                    justify-content: flex-start;
                     cursor: pointer;
                }
           }
@@ -88,7 +92,7 @@
           .lists {
                display: flex;
                flex-direction: column;
-               gap: 24px;
+               gap: 8px;
 
                li {
                     @include text($color-950, $paragraphe1, $regular);
