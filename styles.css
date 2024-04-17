@@ -142,6 +142,9 @@ a {
     flex-direction: column !important;
     gap: 8px !important;
   }
+  .containerProjet {
+    grid-template-columns: none !important;
+  }
 }
 @media screen and (max-width: 640px) {
   .container {
