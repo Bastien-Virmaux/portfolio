@@ -1,4 +1,3 @@
-/* SEC1 - RESPONSIVE */
 @media screen and (max-width: 1230px) {
      .sec1Container1 {
           flex-wrap: wrap !important;
@@ -8,26 +7,11 @@
           width: 100% !important;
      }
 
-
      .right {
           margin-top: 16px !important;
      }
 }
 
-@media screen and (max-width: 460px) {
-
-     .right,
-     .rgImg {
-          width: 100% !important;
-     }
-
-     .containerCv .cv {
-          width: 100% !important;
-          height: unset !important;
-     }
-}
-
-/* SEC3 - RESPONSIVE */
 @media screen and (max-width: 1000px) {
      .expPro {
           flex-direction: column !important;
@@ -47,20 +31,29 @@
      }
 }
 
-/* SEC4 - RESPONSIVE */
-@media screen and (max-width: 840px) {
-     .compTechniques .compTechnique {
-          flex-direction: column !important;
+@media screen and (max-width: 476px) {
+     .divers {
+          grid-template-columns: none !important;
      }
 
-     .otherComp {
+     .right,
+     .rgImg {
           width: 100% !important;
      }
-}
 
-/* SEC5 - Repsonsive */
+     .containerCv .cv {
+          width: 100% !important;
+          height: unset !important;
+     }
 
-@media screen and (max-width: 440px) {
+     .competences .compNavigation {
+          border-right: none !important;
+     }
+
+     .competences .compBody .compsHeader {
+          border-top: 4px solid $color-700;
+     }
+
      .expPro {
           width: 100% !important;
      }
@@ -74,20 +67,6 @@
           align-items: flex-start !important;
           flex-direction: column !important;
           gap: 8px !important;
-     }
-}
-
-@media screen and (max-width: 876px) {
-     .containerProjet {
-          grid-template-columns: none !important;
-     }
-}
-
-/* SEC6 - Repsonsive */
-
-@media screen and (max-width: 476px) {
-     .divers {
-          grid-template-columns: none !important;
      }
 }
 

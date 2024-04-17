@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
 html,
 body,
 p,
@@ -85,7 +86,6 @@ a {
   scroll-behavior: smooth;
 }
 
-/* SEC1 - RESPONSIVE */
 @media screen and (max-width: 1230px) {
   .sec1Container1 {
     flex-wrap: wrap !important;
@@ -97,17 +97,6 @@ a {
     margin-top: 16px !important;
   }
 }
-@media screen and (max-width: 460px) {
-  .right,
-.rgImg {
-    width: 100% !important;
-  }
-  .containerCv .cv {
-    width: 100% !important;
-    height: unset !important;
-  }
-}
-/* SEC3 - RESPONSIVE */
 @media screen and (max-width: 1000px) {
   .expPro {
     flex-direction: column !important;
@@ -123,17 +112,24 @@ a {
     width: 100% !important;
   }
 }
-/* SEC4 - RESPONSIVE */
-@media screen and (max-width: 840px) {
-  .compTechniques .compTechnique {
-    flex-direction: column !important;
+@media screen and (max-width: 476px) {
+  .divers {
+    grid-template-columns: none !important;
   }
-  .otherComp {
+  .right,
+.rgImg {
     width: 100% !important;
   }
-}
-/* SEC5 - Repsonsive */
-@media screen and (max-width: 440px) {
+  .containerCv .cv {
+    width: 100% !important;
+    height: unset !important;
+  }
+  .competences .compNavigation {
+    border-right: none !important;
+  }
+  .competences .compBody .compsHeader {
+    border-top: 4px solid #344E47;
+  }
   .expPro {
     width: 100% !important;
   }
@@ -145,17 +141,6 @@ a {
     align-items: flex-start !important;
     flex-direction: column !important;
     gap: 8px !important;
-  }
-}
-@media screen and (max-width: 876px) {
-  .containerProjet {
-    grid-template-columns: none !important;
-  }
-}
-/* SEC6 - Repsonsive */
-@media screen and (max-width: 476px) {
-  .divers {
-    grid-template-columns: none !important;
   }
 }
 @media screen and (max-width: 640px) {
@@ -363,7 +348,7 @@ a {
 /* ==SECTION== */
 .section {
   position: relative;
-  padding: 32px;
+  padding: 80px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,6 +476,7 @@ a {
   align-items: center;
   gap: 24px;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   flex: 1 0 0;
   align-self: stretch;
@@ -501,6 +487,7 @@ a {
   align-items: center;
   gap: 16px;
   flex-direction: column;
+  align-items: flex-start;
 }
 .expPro .right .expProRightTextContainer .expProRightText {
   color: #141F1D;
@@ -568,116 +555,109 @@ a {
   height: 124px;
 }
 
-.compTechniques {
+.competences {
   width: 100%;
+  background-color: #DDEAE5;
+  border-radius: 40px;
+  border: 4px solid #344E47;
+  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  flex-direction: column;
-}
-.compTechniques .compTechnique {
-  position: relative;
-  padding: 24px;
-  background: #DDEAE5;
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  gap: 0px;
   flex-direction: row;
   justify-content: flex-start;
-}
-.compTechniques .compTechnique .titleCompTechnique {
-  color: #141F1D;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.32px;
-}
-.compTechniques .compTechnique .paraCompTechnique {
-  color: #141F1D;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.32px;
-}
-.compTechniques .compTechnique .textContainerComp {
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
-  gap: 24px;
-}
-.compTechniques .compTechnique .note {
-  position: relative;
-}
-.compTechniques .compTechnique .note .noteSvg {
-  width: 230px;
-  height: 230px;
-}
-.compTechniques .compTechnique .note .noteSvg .noteCirleNiv1,
-.compTechniques .compTechnique .note .noteSvg .noteCirleNiv2 {
-  fill: none;
-  stroke-width: 24px;
-  transform: translate(25px, 25px);
-}
-.compTechniques .compTechnique .note .noteSvg .noteCirleNiv1 {
-  stroke: #344E47;
-  stroke-dasharray: 565px;
-  stroke-linecap: round;
-}
-.compTechniques .compTechnique .note .noteSvg .noteCirleNiv2 {
-  stroke: #BBD4CA;
-}
-.compTechniques .compTechnique .note .noteText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #344E47;
-  font-size: 40px;
-  font-weight: 800;
-  letter-spacing: 0.32px;
-}
-
-.otherComps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  flex-direction: row;
   flex-wrap: wrap;
 }
-.otherComps .otherComp {
+.competences .compNavigation {
   padding: 24px;
-  border: 4px solid #344E47;
-  border-radius: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  flex-direction: row;
-  align-self: stretch;
+  border-right: 4px solid #344E47;
+  flex: 1;
 }
-.otherComps .otherComp .comp {
-  padding: 24px;
-  background: #DDEAE5;
-  border-radius: 24px;
+.competences .compNavigation .compNavList {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
+  flex-direction: column;
+  margin: 16px 0;
+}
+.competences .compNavigation .compNavList .elementsCompNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+}
+.competences .compNavigation .compNavList .elementsCompNav .line {
+  width: 100%;
+  height: 4px;
+  border-radius: 100px;
+  border: none;
+  background-color: #344E47;
+}
+.competences .compBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
   flex-direction: column;
   justify-content: flex-start;
+  align-self: stretch;
+  flex: 4;
 }
-.otherComps .otherComp .comp .level {
+.competences .compBody .compsHeader {
+  width: 100%;
+  padding: 32px;
+  border-bottom: 4px solid #344E47;
+}
+.competences .compBody .comps {
+  width: 100%;
+  height: 100%;
+  max-height: 439px;
+  padding: 16px;
+  overflow: overlay;
+}
+.competences .compBody .comps::-webkit-scrollbar {
+  width: 8px;
+}
+.competences .compBody .comps::-webkit-scrollbar-track {
+  background: #DDEAE5;
+}
+.competences .compBody .comps::-webkit-scrollbar-thumb {
+  background-color: #344E47;
+  border-radius: 20px;
+  border: 3px solid #DDEAE5;
+}
+.competences .compBody .compJauge {
+  width: 100%;
+  padding: 32px;
+  border-top: 4px solid #344E47 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: row;
+}
+.competences .compBody .compJauge .noteJauge {
+  width: 100%;
+  height: 24px;
+}
+.competences .compBody .compJauge .noteJauge .jaugeNiv1 {
+  width: 24%;
+  height: 24px;
+  fill: #344E47;
+}
+.competences .compBody .compJauge .noteJauge .jaugeNiv2 {
+  width: 100%;
+  height: 24px;
+  fill: #BBD4CA;
+}
+.competences .compBody .compJauge .jaugeText {
+  font-family: "Oxanium", sans-serif;
   color: #344E47;
   font-size: 40px;
-  font-weight: 800;
-  letter-spacing: 0.32px;
-}
-.otherComps .otherComp .comp .titleCompLanguage {
-  color: #141F1D;
-  font-size: 32px;
   font-weight: 600;
   letter-spacing: 0.32px;
 }
@@ -1014,6 +994,98 @@ a {
   color: #DDEAE5 !important;
 }
 
+.compNavButton {
+  padding: 16px;
+  background-color: #DDEAE5;
+  border-radius: 8px;
+  border: 8px solid #344E47;
+  text-align: left;
+  align-self: stretch;
+  color: #344E47;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+}
+.compNavButton.active {
+  background: #344E47 !important;
+  color: #F5F8F6 !important;
+}
+
+.comp {
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #BBD4CA;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comp .compContainerTitle {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.comp .compContainerTitle .compTitle {
+  color: #141F1D;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+}
+.comp .compContainerTitle .compButton {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-direction: row;
+  cursor: pointer;
+}
+.comp .compContainerTitle .compButton:hover {
+  background-color: #DDEAE5;
+}
+
+.compContent {
+  width: 100%;
+  margin: 16px 0px;
+  padding: 16px;
+  background-color: #BBD4CA;
+  border-radius: 16px;
+  display: none;
+  animation: animateFromBottom 0.3s;
+}
+.compContent.show {
+  display: block;
+}
+.compContent .paraCompTechnique {
+  color: #141F1D;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+@keyframes animateFromBottom {
+  from {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
 .headerPrj {
   position: relative;
   background-image: url(assets/images/image_wave.svg);
@@ -1201,6 +1273,14 @@ body {
   height: 100%;
   background-color: #F5F8F6;
   z-index: 0;
+}
+body::-webkit-scrollbar-track {
+  background: #DDEAE5;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #344E47;
+  border-radius: 20px;
+  border: 3px solid #344E47;
 }
 
 /*# sourceMappingURL=styles.css.map */

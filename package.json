@@ -17,6 +17,8 @@
   "homepage": "https://github.com/bastien-virmaux/portfolio#readme",
   "description": "",
   "dependencies": {
-    "sass": "^1.70.0"
+    "fs": "^0.0.1-security",
+    "sass": "^1.70.0",
+    "swup": "^4.6.0"
   }
 }

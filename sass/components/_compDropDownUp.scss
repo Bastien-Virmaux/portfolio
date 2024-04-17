@@ -1,0 +1,63 @@
+.comp {
+     margin-bottom: 16px;
+     padding: 16px;
+     background-color: $color-200;
+     border-radius: 16px;
+     @include flex(0, column);
+     justify-content: space-between;
+
+     .compContainerTitle {
+          position: relative;
+          width: 100%;
+          @include flex(0, row);
+          justify-content: space-between;
+
+          .compTitle {
+               @include text($color-950, $paragraphe1, $semibold)
+          }
+
+          .compButton {
+               width: 40px;
+               height: 40px;
+               background-color: transparent;
+               border: none;
+               border-radius: 100px;
+               @include flex(0px, row);
+               cursor: pointer;
+
+               &:hover {
+                    background-color: $color-100;
+               }
+          }
+     }
+}
+
+.compContent {
+     width: 100%;
+     margin: 16px 0px;
+     padding: 16px;
+     background-color: $color-200;
+     border-radius: 16px;
+     display: none;
+     animation: animateFromBottom .3s;
+
+     &.show {
+          display: block;
+     }
+
+     .paraCompTechnique {
+          @include text($color-950, $paragraphe2, $regular);
+     }
+}
+
+@keyframes animateFromBottom {
+     from {
+          transform: translate3d(0, 10px, 0);
+          opacity: 0
+     }
+
+     to {
+          transform: translate3d(0, 0, 0);
+          opacity: 1
+     }
+}

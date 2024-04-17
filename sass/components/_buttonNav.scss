@@ -1,0 +1,18 @@
+.compNavButton {
+     padding: 16px;
+     background-color: $color-100;
+     border-radius: 8px;
+     border: 8px solid $color-700;
+     text-align: left;
+     align-self: stretch;
+     color: $color-700;
+     font-size: $paragraphe1;
+     font-style: normal;
+     font-weight: $semibold;
+     cursor: pointer;
+
+     &.active {
+          background: #344E47 !important;
+          color: #F5F8F6 !important;
+     }
+}

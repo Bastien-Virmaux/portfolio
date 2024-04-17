@@ -14,12 +14,14 @@
 
      .right {
           @include flex(24px, column);
+          justify-content: flex-start;
           align-items: center;
           flex: 1 0 0;
           align-self: stretch;
 
           .expProRightTextContainer {
                @include flex(16px, column);
+               align-items: flex-start;
 
                .expProRightText {
                     @include text($color-950, $paragraphe1, $regular);

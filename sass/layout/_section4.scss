@@ -1,3 +1,4 @@
+//QUALITE
 .containerQualité {
      @include flex(24px, column);
      flex: 1 0 0;
@@ -41,94 +42,102 @@
      }
 }
 
-.compTechniques {
+//COMP TECHNIQUE
+.competences {
      width: 100%;
-     @include flex(24px, column);
+     background-color: $color-100;
+     border-radius: 40px;
+     border: 4px solid $color-700;
+     display: flex;
+     @include flex(0px, row);
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-wrap: wrap;
 
-     .compTechnique {
-          position: relative;
+     .compNavigation {
           padding: 24px;
-          background: $color-100;
-          border-radius: 24px;
-          @include flex(16px, row);
-          justify-content: flex-start;
+          border-right: 4px solid $color-700;
+          flex: 1;
 
-          .titleCompTechnique {
-               @include text($color-950, $paragraphe1, $semibold);
-          }
+          .compNavList {
+               @include flex(16px, column);
+               margin: 16px 0;
 
-          .paraCompTechnique {
-               @include text($color-950, $paragraphe2, $regular);
-          }
+               .elementsCompNav {
+                    @include flex(16px, column);
 
-          .textContainerComp {
-               display: flex;
-               justify-content: center;
-               align-items: flex-start;
-               flex-direction: column;
-               gap: 24px;
-          }
-
-          .note {
-               position: relative;
-
-               .noteSvg {
-                    width: 230px;
-                    height: 230px;
-
-                    .noteCirleNiv1,
-                    .noteCirleNiv2 {
-                         fill: none;
-                         stroke-width: 24px;
-                         transform: translate(25px, 25px);
+                    .line {
+                         width: 100%;
+                         height: 4px;
+                         border-radius: 100px;
+                         border: none;
+                         background-color: $color-700;
                     }
-
-                    .noteCirleNiv1 {
-                         stroke: $color-700;
-                         stroke-dasharray: 565px;
-                         stroke-linecap: round;
-                    }
-
-                    .noteCirleNiv2 {
-                         stroke: $color-200;
-                    }
-               }
-
-               .noteText {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    @include text($color-700, 40px, $extrabold);
                }
           }
      }
-}
 
-.otherComps {
-     @include flex(16px, row);
-     flex-wrap: wrap;
-
-     .otherComp {
-          padding: 24px;
-          border: 4px solid $color-700;
-          border-radius: 48px;
-          @include flex(24px, row);
+     .compBody {
+          @include flex(0px, column);
+          justify-content: flex-start;
           align-self: stretch;
+          flex: 4;
 
-          .comp {
-               padding: 24px;
-               background: $color-100;
-               border-radius: 24px;
-               @include flex(8px, column);
-               justify-content: flex-start;
+          .compsHeader {
+               width: 100%;
+               padding: 32px;
+               border-bottom: 4px solid $color-700;
+          }
 
-               .level {
-                    @include text($color-700, 40px, $extrabold);
+          .comps {
+               width: 100%;
+               height: 100%;
+               max-height: 439px;
+               padding: 16px;
+               overflow: overlay;
+
+               &::-webkit-scrollbar {
+                    width: 8px;
                }
 
-               .titleCompLanguage {
-                    @include text($color-950, $titre, $semibold);
+               &::-webkit-scrollbar-track {
+                    background: $color-100;
+               }
+
+               &::-webkit-scrollbar-thumb {
+                    background-color: $color-700;
+                    border-radius: 20px;
+                    border: 3px solid $color-100;
+               }
+          }
+
+          .compJauge {
+               width: 100%;
+               padding: 32px;
+               border-top: 4px solid $color-700 !important;
+
+               @include flex(40px, row);
+
+               .noteJauge {
+                    width: 100%;
+                    height: 24px;
+
+                    .jaugeNiv1 {
+                         width: 24%; //paramétre à modifier pour faire la jauge
+                         height: 24px;
+                         fill: #344E47;
+                    }
+
+                    .jaugeNiv2 {
+                         width: 100%;
+                         height: 24px;
+                         fill: #BBD4CA;
+                    }
+               }
+
+               .jaugeText {
+                    font-family: "Oxanium", sans-serif;
+                    @include text($color-700, 40px, $semibold)
                }
           }
      }
