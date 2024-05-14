@@ -199,22 +199,12 @@ let comps = [
                {
                     "titleCompétence": "Utilisation de l'oscilloscope",
                     "description": `<p class="paraCompTechnique">
-                              .
+                              En cours d'écriture...
                          </p><br>
                          <p class="paraCompTechnique">
-                             Au cours des TD et TP, j'ai pu dans un premier temps découvrir ce qu'était un IPBX puis dans un second temps, 
-                              j'ai pu apprendre à installer et configurer des téléphones IP ("propriétaires"), des téléphones SIP (Linksys et Cisco) et des call sever UNIFY 
-                              avec l'ensemble des options disponibles (messagerie, renvoi d'appel, gestion des utilisateurs, trunk SIP).<br>
-                              De plus, j'ai appris à configurer et utiliser des softphone et un logiciel d'accès aux fonctions de communication unifiée (myPortal).
                          </p>`,
                     "jauge": 90,
-                    "tags": [
-                         "Téléphonie",
-                         "SIP",
-                         "IP",
-                         "IPBX",
-                         "myPortal"
-                    ]
+                    "tags": []
                }
           ]
      },
