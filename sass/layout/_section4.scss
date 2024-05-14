@@ -73,6 +73,10 @@
                          border: none;
                          background-color: $color-700;
                     }
+
+                    .compNavInfo {
+                         @include text($color-950, $paragraphe2, $regular);
+                    }
                }
           }
      }
@@ -142,3 +146,4 @@
           }
      }
 }
+

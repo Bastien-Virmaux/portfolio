@@ -13,8 +13,12 @@ if (activeBtn) {
      compContent.innerHTML = '';
 
      for (let k = 0; k < comps[index].compétences.length; k++) {
-          let titleComp =
-               `<div class="comp" id="comp">
+          let content = ""
+          if (comps[index].compétences[k].length == 0) {
+               content = `<p>error, il n'y a rien !</p>`;
+          } else {
+               content =
+                    `<div class="comp" id="comp">
                               <div class="compContainerTitle">
                                    <p class="compTitle">${comps[index].compétences[k].titleCompétence}</p>
                                    <button class="compButton" id="compButton" data-btn="${comps[k].id}">
@@ -29,7 +33,8 @@ if (activeBtn) {
                               <div class="compContent" id="compContent" data-content="${comps[k].id}">
                                    ${comps[index].compétences[k].description}
                               </div>`;
-          compContent.innerHTML += titleComp;
+          }
+          compContent.innerHTML += content;
      }
      animationDropDown()
 }

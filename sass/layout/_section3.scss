@@ -12,6 +12,12 @@
           align-self: stretch;
      }
 
+     iframe {
+          border-radius: 35px;
+          display: flex;
+          align-self: stretch;
+     }
+
      .right {
           @include flex(24px, column);
           justify-content: flex-start;

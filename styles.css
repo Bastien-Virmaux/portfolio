@@ -473,6 +473,11 @@ a {
   display: flex;
   align-self: stretch;
 }
+.expPro iframe {
+  border-radius: 35px;
+  display: flex;
+  align-self: stretch;
+}
 .expPro .right {
   display: flex;
   justify-content: center;
@@ -599,6 +604,12 @@ a {
   border-radius: 100px;
   border: none;
   background-color: #344E47;
+}
+.competences .compNavigation .compNavList .elementsCompNav .compNavInfo {
+  color: #141F1D;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
 }
 .competences .compBody {
   display: flex;
@@ -1089,6 +1100,42 @@ a {
     opacity: 1;
   }
 }
+.alert {
+  width: 100%;
+  padding: 16px;
+  background-color: #DDEAE5;
+  border: 4px solid #344E47;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.alert .headerAlert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row;
+}
+.alert .headerAlert svg path {
+  stroke: #344E47;
+}
+.alert .titleAlert {
+  color: #344E47;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+}
+.alert .message {
+  color: #141F1D;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
 .headerPrj {
   position: relative;
   background-image: url(assets/images/image_wave.svg);

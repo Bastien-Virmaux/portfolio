@@ -1,7 +1,3 @@
-/**
- * Show or not the shadow on the header
- */
-
 function navBar() {
      const header = document.querySelector("#header");
 
@@ -14,10 +10,6 @@ function navBar() {
           }
      })
 }
-
-/**
- * Generate button navigation for technical skills via JSON path
- */
 
 function generateButton() {
      const compNavList = document.getElementById("compNavList");
@@ -72,10 +64,13 @@ function changeContent() {
           element.addEventListener('click', () => {
                let index = element.getAttribute('data-comp') - 1;
                compContent.innerHTML = '';
+               let content = ``;
+               let errorContent = ``;
 
-               for (let k = 0; k < comps[index].compétences.length; k++) {
-                    let titleComp =
-                         `<div class="comp" id="comp">
+               if (comps[index].compétences.length != 0) {
+                    for (let k = 0; k < comps[index].compétences.length; k++) {
+                         let content =
+                              `<div class="comp" id="comp">
                               <div class="compContainerTitle">
                                    <p class="compTitle">${comps[index].compétences[k].titleCompétence}</p>
                                    <button class="compButton" id="compButton" data-btn="${comps[k].id}">
@@ -90,9 +85,26 @@ function changeContent() {
                               <div class="compContent" id="compContent" data-content="${comps[k].id}">
                                    ${comps[index].compétences[k].description}
                               </div>`;
-                    compContent.innerHTML += titleComp;
+                         compContent.innerHTML += content;
+                    }
+               } else {
+                    let errorContent =
+                         ` <div class="alert">
+                              <div class="headerAlert error">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
 
+                                   <p class="titleAlert">Aucune compétence disponible pour ${comps[index].title}</p>
+                              </div>
+
+                              <p class="message">
+                                   La compétence générale <strong>${comps[index].title}</strong> sera étudiée à partir de la deuxième année du BUT Réseaux et Télécommunications.
+                              </p>
+               </div>`;
+                    compContent.innerHTML += errorContent;
                }
+
                animationDropDown();
           });
      });

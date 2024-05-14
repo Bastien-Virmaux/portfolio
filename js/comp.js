@@ -1,22 +1,25 @@
 let comps = [
+     //compétence réseaux
      {
           "title": "Réseaux",
           "id": 1,
           "compétences": [
+               //ss-comp 1
                {
                     "titleCompétence": "Configurer un réseau informatique",
                     "description": `<p class="paraCompTechnique">
-                              J'ai développé cette compétence au cours des nombreux TD et TP sur le logiciel Cisco
-                              Packet Tracer.
-                         </p><br>
+                              J'ai développé cette compétence au cours des nombreux TD et TP dans un premier temps sur le logiciel Cisco Packet Tracer puis dans un second temps, sur des vraies machines. 
+                        </p><br>
                          <p class="paraCompTechnique">
-                              Au cours des TD et TP, j'ai pratiqué sur le logiciel
-                              Cisco Packet Tracer afin de configurer et installer plusieurs machines
+                              Au cours des TD et TP, j'ai pratiqué d'abord sur le logiciel
+                              Cisco Packet Tracer afin de configurer plusieurs machines
                               et services (PC, Switch, Routeur, Serveur, DHCP, FTP) en apprenant
                               a adressé correctement un réseau, utilisé plusieurs
                               protocole de routages, tester les connectivités entre
                               tous les appareils et savoir comment tous les interconnecter afin
                               qu'ils communiquent.<br><br>
+                              Ensuite j'ai pu mettre en pratique en faisant l'installation et la configuration des routeurs Cisco, des switch Cisco, des point d'accès,
+                              configurer les PC sous Windows et Linux afin qu'ils soient dans le même réseau et configurer des VLAN.<br><br>
                               Or mis ceci, j'ai beaucoup appris sur le fonctionnement du matériel
                               au cœur des réseaux locaux tels que les routeurs ou les switchs mais aussi des choses plus
                               théoriques comme le modéle OSI ou TCP/IP.
@@ -28,6 +31,7 @@ let comps = [
                          "Cisco"
                     ]
                },
+               //ss-comp 2
                {
                     "titleCompétence": "Installer des machines virtuelles",
                     "description": `<p class="paraCompTechnique">
@@ -35,25 +39,52 @@ let comps = [
                               virtuelles.
                          </p><br>
                          <p class="paraCompTechnique">
-                              Au cours des nombreuses séances de TP, j'ai effectué l'installation de machines virtuelles
-                              sur VMware et j'ai aussi configuré les OS (Windows, Linux) sur ces machines.
-                              Dans le cadre personnel, j'ai aussi testé l'installation de machines virtuelles sur
-                              VirtualBox.
+                              Au cours des nombreuses séances de TP, j'ai effectué la configuration, l'installation et la gestion de machines virtuelles
+                              sur VMware et VirtualBox. Aussi, j'ai découvert comment sauvegarder une VM, comment la cloner, les différents types de
+                              connexions réseau possibles (NAT, PONT, Réseau Privé, Pas de connexion). <br><br>
+                              J'ai aussi découvert ESX qui permet de faire la gestion de plusieurs VM via une interface graphique sur un site internet.
                          </p>`,
-                    "jauge": 75,
+                    "jauge": 95,
                     "tags": [
                          "VMware",
                          "VirtualBox",
                          "Linux",
                          "Windows"
                     ]
+               },
+               //ss-comp 3
+               {
+                    "titleCompétence": "Administration Réseau",
+                    "description": `<p class="paraCompTechnique">
+                              Lors des nombreux TD et TP, j'ai développé des compétences dans l'administration réseau.
+                         </p><br>
+                         <p class="paraCompTechnique">
+                             Dans un premier temps, j'ai découvert comment créer, modifier, supprimer des utilisateurs et des groupes sous Windows et Linux. <br>
+                              Dans un second temps, j'ai découvert comment faire des sauvegardes de données et planifier des tâches via Rsync et Cron pour Linux et Syncback pour Windows. Puis j'ai
+                              appris à utiliser Windows Serveur afin de configurer Active Directory et un DNS afin de mettre en place un domaine, des OU, des utilisateurs et les administrer en mettant en place des
+                              Stratégie de Groupe et des contraintes sur les comptes. Enfin j'ai appris à utiliser Docker afin de rechercher une image, l'installer et la démarrer et faire les configurations
+                              concernant le réseau du conteneur. <br><br>
+                              Au-delà de ceci, j'ai pu découvrir le système de stockage RAID et les contraintes de sauvegarde (lieu, matériel).
+                         </p>`,
+                    "jauge": 95,
+                    "tags": [
+                         "Adminstration",
+                         "Docker",
+                         "Active Directory",
+                         "DNS",
+                         "Utilisateurs",
+                         "Groupes",
+                         "Sauvegarde et Stockage"
+                    ]
                }
           ]
      },
+     //compétence programmation
      {
           "title": "Programmation",
           "id": 2,
           "compétences": [
+               //ss-comp 1
                {
                     "titleCompétence": "Utilisation de commande et script Linux",
                     "description": `<p class="paraCompTechnique">
@@ -78,6 +109,7 @@ let comps = [
                          "SHELL"
                     ]
                },
+               //ss-comp 2
                {
                     "titleCompétence": "Programmation en python",
                     "description": `<p class="paraCompTechnique">
@@ -88,7 +120,8 @@ let comps = [
                               d'exercices sur les fondamentaux de python (variables, boucles, conditions, fonctions,
                               module, liste)
                               et j'ai aussi appris à respecter les règles de programmation afin que les programmes
-                              reste lisible pour tout autre développeur.
+                              reste lisible pour tout autre développeur.<br><br>
+                              Aussi, j'ai découvert la Programmation Orienté Objet (POO).
                          </p>`,
                     "jauge": 80,
                     "tags": [
@@ -96,6 +129,7 @@ let comps = [
                          "python"
                     ]
                },
+               //ss-comp 3
                {
                     "titleCompétence": "Programmation Web",
                     "description": `<p class="paraCompTechnique">
@@ -120,24 +154,105 @@ let comps = [
                          "DESIGN",
                          "FIGMA"
                     ]
+               },
+               //ss-comp 4
+               {
+                    "titleCompétence": "Programmation PHP",
+                    "description": `<p class="paraCompTechnique">
+                              Grâce à ma curiosité, mais aussi grâce aux TP et TD en programmation, j'ai acquis de l'expérience avec le langage PHP.
+                         </p><br>
+                         <p class="paraCompTechnique">
+                              Grâce à <strong>Grafikart.fr</strong> j'ai découvert les fondamentaux de PHP. Ensuite, en BUT, j'ai pu remettre en pratique les
+                              base du langage (variables, boucles, conditions, fonctions, listes).<br><br>
+                              Dans un second temps, j'ai découvert comment connecter une base de données à notre projet PHP afin de récupérer des données.
+                         </p>`,
+                    "jauge": 90,
+                    "tags": [
+                         "WEB",
+                         "PHP",
+                         "SQL",
+                    ]
+               },
+               //ss-comp 5
+               {
+                    "titleCompétence": "Base de Données",
+                    "description": `<p class="paraCompTechnique">
+                              Lors de nos TD et TP, j'ai pu découvrir les bases de données.
+                         </p><br>
+                         <p class="paraCompTechnique">
+                              Lors de nos TD et TP, j'ai pu créer une base de données, insérer des données et faire des requêtes SQL afin de sélectionner et afficher les données demandées. <br>
+                              J'ai donc pu découvrir mySQL mais aussi noSQL avec mongoDB.
+                         </p>`,
+                    "jauge": 65,
+                    "tags": [
+                         "SQL",
+                         "MySQL"
+                    ]
                }
           ]
      },
+     //compétence télécommunications
      {
           "title": "Télécommunications",
           "id": 3,
-          "compétences": []
+          "compétences": [
+               {
+                    "titleCompétence": "Utilisation de l'oscilloscope",
+                    "description": `<p class="paraCompTechnique">
+                              .
+                         </p><br>
+                         <p class="paraCompTechnique">
+                             Au cours des TD et TP, j'ai pu dans un premier temps découvrir ce qu'était un IPBX puis dans un second temps, 
+                              j'ai pu apprendre à installer et configurer des téléphones IP ("propriétaires"), des téléphones SIP (Linksys et Cisco) et des call sever UNIFY 
+                              avec l'ensemble des options disponibles (messagerie, renvoi d'appel, gestion des utilisateurs, trunk SIP).<br>
+                              De plus, j'ai appris à configurer et utiliser des softphone et un logiciel d'accès aux fonctions de communication unifiée (myPortal).
+                         </p>`,
+                    "jauge": 90,
+                    "tags": [
+                         "Téléphonie",
+                         "SIP",
+                         "IP",
+                         "IPBX",
+                         "myPortal"
+                    ]
+               }
+          ]
      },
+     //compétence téléphonie
      {
           "title": "Téléphonie",
           "id": 4,
-          "compétences": []
+          "compétences": [
+               //ss-comp 1
+               {
+                    "titleCompétence": "Configuration des téléphones IP et des call server",
+                    "description": `<p class="paraCompTechnique">
+                              Lors des nombreuses séances de TD et TP en Téléphonie, j'ai acquis des compétences pour configurer des téléphones IP et des call server.
+                         </p><br>
+                         <p class="paraCompTechnique">
+                             Au cours des TD et TP, j'ai pu dans un premier temps découvrir ce qu'était un IPBX puis dans un second temps, 
+                              j'ai pu apprendre à installer et configurer des téléphones IP ("propriétaires"), des téléphones SIP (Linksys et Cisco) et des call sever UNIFY 
+                              avec l'ensemble des options disponibles (messagerie, renvoi d'appel, gestion des utilisateurs, trunk SIP).<br>
+                              De plus, j'ai appris à configurer et utiliser des softphone et un logiciel d'accès aux fonctions de communication unifiée (myPortal).
+                         </p>`,
+                    "jauge": 90,
+                    "tags": [
+                         "Téléphonie",
+                         "SIP",
+                         "IP",
+                         "IPBX",
+                         "myPortal"
+                    ]
+               }
+          ]
      },
+     //compétence sécurité
      {
           "title": "Sécurité",
           "id": 5,
-          "compétences": []
+          "compétences": [],
      },
+     //compétence langues
      {
           "title": "Langues",
           "id": 6,
