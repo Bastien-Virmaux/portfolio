@@ -1,18 +1,7 @@
-function navBar() {
-     const header = document.querySelector("#header");
+let comps = [...compsData];
 
-     window.addEventListener("scroll", () => {
-          let scroll = this.scrollY;
-          if (scroll > 10) {
-               header.classList.add("shadow");
-          } else {
-               header.classList.remove("shadow");
-          }
-     })
-}
-
-function generateButton() {
-     const compNavList = document.getElementById("compNavList");
+function generateButtonComp() {
+     const compNavList = document.querySelector("#compNavList");
      for (let i = 0; i < comps.length; i++) {
           const newButton = document.createElement('button');
 
@@ -34,7 +23,7 @@ function generateButton() {
      compNavList.append(firstElement);
 }
 
-function changeTitle() {
+function changeTitleComp() {
      const btn = document.querySelectorAll("#btn"); //selection de tous les boutons
      const title = document.querySelector('#titleCompetence'); //selection du titre
 
@@ -56,8 +45,8 @@ function changeTitle() {
      })
 }
 
-function changeContent() {
-     const compContent = document.getElementById("comps");
+function changeContentComp() {
+     const compContent = document.querySelector("#comps");
      const btn = document.querySelectorAll("#btn");
 
      btn.forEach(element => {
@@ -105,13 +94,13 @@ function changeContent() {
                     compContent.innerHTML += errorContent;
                }
 
-               animationDropDown();
+               animationDropDownComp();
           });
      });
 
 }
 
-function animationDropDown() {
+function animationDropDownComp() {
      const btnComp = document.querySelectorAll("#compButton");
      const contentComp = document.querySelectorAll("#compContent");
      const jaugeText = document.querySelector("#jaugeText");

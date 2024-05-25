@@ -213,9 +213,8 @@
                               chef-d' oeuvre pour leur baccalauréat.
                          </p>
                          <p class="expProRightText">
-                              Cette cordée, me permettra de développer mes compétences en communication afin d'être
-                              le
-                              plus claire et concis possible pour aider les lycéens.
+                              Cette cordée, m'a permis de développer mes compétences en communication afin d'être
+                              le plus clair est concis possible pour aider les lycéens.
                          </p>
                     </div>
                </div>
@@ -271,15 +270,6 @@
           <div class="containerQualité">
                <!-- LIGNE 1 -->
                <div class="lg1">
-                    <div class="card">
-                         <img class="cdIcon" src="assets/icons/icon_bag.svg" alt="icon">
-                         <div class="cdText">
-                              <p class="cdTitle">Persévérance</p>
-                              <p class="cdPara">Je fournis l’effort nécessaire afin
-                                   de terminer et de réussir le travail
-                                   demandé.</p>
-                         </div>
-                    </div>
                     <div class="card">
                          <img class="cdIcon" src="assets/icons/icon_location.svg" alt="icon">
                          <div class="cdText">
@@ -399,92 +389,22 @@
           <!-- =FIN MAIN TITLE= -->
 
           <!-- =CONTAINER PROJET= -->
-          <div class="containerProjet">
+          <div class="projets" id="projets">
+               <div class="projetsNavigation">
+                    <button class="projetNavigationButton" id="btnTop">
+                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.667 18.6667L16.0003 13.3333L21.3337 18.6667" stroke="#344E47"
+                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                    </button>
 
-               <!-- PROJET 1 : SAE14 : Portfolio -->
-               <div class="projet">
-                    <div class="informationsProjet">
-                         <h2 class="titleProjet">SAE14 : Portfolio</h2>
-                         <div class="tags">
-                              <a href="projet/prj_portfolio.html">
-                                   <button class="tagButton">Voir le projet <img src="assets/icons/icon_arrowRight.svg"
-                                             alt="fléche droite">
-                                   </button>
-                              </a>
-                              <div class="tag">
-                                   <p class="tagText">2023</p>
-                              </div>
-                              <div class="tag">
-                                   <p class="tagText">BUT</p>
-                              </div>
-                         </div>
-                    </div>
+                    <button class="projetNavigationButton" id="btnBottom">
+                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.3337 13.3333L16.0003 18.6667L10.667 13.3333" stroke="#344E47"
+                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                    </button>
                </div>
-               <!-- FIN PROJET 1 : SAE14 : Portfolio -->
-
-               <!-- PROJET 2 : SAE11 : Présentation du phishing -->
-               <div class="projet">
-                    <div class="informationsProjet">
-                         <h2 class="titleProjet">SAE11 : Se sensibiliser à l'hygiène informatique et à la
-                              cybersécurité</h2>
-                         <div class="tags">
-                              <a href="projet/prj_presentationPhishing.html">
-                                   <button class="tagButton">Voir le projet <img src="assets/icons/icon_arrowRight.svg"
-                                             alt="fléche droite">
-                                   </button>
-                              </a>
-                              <div class="tag">
-                                   <p class="tagText">2023</p>
-                              </div>
-                              <div class="tag">
-                                   <p class="tagText">BUT</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <!-- FIN PROJET 2 : SAE11 : Présentation du phishing -->
-
-               <!-- PROJET 3 : Projet STI2D : Logement Étudiant -->
-               <div class="projet">
-                    <div class="informationsProjet">
-                         <h2 class="titleProjet">SAE15 : Traitement de données</h2>
-                         <div class="tags">
-                              <a href="projet/prj_sae15.html">
-                                   <button class="tagButton">Voir le projet <img src="assets/icons/icon_arrowRight.svg"
-                                             alt="fléche droite">
-                                   </button>
-                              </a>
-                              <div class="tag">
-                                   <p class="tagText">2023</p>
-                              </div>
-                              <div class="tag">
-                                   <p class="tagText">BUT</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <!-- FIN PROJET 3 : Projet STI2D : Logement Étudiant -->
-
-               <!-- PROJET 4 : Projet STI2D : Logement Étudiant -->
-               <div class="projet">
-                    <div class="informationsProjet">
-                         <h2 class="titleProjet">Logement Étudiant</h2>
-                         <div class="tags">
-                              <a href="projet/prj_lgEtudiant.html">
-                                   <button class="tagButton">Voir le projet <img src="assets/icons/icon_arrowRight.svg"
-                                             alt="fléche droite">
-                                   </button>
-                              </a>
-                              <div class="tag">
-                                   <p class="tagText">2023</p>
-                              </div>
-                              <div class="tag">
-                                   <p class="tagText">Lycée</p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <!-- FIN PROJET 4 : Projet STI2D : Logement Étudiant -->
           </div>
           <!-- =FIN CONTAINER PROJET= -->
      </section>
@@ -646,8 +566,10 @@
           </div>
      </footer>
      <!-- ==FIN FOOTER== -->
-     <script src="js/comp.js"></script>
-     <script src="js/function.js"></script>
+     <script src="js/data.js"></script>
+     <script src="js/function_navbar.js"></script>
+     <script src="js/function_comp.js"></script>
+     <script src="js/function_projet.js"></script>
      <script src="js/app.js"></script>
 </body>
 

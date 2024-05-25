@@ -1,4 +1,5 @@
-let comps = [
+//compétences techniques
+const compsData = [
      //compétence réseaux
      {
           "title": "Réseaux",
@@ -196,6 +197,7 @@ let comps = [
           "title": "Télécommunications",
           "id": 3,
           "compétences": [
+               //ss-comp 1
                {
                     "titleCompétence": "Utilisation de l'oscilloscope",
                     "description": `<p class="paraCompTechnique">
@@ -246,6 +248,51 @@ let comps = [
      {
           "title": "Langues",
           "id": 6,
-          "compétences": []
+          "compétences": [
+               //ss-comp 1
+               {
+                    "titleCompétence": "Anglais",
+                    "description": `<p class="paraCompTechnique">
+                              Niveau : B1 
+                        </p><br>`,
+                    "jauge": "70"
+               }
+          ]
      }
 ]
+
+//projets
+const projetsData = [
+     //projet 1
+     {
+          "title": "SAE15 : Traitement de données",
+          "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
+          "image": "assets/images/image_illProjet3.jpg",
+          "page": "projet/prj_sae15.html",
+          "id": 0
+     },
+     //projet 2
+     {
+          "title": "SAE14 : Portfolio",
+          "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
+          "image": "assets/images/image_illProjet1.jpg",
+          "page": "projet/prj_portfolio.html",
+          "id": 1
+     },
+     //projet 3
+     {
+          "title": "SAE11 : Se sensibiliser à l'hygiène informatique et à la cybersécurité",
+          "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
+          "image": "assets/images/image_illProjet2.jpg",
+          "page": "projet/prj_presentationPhishing.html",
+          "id": 2
+     },
+     //projet 4
+     {
+          "title": "Logement Étudiant",
+          "description": "Projet développé en 2023 au Lycée en STI2D avec l'option : SIN.",
+          "image": "assets/images/image_illProjet4.jpg",
+          "page": "projet/prj_lgEtudiant.html",
+          "id": 3
+     },
+];

@@ -101,3 +101,38 @@
           display: none;
      }
 }
+
+@media screen and (max-width: 860px) {
+     .projets {
+          width: 100% !important;
+          flex-direction: column !important;
+
+          .projet {
+               gap: 16px !important;
+
+               .projetInfo {
+                    width: 100% !important;
+               }
+          }
+
+          .projetsNavigation {
+               flex-direction: row !important;
+
+               .projetNavigationButton {
+                    padding: 16px !important;
+
+                    &:nth-child(1) {
+                         border-radius: 32px 0 0 32px !important;
+                    }
+
+                    &:nth-child(2) {
+                         border-radius: 0 32px 32px 0px !important;
+                    }
+               }
+          }
+
+          .imgIllProjet {
+               height: unset !important;
+          }
+     }
+}

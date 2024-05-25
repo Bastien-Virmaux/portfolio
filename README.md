@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="[www.](https://bastien-virmaux.github.io/portfolio/)"><img src="![image](https://github.com/Bastien-Virmaux/portfolio/assets/79004633/83e4197c-0685-462e-95e8-f9c109bcad04)
+  <a href="[www.](https://bastien-virmaux.github.io/portfolio/)"><img src="![image](assets/icons/icon_logo.svg)
 " alt="mon logo" width="200"></a>
   <br>
   Bastien

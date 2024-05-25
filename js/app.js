@@ -1,8 +1,8 @@
 navBar();
 
-//Fonction pour la partie compétences
-generateButton();
-changeTitle();
+/* ===Fonction pour la partie compétences=== */
+generateButtonComp();
+changeTitleComp();
 
 //chargement par défaut du contenu des compétences technique
 const compContent = document.getElementById("comps");
@@ -36,8 +36,29 @@ if (activeBtn) {
           }
           compContent.innerHTML += content;
      }
-     animationDropDown()
+     animationDropDownComp()
 }
+//FIN chargement par défaut du contenu des compétences technique
 
-changeContent();
+changeContentComp();
+/* === FIN fonction pour la partie compétences=== */
 
+/* ===Fonction pour la partie projet=== */
+
+
+const btnTop = document.querySelector('#btnTop');
+const btnBottom = document.querySelector('#btnBottom');
+
+
+bottomProjet(); //initialisation d'un projet
+
+btnTop.addEventListener('click', () => {
+     topProjet();
+});
+
+btnBottom.addEventListener('click', () => {
+     bottomProjet();
+});
+
+
+/* ===FIN fonction pour la partie projet=== */
