@@ -242,7 +242,7 @@ const compsData = [
                {
                     "titleCompétence": "Utilisation de GBF (Générateur de fonction)",
                     "description": `<p class="paraCompTechnique">Lors des TP de télécommunications, j'ai pu apprendre à 
-                                        utiliser des GBF (Agilent et RIGOL)
+                                        utiliser des GBF (Agilent et RIGOL).
                          </p><br>
                          <p class="paraCompTechnique">
                               J'ai pu apprendre à générer 1 ou plusieurs signal(aux) avec des amplitudes et des fréquences différentes. J'ai pu utiliser
@@ -263,7 +263,7 @@ const compsData = [
                {
                     "titleCompétence": "Utilisation de l'oscilloscope",
                     "description": `<p class="paraCompTechnique">
-                              Lors des TP de télécommunications j'ai pu apprendre à utiliser des oscilloscopes (Keysight et Agilent)
+                              Lors des TP de télécommunications j'ai pu apprendre à utiliser des oscilloscopes (Keysight et Agilent).
                          </p><br>
                          <p class="paraCompTechnique">
                               J'ai pu apprendre à observer 1 ou plusieurs signal(aux) simultanément pour en extraire des informations sur l'amplitude,
@@ -282,9 +282,9 @@ const compsData = [
                },
                //ss-comp 3
                {
-                    "titleCompétence": "Utilisation d'analyseur de spectre (ANRITSU et SIGLENT)",
+                    "titleCompétence": "Utilisation d'analyseur de spectre",
                     "description": `<p class="paraCompTechnique">
-                              Lors des TP de télécommunications j'ai pu apprendre à utiliser des analyseurs de spectre (Keysight et Agilent)
+                              Lors des TP de télécommunications j'ai pu apprendre à utiliser des analyseurs de spectre (ANRITSU et SIGLENT).
                          </p><br>
                          <p class="paraCompTechnique">
                               J'ai pu apprendre à observer le spectre d'un signal sinusoïdal ou carré en sachant régler l'échelle horizontale
