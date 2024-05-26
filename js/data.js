@@ -14,7 +14,7 @@ const compsData = [
                          <p class="paraCompTechnique">
                               Au cours des TD et TP, j'ai pratiqué d'abord sur le logiciel
                               Cisco Packet Tracer afin de configurer plusieurs machines
-                              et services (PC, Switch, Routeur, Serveur, DHCP, FTP) en apprenant
+                              et services (PC, Switch, Routeur, Serveur) en apprenant
                               a adressé correctement un réseau, utilisé plusieurs
                               protocole de routages, tester les connectivités entre
                               tous les appareils et savoir comment tous les interconnecter afin
@@ -76,6 +76,47 @@ const compsData = [
                          "Utilisateurs",
                          "Groupes",
                          "Sauvegarde et Stockage"
+                    ]
+               },
+               //ss-comp 4
+               {
+                    "titleCompétence": "Service DHCP",
+                    "description": `<p class="paraCompTechnique">
+                              Lors des TD et TP, j'ai développé des compétences dans la configuration du service DHCP.
+                         </p><br>
+                         <p class="paraCompTechnique">
+                              lors des TD et TP en service-réseau, j'ai pu installer et configurer un service DHCP (isc-dhcp-server) sur un serveur Linux afin qu'il
+                              attribue une adresse IP, mais aussi d'autres informations, comme la passerelle à des machines Windows et Linux.<br>
+                         </p>`,
+                    "jauge": 90,
+                    "tags": [
+                         "DHCP",
+                         "ISC-DHCP-SERVER",
+                         "Configuration",
+                         "Linux",
+                         "Windows",
+                         "IP"
+                    ]
+               },
+               //ss-comp 5
+               {
+                    "titleCompétence": "Service DNS",
+                    "description": `<p class="paraCompTechnique">
+                              Lors des TD et TP, j'ai développé des compétences dans la configuration du service DNS.
+                         </p><br>
+                         <p class="paraCompTechnique">
+                              Lors des TD et TP en service réseau, j'ai pu mettre en place un service DNS sur des serveurs sur le logiciel cisco packet
+                              tracer sur deux réseaux différents afin de voir comment cela fonctionne. J'ai aussi configuré les serveurs DNS afin que les deux réseaux
+                              sachent comment traiter les noms d'un autre réseau.<br>
+                         </p>`,
+                    "jauge": 90,
+                    "tags": [
+                         "DHCP",
+                         "ISC-DHCP-SERVER",
+                         "Configuration",
+                         "Linux",
+                         "Windows",
+                         "IP"
                     ]
                }
           ]
@@ -199,14 +240,65 @@ const compsData = [
           "compétences": [
                //ss-comp 1
                {
-                    "titleCompétence": "Utilisation de l'oscilloscope",
-                    "description": `<p class="paraCompTechnique">
-                              En cours d'écriture...
+                    "titleCompétence": "Utilisation de GBF (Générateur de fonction)",
+                    "description": `<p class="paraCompTechnique">Lors des TP de télécommunications, j'ai pu apprendre à 
+                                        utiliser des GBF (Agilent et RIGOL)
                          </p><br>
                          <p class="paraCompTechnique">
+                              J'ai pu apprendre à générer 1 ou plusieurs signal(aux) avec des amplitudes et des fréquences différentes. J'ai pu utiliser
+                              plusieurs fonctions telles que le réglage de l'impédance, la modulation, sweep.
+                         </p>`,
+                    "jauge": 95,
+                    "tags": [
+                         "RIGOL",
+                         "Agilent",
+                         "Fréquence",
+                         "Amplitude",
+                         "Sweep",
+                         "Modulation",
+                         "Impédance"
+                    ]
+               },
+               //ss-comp 2
+               {
+                    "titleCompétence": "Utilisation de l'oscilloscope",
+                    "description": `<p class="paraCompTechnique">
+                              Lors des TP de télécommunications j'ai pu apprendre à utiliser des oscilloscopes (Keysight et Agilent)
+                         </p><br>
+                         <p class="paraCompTechnique">
+                              J'ai pu apprendre à observer 1 ou plusieurs signal(aux) simultanément pour en extraire des informations sur l'amplitude,
+                              la fréquence, la durée à l'état haut.... Tout en sachant régler l'échelle horizontale et verticale. J'ai pu
+                              apprendre à utiliser des fonctions telles que FFT pour observer le spectre d'un signal.
                          </p>`,
                     "jauge": 90,
-                    "tags": []
+                    "tags": [
+                         "Keysight",
+                         "Agilent",
+                         "Oscilloscope",
+                         "Fréquence",
+                         "Amplitude",
+                         "FFT"
+                    ]
+               },
+               //ss-comp 3
+               {
+                    "titleCompétence": "Utilisation d'analyseur de spectre (ANRITSU et SIGLENT)",
+                    "description": `<p class="paraCompTechnique">
+                              Lors des TP de télécommunications j'ai pu apprendre à utiliser des analyseurs de spectre (Keysight et Agilent)
+                         </p><br>
+                         <p class="paraCompTechnique">
+                              J'ai pu apprendre à observer le spectre d'un signal sinusoïdal ou carré en sachant régler l'échelle horizontale
+                              et verticale. J'ai aussi utilisé la démodulation afin de pouvoir écouter un signal, observer son spectre et déterminé
+                              son enveloppe.
+                         </p>`,
+                    "jauge": 90,
+                    "tags": [
+                         "Anritsu",
+                         "Siglent",
+                         "Sinusoïdal",
+                         "Carré",
+                         "FFT"
+                    ]
                }
           ]
      },
