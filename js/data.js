@@ -357,34 +357,44 @@ const compsData = [
 const projetsData = [
      //projet 1
      {
+          "title": "SAE21 : Construire réseau",
+          "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
+          "image": "assets/images/image_illProjet5.jpg",
+          "page": "projet/prj5.html",
+     },
+     //projet 2
+     {
+          "title": "SAE23 : Mettre en place une solution informatique pour l’entreprise",
+          "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
+          "image": "assets/images/image_illProjet6.jpg",
+          "page": "projet/prj6.html",
+     },
+     //projet 3
+     {
           "title": "SAE15 : Traitement de données",
           "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_illProjet3.jpg",
-          "page": "projet/prj_sae15.html",
-          "id": 0
+          "page": "projet/prj1.html",
      },
-     //projet 2
+     //projet 4
      {
           "title": "SAE14 : Portfolio",
           "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_illProjet1.jpg",
-          "page": "projet/prj_portfolio.html",
-          "id": 1
+          "page": "projet/prj2.html",
      },
-     //projet 3
+     //projet 5
      {
           "title": "SAE11 : Se sensibiliser à l'hygiène informatique et à la cybersécurité",
           "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_illProjet2.jpg",
-          "page": "projet/prj_presentationPhishing.html",
-          "id": 2
+          "page": "projet/prj3.html",
      },
-     //projet 4
+     //projet 6
      {
           "title": "Logement Étudiant",
           "description": "Projet développé en 2023 au Lycée en STI2D avec l'option : SIN.",
           "image": "assets/images/image_illProjet4.jpg",
-          "page": "projet/prj_lgEtudiant.html",
-          "id": 3
+          "page": "projet/prj4.html",
      },
 ];
