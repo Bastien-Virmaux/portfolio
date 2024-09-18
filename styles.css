@@ -820,11 +820,21 @@ a {
   font-weight: 800;
   letter-spacing: 0.32px;
 }
-.divers .diver .diverParagraphe {
+.divers .diver .containerDiver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row;
+}
+.divers .diver .containerDiver .diverParagraphe {
   color: #141F1D;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.32px;
+}
+.divers .diver .containerDiver .illCuisine {
+  height: 160px;
 }
 
 .containerCv {
@@ -1205,6 +1215,12 @@ a {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.32px;
+}
+
+.simpleLink {
+  color: #344E47;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .headerPrj {

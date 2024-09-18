@@ -16,8 +16,16 @@
                @include text($color-700, $paragraphe1, $extrabold);
           }
 
-          .diverParagraphe {
-               @include text($color-950, $paragraphe1, $regular);
+          .containerDiver {
+               @include flex(8px, row);
+
+               .diverParagraphe {
+                    @include text($color-950, $paragraphe1, $regular);
+               }
+
+               .illCuisine {
+                    height: 160px;
+               }
           }
      }
 }
