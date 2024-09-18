@@ -1,0 +1,76 @@
+.projets {
+     width: 100%;
+     margin: 0 auto;
+     padding: 72px 24px;
+     background-color: $color-100;
+     border: 4px solid $color-700;
+     border-radius: 16px;
+     @include flex(56px, row);
+     justify-content: space-between;
+
+     .projetsNavigation {
+          background-color: $color-200;
+          border: 4px solid $color-700;
+          border-radius: 100px;
+          @include flex(0, column);
+
+          .projetNavigationButton {
+               padding: 16px 8px;
+               background-color: transparent;
+               border: none;
+
+               &:nth-child(1) {
+                    border-radius: 32px 32px 0 0;
+               }
+
+               &:nth-child(2) {
+                    border-radius: 0 0 32px 32px;
+               }
+
+               &:hover {
+                    background-color: $color-100;
+               }
+          }
+     }
+
+     .projet {
+          width: 100%;
+          @include flex(0, column);
+          justify-content: space-between;
+          align-items: flex-start;
+          align-self: stretch;
+
+          .projetInfo {
+               @include flex(8px, column);
+               align-items: flex-start;
+
+               .projetTitle {
+                    @include text($color-700, 40px, $semibold1);
+                    font-family: "Libre Caslon Text", serif;
+               }
+
+               .projetDescription {
+                    @include text($color-950, $paragraphe2, $regular);
+               }
+          }
+
+          .projetLink {
+               @include text($color-700, $paragraphe1, $regular);
+               @include flex(0, row);
+
+               svg {
+                    transform: translate(4px);
+                    transition: 0.5s;
+               }
+
+               &:hover svg {
+                    transform: translate(12px);
+               }
+          }
+     }
+
+     .imgIllProjet {
+          width: 389px;
+          height: 332px;
+     }
+}
