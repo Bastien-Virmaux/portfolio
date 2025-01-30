@@ -62,7 +62,7 @@ function changeContentComp() {
                               `<div class="comp" id="comp">
                               <div class="compContainerTitle">
                                    <p class="compTitle">${comps[index].compétences[k].titleCompétence}</p>
-                                   <button class="compButton" id="compButton" data-btn="${comps[k].id}">
+                                   <button class="compButton" id="compButton" data-btn="${comps[index].compétences[k].id}">
                                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                              <path d="M15 11L12 14L9 11" stroke="#344E47" stroke-width="2"
@@ -71,7 +71,7 @@ function changeContentComp() {
                                    </button>
                               </div>
                               </div> 
-                              <div class="compContent" id="compContent" data-content="${comps[k].id}">
+                              <div class="compContent" id="compContent" data-content="${comps[index].compétences[k].id}">
                                    ${comps[index].compétences[k].description}
                               </div>`;
                          compContent.innerHTML += content;
