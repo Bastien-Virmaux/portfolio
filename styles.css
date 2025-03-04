@@ -88,38 +88,62 @@ a {
 }
 
 @media screen and (max-width: 1320px) {
+  /* ===SECTION 1=== */
   #aPropos {
     height: 100% !important;
   }
   #aPropos .sec1Container1 .left {
     width: 100% !important;
   }
+  /* ===FIN SECTION 1=== */
 }
 @media screen and (max-width: 1030px) {
+  /* ===SECTION 5=== */
   .projets {
     flex-direction: column !important;
   }
   .projets .projetsNavigation {
     transform: rotate(90deg);
   }
+  /* ===FIN SECTION 5=== */
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
+  /* ===SECTION 4=== */
   .containerQualite {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  /* ===FIN SECTION 4=== */
+  /* ===SECTION 6=== */
   .divers {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  /* ===FIN SECTION 6=== */
+  /* ===PROJET=== */
+  .introProjet {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .introProjet .left {
+    width: 100% !important;
+  }
+  .introProjet .left .btnContainerPrj {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  /* ===FIN PROJET=== */
 }
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
+  /* ===SECTION 4=== */
   .competences {
     height: 100% !important;
   }
   .competences .compNavigation {
     border-right: unset !important;
   }
+  /* ===FIN SECTION 4=== */
 }
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
+  /* ===SECTION 1===*/
   .circleContainer {
     width: 300px !important;
     height: 300px !important;
@@ -132,14 +156,19 @@ a {
     width: 300px !important;
     height: 300px !important;
   }
+  /* ===FIN SECTION 1===*/
+  /* ===OVERLAY=== */
   .overlayInfo {
     width: 100% !important;
   }
+  /* ===FIN OVERLAY=== */
+  /* ===SECTION 8=== */
   .contact {
     align-items: flex-start !important;
     flex-direction: column !important;
     gap: 8px !important;
   }
+  /* ===FIN SECTION 8=== */
 }
 .nav {
   display: flex;
@@ -1556,7 +1585,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0px;
+  gap: 16px;
   flex-direction: row;
 }
 .introProjet .left {

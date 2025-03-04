@@ -1,5 +1,5 @@
 @media screen and (max-width: 1320px) {
-     // ===SECTION 1=== //
+     /* ===SECTION 1=== */
 
      #aPropos {
           height: 100% !important;
@@ -11,11 +11,11 @@
           }
      }
 
-     // ===FIN SECTION 1=== //
+     /* ===FIN SECTION 1=== */
 }
 
 @media screen and (max-width: 1030px) {
-     // ===SECTION 5=== //
+     /* ===SECTION 5=== */
 
      .projets {
           flex-direction: column !important;
@@ -25,30 +25,48 @@
           }
      }
 
-     // ===FIN SECTION 5=== //
+     /* ===FIN SECTION 5=== */
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
-     // ===SECTION 4=== //
+     /* ===SECTION 4=== */
 
      .containerQualite {
           grid-template-columns: repeat(1, 1fr) !important;
      }
 
-     // ===FIN SECTION 4=== //
+     /* ===FIN SECTION 4=== */
 
-     // ===SECTION 6=== //
+     /* ===SECTION 6=== */
 
      .divers {
           grid-template-columns: repeat(1, 1fr) !important;
      }
 
-     // ===FIN SECTION 6=== //
+     /* ===FIN SECTION 6=== */
+
+     /* ===PROJET=== */
+
+     .introProjet {
+          width: 100% !important;
+          flex-direction: column !important;
+
+          .left {
+               width: 100% !important;
+
+               .btnContainerPrj {
+                    width: 100%;
+                    flex-direction: column !important;
+               }
+          }
+     }
+
+     /* ===FIN PROJET=== */
 }
 
-@media (max-width: 720px) {
-     // ===SECTION 4=== //
+@media screen and (max-width: 720px) {
+     /* ===SECTION 4=== */
 
      .competences {
           height: 100% !important;
@@ -58,12 +76,12 @@
           }
      }
 
-     // ===FIN SECTION 4=== //
+     /* ===FIN SECTION 4=== */
 }
 
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
 
-     // ===SECTION 1===//
+     /* ===SECTION 1===*/
 
      .circleContainer {
           width: 300px !important;
@@ -80,17 +98,17 @@
           height: 300px !important;
      }
 
-     // ===FIN SECTION 1===//
+     /* ===FIN SECTION 1===*/
 
-     // ===OVERLAY=== //
+     /* ===OVERLAY=== */
 
      .overlayInfo {
           width: 100% !important;
      }
 
-     // ===FIN OVERLAY=== //
+     /* ===FIN OVERLAY=== */
 
-     // ===SECTION 8=== //
+     /* ===SECTION 8=== */
 
      .contact {
           align-items: flex-start !important;
@@ -98,5 +116,5 @@
           gap: 8px !important;
      }
 
-     // ===FIN SECTION 8=== //
+     /* ===FIN SECTION 8=== */
 }

@@ -3,7 +3,7 @@
      padding: 24px;
      background-color: $color-50;
      border-radius: 24px;
-     @include flex(space-between, 0px, row);
+     @include flex(space-between, 16px, row);
 
      .left {
           @include flex(flex-start, 40px, column);
