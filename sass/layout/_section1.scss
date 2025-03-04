@@ -1,0 +1,56 @@
+.sec1Container1 {
+     width: 100%;
+     height: calc(100% - 24%);
+     @include flex(space-evenly, 32px, row);
+     flex-wrap: wrap;
+
+
+     .left {
+          width: 64%;
+          @include flex(center, 24px, column);
+          align-items: flex-start;
+
+          .lfTitle {
+               @include text($color-950, $titre, $semibold);
+          }
+
+          .name {
+               @include text($color-700, $titre, $extrabold);
+          }
+
+          .lfTitleSecond {
+               @include text($color-950, $sousTitre, $semibold);
+          }
+
+          .lfTextPara {
+               @include text($color-950, $paragraphe1, $regular);
+          }
+     }
+
+     .right {
+          position: relative;
+
+          .circleContainer {
+               width: 400px;
+               height: 400px;
+               border: 8px solid $color-100;
+               border-radius: 500px;
+               @include flex(center, 0px, column);
+
+               .circleChild {
+                    width: 350px;
+                    height: 350px;
+                    background-color: $color-700;
+                    border-radius: 500px;
+               }
+          }
+
+          .rgImg {
+               position: absolute;
+               top: 0;
+               width: 400px;
+               height: 400px;
+               border-radius: 0 0 170px 170px;
+          }
+     }
+}

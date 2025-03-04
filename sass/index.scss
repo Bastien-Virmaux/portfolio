@@ -1,0 +1,64 @@
+//importation web
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+//importation des tools
+@import "tools/variables";
+@import "tools/reset";
+@import "tools/mixin";
+
+//importation des layout
+@import "layout/responsive";
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/section";
+@import "layout/section1";
+@import "layout/section2";
+@import "layout/section3";
+@import "layout/section4";
+@import "layout/section5";
+@import "layout/section6";
+@import "layout/section7";
+@import "layout/section8";
+
+//importation des components
+@import "components/button";
+@import "components/logo";
+@import "components/tags";
+@import "components/title";
+@import "components/themeElements";
+@import "components/compDropDownUp";
+@import "components/error";
+@import "components/simpleLink";
+@import "components/overlay";
+
+//importation des pages
+@import "pages/prj";
+
+* {
+     font-family: 'Inter', sans-serif;
+}
+
+body {
+     height: 100%;
+     padding: 24px 24px 0 24px;
+     background-color: $color-700;
+     @include flex(center, 24px, column);
+
+     //NAVIGATION BAR SCROLL
+     &::-webkit-scrollbar {
+          width: 8px;
+     }
+
+     &::-webkit-scrollbar-track {
+          background: $color-700;
+     }
+
+     &::-webkit-scrollbar-thumb {
+          background-color: $color-50;
+          border-radius: 20px;
+          border: 3px solid $color-700;
+     }
+}

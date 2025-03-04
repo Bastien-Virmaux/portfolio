@@ -1,0 +1,199 @@
+//===NAVIGATION COMPETENCES===//
+
+.compNav {
+     position: relative;
+     width: min-content;
+     margin: 24px auto;
+     padding: 16px;
+     background-color: $color-50;
+     border-radius: 200px;
+     @include flex(center, 0px, row);
+
+     .compNavBtn {
+          width: 160px;
+          height: 56px;
+          padding: 16px 24px;
+          background-color: unset;
+          border: none;
+          border-radius: 200px;
+          cursor: pointer;
+          z-index: 20;
+          @include flex(center, 0px, row);
+
+
+          .compNavBtnText {
+               @include text($color-700, $paragraphe1, $semibold);
+               transition: color 0.3s;
+          }
+
+          &:first-child {
+               margin-right: 24px;
+          }
+     }
+
+     .compNavBtnRect {
+          position: absolute;
+          width: 159px;
+          height: 54px;
+          padding: 16px 24px;
+          background-color: $color-400;
+          border: none;
+          border-radius: 200px;
+          z-index: 1;
+          transition: ease-out 0.3s;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+     }
+}
+
+//===FIN NAVIGATION COMPETENCES===//
+
+//===QUALITE===//
+
+.containerQualite {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     grid-column-gap: 24px;
+     grid-row-gap: 24px;
+
+     .cardQualite {
+          @include card(16px);
+          @include flex(center, 16px, column);
+
+          .cardQualiteIcon {
+               width: 124px;
+               height: 124px;
+          }
+
+          .cardQualiteInfo {
+               @include flex(center, 16px, column);
+
+               .cardQualiteTextTitle {
+                    @include text($color-50, $sousTitre, $semibold1);
+               }
+
+               .cardQualiteTextPara {
+                    @include text($color-50, $paragraphe2, $regular);
+               }
+          }
+     }
+}
+
+//===FIN QUALITE===//
+
+//===TECHNIQUES===//
+
+.containerTechnique {
+     display: none;
+}
+
+.competences {
+     width: 100%;
+     height: 585px;
+     background-color: $color-700;
+     border-radius: 40px;
+     border: 2px solid $color-100;
+     display: flex;
+     @include flex(flex-start, 0px, row);
+     align-items: flex-start;
+     flex-wrap: wrap;
+
+     .compNavigation {
+          height: 100%;
+          padding: 24px;
+          border-right: 2px solid $color-100;
+          flex: 1;
+
+          .compNavList {
+               @include flex(center, 16px, column);
+               margin: 16px 0;
+
+               .elementsCompNav {
+                    @include flex(center, 16px, column);
+
+                    .line {
+                         width: 100%;
+                         height: 4px;
+                         border-radius: 100px;
+                         border: none;
+                         background-color: $color-100;
+                    }
+
+                    .compNavInfo {
+                         @include text($color-100, $paragraphe2, $regular);
+                    }
+               }
+          }
+     }
+
+     .compBody {
+          height: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-self: stretch;
+          flex: 4;
+
+          .compsHeader {
+               width: 100%;
+               padding: 24px 32px;
+               border-bottom: 2px solid $color-100;
+               flex-shrink: 0; // Prend l'espace minimal possible
+          }
+
+          .comps {
+               width: 100%;
+               flex-grow: 1; // Prend le reste de l'espace disponible
+               padding: 16px;
+               overflow: overlay;
+
+               //NAVIGATION BAR SCROLL
+               &::-webkit-scrollbar {
+                    width: 8px;
+               }
+
+               &::-webkit-scrollbar-track {
+                    background: $color-700;
+               }
+
+               &::-webkit-scrollbar-thumb {
+                    background-color: $color-50;
+                    border-radius: 20px;
+                    border: 3px solid $color-700;
+               }
+          }
+
+          .compJauge {
+               position: relative;
+               width: 100%;
+               padding: 24px 32px;
+               border-top: 2px solid $color-100 !important;
+               border-radius: 0 0 38px 0;
+               @include flex(center, 40px, row);
+               flex-shrink: 0; // Prend l'espace minimal possible
+
+               .noteJauge {
+                    width: 100%;
+                    height: 32px;
+                    padding: 4px;
+                    border-radius: 1000px;
+                    border: 2px solid #ddeae5;
+                    display: none;
+
+                    .jaugeNiv1 {
+                         width: 24%; //paramétre à modifier pour faire la jauge
+                         height: 100%;
+                         background-color: $color-100;
+                         border-radius: 1000px;
+                    }
+               }
+
+               .jaugeText {
+                    font-family: "Oxanium", sans-serif;
+                    @include text($color-100, 40px, $semibold)
+               }
+          }
+     }
+}
+
+//===FIN TECHNIQUES===//

@@ -1,0 +1,85 @@
+// ===NAVIGATION=== //
+
+.nav {
+     @include flex(center, 24px, row);
+
+     .mainNav {
+          @include flex(center, 24px, row);
+
+          .navLink {
+               position: relative;
+               padding: 4px 0; // Contraindre la hauteur du lien pour l'aligner avec le bloc parent
+               @include text($color-950, $paragraphe2, $regular);
+
+               // Ajouter une transition sur le pseudo-élément ::before => qui est une barre qui s'anime en-dessous du texte
+               &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    bottom: 0;
+                    background-color: #FFF;
+                    transition: 0.5s transform ease;
+                    transform: scale3d(0, 1, 1);
+                    transform-origin: 0 50%;
+               }
+
+               &:hover::before {
+                    transform: scale3d(1, 1, 1);
+               }
+
+               &::before {
+                    background-color: $color-700;
+                    transform-origin: 100% 50%;
+               }
+
+               &:hover::before {
+                    transform-origin: 0 50%;
+                    ;
+               }
+          }
+     }
+}
+
+// ===FIN NAVIGATION=== //
+
+// ===NAVIGATION RESPONSIVE=== //
+.btnNavResponsive,
+.toggleNav {
+     display: none;
+}
+
+@media all and (max-width: 991px) {
+     .nav {
+          height: 60px;
+     }
+
+     .nav .mainNav {
+          display: none;
+          flex-direction: column;
+          background: #48435C;
+          height: 220px;
+     }
+
+     .nav .mainNav .navLink {
+          width: 50%;
+     }
+
+     .btnNavResponsive {
+          width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          font-size: 40px;
+          color: white;
+          cursor: pointer;
+     }
+
+     .toggleNav:checked+.mainNav {
+          display: flex;
+     }
+}
+
+// ===FIN NAVIGATION RESPONSIVE=== //

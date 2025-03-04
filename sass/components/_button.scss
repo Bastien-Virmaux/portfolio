@@ -1,0 +1,115 @@
+/* ===BUTTON G=== */
+
+.btn {
+     @include card(8px 16px);
+     @include text($color-50, $paragraphe1, $semibold);
+     @include flex(center, 8px, row);
+     cursor: pointer;
+     transition: background-color 0.5s;
+
+     &:hover {
+          background-color: $color-50;
+          color: $color-700;
+     }
+}
+
+/* ===FIN BUTTON G=== */
+
+/* ===BUTTON OVERLAY=== */
+
+.btn-round {
+     padding: 8px;
+     background-color: unset;
+     border: 1px solid $color-700;
+     border-radius: 100%;
+     @include flex(center, 0px, row);
+     cursor: pointer;
+     transition: backhround-color 0.3s;
+
+     .btn-round-icon {
+          width: 16px;
+          height: 16px;
+     }
+}
+
+/* ===FIN BUTTON OVERLAY=== */
+
+/* ===BUTTON COMP TECHNIQUE=== */
+
+.compNavButton {
+     width: 100%;
+     padding: 16px;
+     background-color: unset;
+     border-radius: 8px;
+     border: 2px solid $color-50;
+     @include text($color-50, $paragraphe1, $semibold);
+     text-align: left;
+     cursor: pointer;
+     transition: border-radius 0.5s, color 0.5s, background-color 0.5s;
+
+     &:hover {
+          background-color: $color-50;
+          color: $color-700;
+     }
+
+     &.active {
+          @include card(16px);
+          color: $color-50;
+     }
+}
+
+/* ===FIN BUTTON COMP TECHNIQUE=== */
+
+/* ===BUTTON PROJET=== */
+
+.projetNavigationButton {
+     padding: 16px 8px;
+     background-color: unset;
+     border: unset;
+     transition: background-color 0.5s;
+
+     svg path {
+          stroke: $color-100;
+     }
+
+     &:nth-child(1) {
+          border-radius: 22px 22px 0 0;
+     }
+
+     &:nth-child(2) {
+          border-radius: 0 0 22px 22px;
+     }
+
+     &:hover {
+          background-color: $color-50;
+
+          svg path {
+               stroke: $color-700;
+          }
+
+     }
+}
+
+.projetBtn {
+     @include card(8px 16px);
+     border: 2px solid $color-700;
+     @include text($color-700, $paragraphe1, $semibold);
+     @include flex(center, 8px, row);
+     cursor: pointer;
+     transition: background-color 0.5s;
+
+     svg path {
+          stroke: $color-700;
+     }
+
+     &:hover {
+          background-color: $color-700;
+          color: $color-50;
+
+          svg path {
+               stroke: $color-50;
+          }
+     }
+}
+
+/* ===FIN BUTTON PROJET===*/

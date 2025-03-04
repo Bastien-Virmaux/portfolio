@@ -1,0 +1,13 @@
+/* ==HEADER== */
+.header {
+     width: 100%;
+     padding: 24px 40px;
+     background-color: $color-50;
+     border-radius: 24px;
+     @include flex(space-between, 0px, row);
+
+     .logo {
+          width: 40px;
+          height: 40px;
+     }
+}

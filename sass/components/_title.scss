@@ -1,0 +1,47 @@
+.title {
+     width: 100%;
+     margin-bottom: 56px;
+     @include flex(center, 16px, column);
+     align-items: flex-start;
+
+     .textTitle {
+          @include text($color-50, $extaTitre, $black);
+          letter-spacing: 2px !important;
+          text-transform: uppercase;
+     }
+}
+
+#aProposTitle {
+     margin-bottom: 32px;
+
+     .textTitle {
+          @include text($color-700, $extaTitre, $black);
+     }
+}
+
+.ssTitle {
+     width: 100%;
+     align-items: flex-start;
+
+     .textTitle {
+          @include text($color-50, $sousTitre, $extrabold)
+     }
+}
+
+.ssTitlePrj {
+     width: 100%;
+     align-items: flex-start;
+
+     .textTitle {
+          @include text($color-50, $titre, $extrabold)
+     }
+}
+
+.ssTitleOverlay {
+     width: 100%;
+     align-items: flex-start;
+
+     .textTitle {
+          @include text($color-700, $sousTitre, $extrabold)
+     }
+}

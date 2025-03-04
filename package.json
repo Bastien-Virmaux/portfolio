@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastien-virmaux/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastien-virmaux/portfolio/issues"
+  },
+  "homepage": "https://github.com/bastien-virmaux/portfolio#readme",
+  "description": "",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "sass": "^1.70.0",
+    "swup": "^4.6.0"
+  }
+}

@@ -1,0 +1,132 @@
+.overlayInfo {
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: calc(100% / 2);
+     height: 100vh;
+     padding: 16px;
+     background-color: $color-white;
+     display: none;
+     z-index: 1000;
+     overflow: scroll;
+
+     .overlayInfoLogo {
+          width: 190px;
+          height: 190px;
+     }
+
+     .overlayInfoHeader {
+          width: 100%;
+          @include flex(flex-start, 0px, column);
+
+          .overlayInfoBref {
+               width: 100%;
+               padding: 16px;
+               background-color: $color-50;
+               border-radius: 4px;
+               @include flex(flex-start, 8px, column);
+               align-items: flex-start;
+
+               .overlayInfoBrefText {
+                    @include text($color-950, $paragraphe1, $semibold);
+
+                    .infoBref {
+                         @include text($color-950, $paragraphe1, $regular);
+                    }
+               }
+          }
+     }
+
+     .overlayInfoText {
+          margin-top: 32px;
+          @include flex(flex-direction, 16px, column);
+
+          .overlayInfoTextPara {
+               @include text($color-950, $paragraphe2, $regular);
+          }
+     }
+
+     //NAVIGATION BAR SCROLL
+     &::-webkit-scrollbar {
+          width: 8px;
+     }
+
+     &::-webkit-scrollbar-track {
+          background: $color-white;
+     }
+
+     &::-webkit-scrollbar-thumb {
+          background-color: $color-700;
+          border-radius: 20px;
+          border: 3px solid $color-white;
+     }
+}
+
+.overlayAnim {
+     display: block;
+     animation: overlayAnim 0.5s ease-out;
+}
+
+@keyframes overlayAnim {
+     0% {
+          right: -700px;
+     }
+
+     100% {
+          right: -20px;
+     }
+}
+
+.overlayDownload {
+     width: 100%;
+     @include flex(center, 16px, column);
+     align-items: flex-start;
+
+     .overlayDownloadDocument {
+          padding: 16px 0 0 0;
+          background-color: unset;
+          border: 1px solid $color-300;
+          border-radius: 24px;
+          @include flex(center, 32px, column);
+          cursor: pointer;
+
+          .overlayDownloadContainer {
+               padding: 0 16px 0 16px;
+               @include flex(center, 8px, column);
+               align-items: flex-start;
+
+               .overlayDownloadIcon {
+                    padding: 8px;
+                    border: 1px solid $color-300;
+                    border-radius: 8px;
+                    @include flex(center, 8px, row);
+
+                    svg {
+                         width: 24px;
+                         height: 24px;
+                    }
+               }
+
+               .overlayDownloadText {
+                    width: 200px;
+                    text-align: start;
+                    @include text($color-950, $paragraphe1, $medium);
+               }
+          }
+
+          .overlayDownloadAction {
+               width: 100%;
+               border-top: 1px solid $color-300;
+               padding: 16px;
+
+               .overlayDownloadActionText {
+                    text-align: start;
+                    @include text($color-950, $textustom, $regular);
+               }
+          }
+
+          &:hover {
+               background-color: $color-section2-bg;
+          }
+     }
+}

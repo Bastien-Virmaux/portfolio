@@ -1,0 +1,59 @@
+.actionBarFormation {
+     width: 100%;
+     margin-bottom: 24px;
+     @include card(16px 24px);
+     @include flex(space-between, 0px, row);
+     cursor: pointer;
+
+     .actionBarFormationInfo {
+          @include flex(center, 24px, row);
+
+          .actionBarFormationLogo {
+               width: 64px;
+               height: 64px;
+          }
+
+          .actionBarFormationText {
+               position: relative;
+
+               .actionBarFormationNom {
+                    position: relative;
+                    top: 10px;
+                    @include text($color-100, $paragraphe1, $semibold);
+                    transition: 0.3s ease-out;
+               }
+
+               .actionBarFormationDate {
+                    position: relative;
+                    top: -10px;
+                    @include text($color-200, $paragraphe2, $regular);
+                    opacity: 0;
+                    transition: 0.3s ease-out;
+               }
+          }
+     }
+
+     .actionBarFormationArrow {
+          right: 24px;
+          transition: transform 0.3s ease-out;
+     }
+
+     &:hover {
+          .actionBarFormationArrow {
+               transform: translate(8px, 0);
+          }
+
+          .actionBarFormationInfo {
+               .actionBarFormationText {
+                    .actionBarFormationNom {
+                         transform: translate(0, -12px);
+                    }
+
+                    .actionBarFormationDate {
+                         opacity: 1;
+                         transform: translate(0, 12px);
+                    }
+               }
+          }
+     }
+}

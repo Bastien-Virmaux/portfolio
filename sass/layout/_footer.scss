@@ -1,0 +1,17 @@
+/* ==FOOTER */
+.footer {
+     padding: 24px 32px;
+     @include flex(center, 24px, column);
+
+     .textFooter {
+          @include flex(center, 8px, column);
+
+          .textMessage {
+               @include text($color-50, $paragraphe1, $semibold1);
+          }
+
+          .copyright {
+               @include text($color-50, $paragraphe2, $regular);
+          }
+     }
+}

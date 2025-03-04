@@ -1,0 +1,80 @@
+.introProjet {
+     width: 100%;
+     padding: 24px;
+     background-color: $color-50;
+     border-radius: 24px;
+     @include flex(space-between, 0px, row);
+
+     .left {
+          @include flex(flex-start, 40px, column);
+          align-items: flex-start;
+
+          .titleProjet {
+               @include text($color-700, $titre, $semibold1);
+          }
+
+
+          .textProjet {
+               @include text($color-950, $paragraphe1, $regular);
+          }
+
+          .btnContainerPrj {
+               @include flex(center, 16px, row);
+
+               .btnAnnPrj {
+                    color: $color-700;
+                    text-decoration: underline;
+               }
+          }
+
+     }
+
+     .right {
+          width: 480px;
+     }
+}
+
+.container {
+     width: 100%;
+     @include flex(center, 32px, column);
+     align-items: flex-start;
+
+     .prjInfo {
+          @include flex(center, 16px, column);
+          align-items: flex-start;
+
+          .infoText {
+               @include text($color-50, $paragraphe2, $regular);
+          }
+
+          .listContainer {
+               list-style: disc;
+               margin-left: 40px;
+
+               .list {
+                    @include text($color-50, $paragraphe2, $regular);
+               }
+          }
+     }
+}
+
+.containerNotes,
+.containerNotesHeader,
+.containerNotesRow {
+     padding: 8px;
+     border: 2px solid $color-50;
+}
+
+.containerNotesHeader {
+     border-radius: 24px 24px 0 0;
+}
+
+.content {
+     padding: 16px;
+     border: 1px solid $color-50;
+     @include text($color-50, $paragraphe2, $regular);
+}
+
+.note {
+     @include text($color-50, $paragraphe2, $semibold1);
+}

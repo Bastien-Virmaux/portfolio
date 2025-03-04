@@ -1,0 +1,50 @@
+// ===TEXT===
+
+@mixin text($color, $size, $weight) {
+     color: $color;
+     font-size: $size;
+     font-weight: $weight;
+     letter-spacing: 1px;
+     text-align: left;
+}
+
+// ===FIN TEXT===
+
+// ===FLEX===
+
+@mixin flex($justify, $gap, $direction) {
+     display: flex;
+     justify-content: $justify;
+     align-items: center;
+     gap: $gap;
+     flex-direction: $direction;
+}
+
+// ===FIN FLEX===
+
+// ===CARD===
+@mixin card($padding) {
+     position: relative;
+     padding: $padding;
+     background-color: $color-section2-bg;
+     border: 2px solid $color-50;
+     border-radius: 24px;
+}
+
+//button
+@mixin button {
+     width: 100%;
+     padding: 12px 16px;
+     background-color: $color-100;
+     border: none;
+     border-radius: 8px;
+     @include flex(none, none);
+     @include paragraphe1_16-600($color-700);
+}
+
+@mixin buttonArray($color) {
+     padding: 8px;
+     background-color: $color;
+     color: $color-white;
+     border-radius: 8px;
+}

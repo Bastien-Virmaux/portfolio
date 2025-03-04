@@ -1,0 +1,26 @@
+.alert {
+     width: 100%;
+     margin: 8px 0px;
+     padding: 16px;
+     background-color: $color-100;
+     border: 2px solid $color-700;
+     border-radius: 8px;
+     @include flex(center, 16px, column);
+     align-items: flex-start;
+
+     .headerAlert {
+          @include flex(center, 8px, row);
+
+          svg path {
+               stroke: $color-700;
+          }
+     }
+
+     .titleAlert {
+          @include text($color-700, $paragraphe1, $semibold)
+     }
+
+     .message {
+          @include text($color-950, $paragraphe2, $regular)
+     }
+}

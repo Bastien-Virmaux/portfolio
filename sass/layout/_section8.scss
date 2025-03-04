@@ -1,0 +1,37 @@
+.messageContact {
+     width: 100%;
+     margin-bottom: 16px;
+     @include card(24px);
+     @include flex(flex-start, 0px, row);
+
+     .textMessage {
+          @include text($color-50, $paragraphe1, $regular);
+     }
+}
+
+.contacts {
+     width: 100%;
+     @include flex(center, 0px, column);
+
+     .contact {
+          width: 100%;
+          padding: 24px 0;
+          @include flex(space-between, 0px, row);
+
+          .contactContainerText {
+               @include flex(center, 8px, row);
+
+               .contactText {
+                    @include text($color-50, $paragraphe1, $semibold1);
+               }
+          }
+
+          .informationContact {
+               @include text($color-50, $paragraphe1, $regular)
+          }
+
+          .networkSocial {
+               @include flex(center, 8px, row);
+          }
+     }
+}

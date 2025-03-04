@@ -1,0 +1,102 @@
+@media screen and (max-width: 1320px) {
+     // ===SECTION 1=== //
+
+     #aPropos {
+          height: 100% !important;
+
+          .sec1Container1 {
+               .left {
+                    width: 100% !important;
+               }
+          }
+     }
+
+     // ===FIN SECTION 1=== //
+}
+
+@media screen and (max-width: 1030px) {
+     // ===SECTION 5=== //
+
+     .projets {
+          flex-direction: column !important;
+
+          .projetsNavigation {
+               transform: rotate(90deg);
+          }
+     }
+
+     // ===FIN SECTION 5=== //
+}
+
+@media (max-width: 900px) {
+
+     // ===SECTION 4=== //
+
+     .containerQualite {
+          grid-template-columns: repeat(1, 1fr) !important;
+     }
+
+     // ===FIN SECTION 4=== //
+
+     // ===SECTION 6=== //
+
+     .divers {
+          grid-template-columns: repeat(1, 1fr) !important;
+     }
+
+     // ===FIN SECTION 6=== //
+}
+
+@media (max-width: 720px) {
+     // ===SECTION 4=== //
+
+     .competences {
+          height: 100% !important;
+
+          .compNavigation {
+               border-right: unset !important;
+          }
+     }
+
+     // ===FIN SECTION 4=== //
+}
+
+@media (max-width: 560px) {
+
+     // ===SECTION 1===//
+
+     .circleContainer {
+          width: 300px !important;
+          height: 300px !important;
+
+          .circleChild {
+               width: 250px !important;
+               height: 250px !important;
+          }
+     }
+
+     .rgImg {
+          width: 300px !important;
+          height: 300px !important;
+     }
+
+     // ===FIN SECTION 1===//
+
+     // ===OVERLAY=== //
+
+     .overlayInfo {
+          width: 100% !important;
+     }
+
+     // ===FIN OVERLAY=== //
+
+     // ===SECTION 8=== //
+
+     .contact {
+          align-items: flex-start !important;
+          flex-direction: column !important;
+          gap: 8px !important;
+     }
+
+     // ===FIN SECTION 8=== //
+}
