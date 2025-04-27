@@ -260,20 +260,25 @@ a {
   gap: 0px;
   flex-direction: row;
   transition: 0.3s, bottom 0.3s, 0.3s, top 0.3s;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .header .logo {
   width: 40px;
   height: 40px;
 }
 
+/* ==HEADER JS CLASS== */
 .scroll {
   position: sticky;
   top: 0;
   left: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 0 0;
   border-radius: 0;
   z-index: 9999;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.headerOverlay {
+  top: -90px;
 }
 
 /* ==FOOTER */
@@ -1436,9 +1441,9 @@ a {
   width: 50%;
   height: 100vh;
   padding: 32px;
-  background-color: #FFF;
+  background-color: #F5F8F6;
   display: none;
-  z-index: 1000;
+  z-index: 9999;
   overflow: scroll;
 }
 .overlayInfo .overlayInfoLogo {

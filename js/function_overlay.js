@@ -1,10 +1,20 @@
+/**
+ * The function universalView is used to create a modal overlay effect for displaying content.
+ * It takes three parameters: buttonSelector, contentSelector, and dataAttribute.
+ * @param {HTMLButtonElement} buttonSelector 
+ * @param {HTMLDivElement} contentSelector 
+ * @param {HTMLDataElement} dataAttribute 
+ */
 function universalView(buttonSelector, contentSelector, dataAttribute) {
      const buttons = document.querySelectorAll(buttonSelector);
      const contents = document.querySelectorAll(contentSelector);
      const body = document.querySelector('body');
+     const header = document.querySelector("#header");
 
      buttons.forEach(button => {
           button.addEventListener('click', () => {
+               header.classList.add('headerOverlay');
+               
                let index = button.getAttribute(dataAttribute);
                contents[index].classList.add('overlayAnim');
 
@@ -19,13 +29,22 @@ function universalView(buttonSelector, contentSelector, dataAttribute) {
      });
 }
 
+/**
+ * The function closeUniversalView is used to close the modal overlay when a close button is clicked.
+ * It takes two parameters: buttonSelector and contentSelector.
+ * @param {HTMLButtonElement} buttonSelector
+ * @param {HTMLDivElement} contentSelector 
+ */
 function closeUniversalView(buttonSelector, contentSelector) {
      const closeButtons = document.querySelectorAll(buttonSelector);
      const contents = document.querySelectorAll(contentSelector);
      const body = document.querySelector('body');
+     const header = document.querySelector("#header");
 
      closeButtons.forEach(button => {
           button.addEventListener('click', () => {
+               header.classList.remove('headerOverlay');
+
                contents.forEach(content => {
                     content.classList.remove('overlayAnim');
                });

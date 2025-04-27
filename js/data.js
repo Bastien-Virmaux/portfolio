@@ -1,6 +1,6 @@
 //compétences techniques
 const compsData = [
-     //compétence réseaux
+     //compétences réseaux
      {
           "title": "Réseaux",
           "id": 1,
@@ -169,7 +169,8 @@ const compsData = [
                }
           ]
      },
-     //compétence programmation
+
+     //compétences programmation
      {
           "title": "Programmation",
           "id": 2,
@@ -321,7 +322,8 @@ const compsData = [
                }
           ]
      },
-     //compétence télécommunications
+
+     //compétences télécommunications
      {
           "title": "Télécommunications",
           "id": 3,
@@ -409,7 +411,8 @@ const compsData = [
                }
           ]
      },
-     //compétence téléphonie
+
+     //compétences téléphonie
      {
           "title": "Téléphonie",
           "id": 4,
@@ -438,7 +441,8 @@ const compsData = [
                }
           ]
      },
-     //compétence sécurité
+
+     //compétences sécurité
      {
           "title": "Sécurité",
           "id": 5,
@@ -494,7 +498,8 @@ const compsData = [
                }
           ],
      },
-     //compétence langues
+
+     //compétences langues
      {
           "title": "Langues",
           "id": 6,
@@ -514,42 +519,42 @@ const compsData = [
 
 //projets
 const projetsData = [
-     //projet 4
+     //projet 1
      {
           "title": "SAE14 : Portfolio",
           "description": "Projet développé en 2023 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_prj-sae14.png",
           "page": "projet/prj_sae14.html",
      },
-     //projet 1
+     //projet 2
      {
           "title": "SAE21 : Construire un réseau informatique pour une petite structure",
           "description": "Projet développé en 2024 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_prj-sae21.png",
           "page": "projet/prj_sae21.html",
      },
-     //projet 2
+     //projet 3
      {
           "title": "SAE23 : Mettre en place une solution informatique pour l’entreprise",
           "description": "Projet développé en 2024 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_prj-sae23.png",
           "page": "projet/prj_sae23.html",
      },
-     //projet 3
+     //projet 4
      {
           "title": "SAE24 : Projet Intégratif",
           "description": "Projet développé en 2024 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_prj-sae24.png",
           "page": "projet/prj_sae24.html",
      },
-     //projet 3
+     //projet 5
      {
           "title": "SAE32 : Développer des applications communicantes",
           "description": "Projet développé en 2025 en BUT Réseaux et Télécommunications.",
           "image": "assets/images/image_prj-sae32.png",
           "page": "projet/prj_sae32.html",
      },
-     //projet 3
+     //projet 6
      {
           "title": "SAE34 : Découvrir le pentesting",
           "description": "Projet développé en 2025 en BUT Réseaux et Télécommunications.",

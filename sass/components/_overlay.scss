@@ -5,9 +5,9 @@
      width: calc(100% / 2);
      height: 100vh;
      padding: 32px;
-     background-color: $color-white;
+     background-color: $color-50;
      display: none;
-     z-index: 1000;
+     z-index: 9999;
      overflow: scroll;
 
      .overlayInfoLogo {
