@@ -65,7 +65,7 @@
      /* ===FIN PROJET=== */
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
      /* ===SECTION 4=== */
 
      .competences {
@@ -77,6 +77,14 @@
      }
 
      /* ===FIN SECTION 4=== */
+
+          /* ===OVERLAY=== */
+
+     .overlayInfo {
+          width: 100% !important;
+     }
+
+     /* ===FIN OVERLAY=== */
 }
 
 @media screen and (max-width: 560px) {
@@ -99,14 +107,6 @@
      }
 
      /* ===FIN SECTION 1===*/
-
-     /* ===OVERLAY=== */
-
-     .overlayInfo {
-          width: 100% !important;
-     }
-
-     /* ===FIN OVERLAY=== */
 
      /* ===SECTION 8=== */
 

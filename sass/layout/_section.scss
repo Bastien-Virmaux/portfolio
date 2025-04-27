@@ -9,7 +9,8 @@
 }
 
 #aPropos {
+     width: unset;
+     margin: 0 24px 0 24px;
      padding: 32px;
-     //height: calc(100vh - 160px);
      background-color: $color-50;
 }

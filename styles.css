@@ -132,7 +132,7 @@ a {
   }
   /* ===FIN PROJET=== */
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   /* ===SECTION 4=== */
   .competences {
     height: 100% !important;
@@ -141,6 +141,11 @@ a {
     border-right: unset !important;
   }
   /* ===FIN SECTION 4=== */
+  /* ===OVERLAY=== */
+  .overlayInfo {
+    width: 100% !important;
+  }
+  /* ===FIN OVERLAY=== */
 }
 @media screen and (max-width: 560px) {
   /* ===SECTION 1===*/
@@ -157,11 +162,6 @@ a {
     height: 300px !important;
   }
   /* ===FIN SECTION 1===*/
-  /* ===OVERLAY=== */
-  .overlayInfo {
-    width: 100% !important;
-  }
-  /* ===FIN OVERLAY=== */
   /* ===SECTION 8=== */
   .contact {
     align-items: flex-start !important;
@@ -250,7 +250,7 @@ a {
 }
 /* ==HEADER== */
 .header {
-  width: 100%;
+  margin: 24px;
   padding: 24px 40px;
   background-color: #F5F8F6;
   border-radius: 24px;
@@ -259,10 +259,21 @@ a {
   align-items: center;
   gap: 0px;
   flex-direction: row;
+  transition: 0.3s, bottom 0.3s, 0.3s, top 0.3s;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .header .logo {
   width: 40px;
   height: 40px;
+}
+
+.scroll {
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 0 0 24px 0;
+  border-radius: 0;
+  z-index: 9999;
 }
 
 /* ==FOOTER */
@@ -307,6 +318,8 @@ a {
 }
 
 #aPropos {
+  width: unset;
+  margin: 0 24px 0 24px;
   padding: 32px;
   background-color: #F5F8F6;
 }
@@ -1422,7 +1435,7 @@ a {
   right: 0;
   width: 50%;
   height: 100vh;
-  padding: 16px;
+  padding: 32px;
   background-color: #FFF;
   display: none;
   z-index: 1000;
@@ -1694,14 +1707,9 @@ a {
 }
 
 body {
+  width: 100%;
   height: 100%;
-  padding: 24px 24px 0 24px;
   background-color: #344E47;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  flex-direction: column;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -1713,6 +1721,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #F5F8F6;
   border-radius: 20px;
   border: 3px solid #344E47;
+}
+
+.bodyPrj {
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */

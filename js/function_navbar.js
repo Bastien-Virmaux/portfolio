@@ -1,12 +1,15 @@
-// function navBar() {
-//      const header = document.querySelector("#header");
+const header = document.querySelector("#header");
 
-//      window.addEventListener("scroll", () => {
-//           let scroll = this.scrollY;
-//           if (scroll > 10) {
-//                header.classList.add("shadow");
-//           } else {
-//                header.classList.remove("shadow");
-//           }
-//      })
-// }
+// On écoute l'événement de scroll sur la fenêtre
+window.addEventListener("scroll", function () {
+    // Récupération du scroll sur l'axe vertical
+    const scrollY = window.scrollY;
+    // Si le scroll est supérieur à 0, on ajoute la classe "scroll" au header
+    if (scrollY > 0) {
+        header.classList.add("scroll");
+    }
+    // Sinon, on enlève la classe "scroll"
+    else {
+        header.classList.remove("scroll");
+    }
+});
