@@ -45,40 +45,18 @@
 // ===FIN NAVIGATION=== //
 
 // ===NAVIGATION RESPONSIVE=== //
-.btnNavResponsive,
-.toggleNav {
+.btnNavResponsive {
      display: none;
 }
 
-@media all and (max-width: 991px) {
-     .nav {
-          height: 60px;
-     }
-
+@media all and (max-width: 1090px) {
      .nav .mainNav {
           display: none;
-          flex-direction: column;
-          background: #48435C;
-          height: 220px;
-     }
-
-     .nav .mainNav .navLink {
-          width: 50%;
      }
 
      .btnNavResponsive {
-          width: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 0 auto;
-          font-size: 40px;
-          color: white;
+          display: block;
           cursor: pointer;
-     }
-
-     .toggleNav:checked+.mainNav {
-          display: flex;
      }
 }
 

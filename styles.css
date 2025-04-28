@@ -216,36 +216,17 @@ a {
   transform-origin: 0 50%;
 }
 
-.btnNavResponsive,
-.toggleNav {
+.btnNavResponsive {
   display: none;
 }
 
-@media all and (max-width: 991px) {
-  .nav {
-    height: 60px;
-  }
+@media all and (max-width: 1090px) {
   .nav .mainNav {
     display: none;
-    flex-direction: column;
-    background: #48435C;
-    height: 220px;
-  }
-  .nav .mainNav .navLink {
-    width: 50%;
   }
   .btnNavResponsive {
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 40px;
-    color: white;
+    display: block;
     cursor: pointer;
-  }
-  .toggleNav:checked + .mainNav {
-    display: flex;
   }
 }
 /* ==HEADER== */
@@ -283,6 +264,7 @@ a {
 
 /* ==FOOTER */
 .footer {
+  width: 100%;
   padding: 24px 32px;
   display: flex;
   justify-content: center;
@@ -1595,7 +1577,7 @@ a {
 }
 
 .introProjet {
-  width: 100%;
+  margin: 24px;
   padding: 24px;
   background-color: #F5F8F6;
   border-radius: 24px;
@@ -1643,7 +1625,7 @@ a {
 }
 
 .container {
-  width: 100%;
+  margin: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1729,7 +1711,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bodyPrj {
-  padding: 24px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
