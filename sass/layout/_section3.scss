@@ -1,99 +1,82 @@
-.expProContainer {
-     position: relative;
+.slider-wrapper {
      overflow: hidden;
+     margin: 0 64px 48px;
 
-     &::before,
-     &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          width: 32px;
-          background: linear-gradient(to right, $color-700, transparent);
-          z-index: 1;
+     .swiper-pagination-bullet {
+          background: $color-50;
+          height: 13px;
+          width: 13px;
+          opacity: 0.5;
      }
 
-     &::after {
-          right: 0;
-          transform: rotate(180deg);
+     swiper-pagination-bullet-active {
+          opacity: 1;
      }
 
-     &::before {
-          left: 0;
+     .swiper-slide-button {
+          color: $color-bg-blur;
+          margin-top: -56px;
+          transition: 0.2s ease;
      }
 
-     .expPros {
-          @include flex(center, 56px, row);
-          transition: transform 0.5s ease-in-out;
+     .swiper-slide-button:hover {
+          color: $color-50;
+     }
+}
 
-          .expPro {
-               width: 380px;
-               @include card(16px);
-               @include flex(flex-start, 24px, column);
-               cursor: pointer;
-               transform: scale(0.90);
+@media (max-width: 768px) {
+     .slider-wrapper {
+          margin: 0 8px 40px;
 
-               .expProIll {
-                    width: 100%;
-                    border-radius: 8px;
-               }
-
-               .expProText {
-                    @include flex(center, 16px, column);
-
-                    .expProTextTitle {
-                         @include text($color-50, $sousTitre, $extrabold);
-                    }
-
-                    .expProTextDesc {
-                         @include text($color-50, $paragraphe2, $regular);
-                    }
-               }
-
-               .expProAction {
-                    width: inherit;
-                    padding: 16px 16px 0 16px;
-                    border-top: 2px solid $color-50;
-                    @include flex(flex-start, 8px, row);
-
-                    .expProActionText {
-                         @include text($color-50, $paragraphe2, $regular);
-                    }
-
-                    .expProActionIcon {
-                         transition: transform 0.3s ease-out;
-                    }
-               }
-
-               &:hover {
-                    .expProAction {
-                         .expProActionIcon {
-                              transform: translate(8px, 0);
-                         }
-                    }
-               }
+          .swiper-slide-button {
+               display: none;
           }
      }
 }
 
-.expProControler {
-     margin-top: 32px;
-     @include flex(center, 24px, row);
+.card-list .card-item {
+     @include card(16px 24px);
+     @include flex(flex-start, 24px, column);
+     cursor: pointer;
+     transform: scale(0.90);
 
-     .expProControlerBtn {
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
+     .expProIll {
+          width: 100%;
+          border-radius: 8px;
      }
 
-     .expProControlerPoint {
-          width: 8px;
-          height: 8px;
-          border-radius: 100px;
-          background-color: $color-50;
+     .expProText {
+          @include flex(center, 16px, column);
+
+          .expProTextTitle {
+               @include text($color-50, $sousTitre, $extrabold);
+          }
+
+          .expProTextDesc {
+               @include text($color-50, $paragraphe2, $regular);
+          }
+     }
+
+     .expProAction {
+          width: inherit;
+          padding: 16px 16px 0 16px;
+          border-top: 2px solid $color-50;
+          @include flex(flex-start, 8px, row);
+
+          .expProActionText {
+               @include text($color-50, $paragraphe2, $regular);
+          }
+
+          .expProActionIcon {
+               transition: transform 0.3s ease-out;
+          }
+     }
+
+     &:hover {
+          .expProAction {
+               .expProActionIcon {
+                    transform: translate(8px, 0);
+               }
+          }
      }
 }
-
-//-----------------------------------------------------------------
-//-----------------------------------------------------------------
-//-----------------------------------------------------------------

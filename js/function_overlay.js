@@ -13,7 +13,7 @@ function universalView(buttonSelector, contentSelector, dataAttribute) {
 
      buttons.forEach(button => {
           button.addEventListener('click', () => {
-               header.classList.add('headerOverlay');
+               header.classList.add('headerOverlay'); // Cache la navbar
                
                let index = button.getAttribute(dataAttribute);
                contents[index].classList.add('overlayAnim');
@@ -43,7 +43,7 @@ function closeUniversalView(buttonSelector, contentSelector) {
 
      closeButtons.forEach(button => {
           button.addEventListener('click', () => {
-               header.classList.remove('headerOverlay');
+               header.classList.remove('headerOverlay'); // Affiche la navbar
 
                contents.forEach(content => {
                     content.classList.remove('overlayAnim');

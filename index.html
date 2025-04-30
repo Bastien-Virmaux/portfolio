@@ -6,6 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Home - VIRMAUX Bastien</title>
      <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
      <link rel="icon" href="assets/icons/icon_logo.svg">
 </head>
 
@@ -15,12 +16,12 @@
           <img class="logo" src="assets/icons/icon_logo.svg" alt="Logo de mon portfolio" />
 
           <nav class="nav">
-               <svg id="toogle" class="btnNavResponsive" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.33331 8H26.6666M5.33331 16H26.6666M5.33331 24H14.6666" stroke="#344E47" stroke-width="2"
-                         stroke-linecap="round" stroke-linejoin="round" />
-               </svg>
-
+               <button class="btnNavResponsive" id="toogle">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M5.33331 8H26.6666M5.33331 16H26.6666M5.33331 24H14.6666" stroke="#344E47"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+               </button>
                <div class="mainNav">
                     <a href="#aPropos" class="navLink">À propos de moi</a>
                     <a href="#formation" class="navLink">Formation</a>
@@ -55,10 +56,19 @@
                     <p class="lfTextPara">J’ai 20 ans, je viens de Montluçon dans l’Allier (03).
                     </p>
 
-                    <p class="lfTextPara"> Au sein de ma formation à l'IUT d'Aubière, j'apprends les concepts fondamentaux des réseaux, de la sécurité et des télécommunications à travers des cours, des travaux dirigés (TD), des travaux pratiques (TP) et des projets tutorés. Cette formation me permet d'acquérir des bases solides, que je peux ensuite réutiliser et approfondir dans le monde professionnel. </p> 
-                    
-                    <p class="lfTextPara"> J'ai choisi de poursuivre ma deuxième année en alternance afin de découvrir le monde professionnel, de gagner en expérience dans la communication avec les salariés et les clients et d'appliquer les compétences acquises à l'IUT ou en autodidacte, tout en en développant de nouvelles. C'est dans cette optique que j'ai signé un contrat d’alternance pour la période 2024-2026, avec un rythme d’un mois en entreprise et un mois en formation à l’ITSRA (Institut de Travail Social de la Région Auvergne). </p> 
-                    
+                    <p class="lfTextPara"> Au sein de ma formation à l'IUT d'Aubière, j'apprends les concepts
+                         fondamentaux des réseaux, de la sécurité et des télécommunications à travers des cours, des
+                         travaux dirigés (TD), des travaux pratiques (TP) et des projets tutorés. Cette formation me
+                         permet d'acquérir des bases solides, que je peux ensuite réutiliser et approfondir dans le
+                         monde professionnel. </p>
+
+                    <p class="lfTextPara"> J'ai choisi de poursuivre ma deuxième année en alternance afin de découvrir
+                         le monde professionnel, de gagner en expérience dans la communication avec les salariés et les
+                         clients et d'appliquer les compétences acquises à l'IUT ou en autodidacte, tout en en
+                         développant de nouvelles. C'est dans cette optique que j'ai signé un contrat d’alternance pour
+                         la période 2024-2026, avec un rythme d’un mois en entreprise et un mois en formation à l’ITSRA
+                         (Institut de Travail Social de la Région Auvergne). </p>
+
                     <p class="lfTextPara"> Dès septembre 2026, je prévois d'intégrer une école d'ingénieurs.</p>
                </div>
 
@@ -337,98 +347,104 @@
           <!-- =FIN MAIN TITLE= -->
 
           <!-- =EXP PRO= -->
+          <div class="container swiper">
+               <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                         <!-- EXP PRO 1 -->
+                         <button class="card-item swiper-slide" id="expPro" data-expPro=0>
+                              <img class="expProIll" src="assets/images/image_fiverr.png" alt="photo de fiverr">
 
-          <div class="expProContainer">
-               <div class="expPros" id="expPros">
-                    <!-- EXP PRO 1 -->
-                    <button class="expPro" id="expPro" data-expPro=0>
-                         <img class="expProIll" src="assets/images/image_fiverr.png" alt="photo de fiverr">
+                              <div class="expProText">
+                                   <h2 class="expProTextTitle">Fiverr</h2>
+                                   <p class="expProTextDesc" id="expProTextDesc">En tant que freelance sur Fiverr,
+                                        j’aide mes
+                                        clients à transformer leurs idées en projets concrets avec
+                                        professionnalisme et créativité.</p>
+                              </div>
 
-                         <div class="expProText">
-                              <h2 class="expProTextTitle">Fiverr</h2>
-                              <p class="expProTextDesc" id="expProTextDesc">En tant que freelance sur Fiverr, j’aide mes
-                                   clients à transformer leurs idées en projets concrets avec
-                                   professionnalisme et créativité.</p>
-                         </div>
+                              <div class="expProAction">
+                                   <p class="expProActionText">Lire plus</p>
+                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+                              </div>
+                         </button>
+                         <!-- FIN EXP PRO 1 -->
 
-                         <div class="expProAction">
-                              <p class="expProActionText">Lire plus</p>
-                              <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                         </div>
-                    </button>
-                    <!-- FIN EXP PRO 1 -->
+                         <!-- EXP PRO 2 -->
+                         <button class="card-item swiper-slide" id="expPro" data-expPro=1>
+                              <img class="expProIll" src="assets/images/image_itsra.png" alt="photo de cordée">
 
-                    <!-- EXP PRO 2 -->
-                    <button class="expPro" id="expPro" data-expPro=1>
-                         <img class="expProIll" src="assets/images/image_itsra.png" alt="photo de cordée">
+                              <div class="expProText">
+                                   <h2 class="expProTextTitle">ITSRA</h2>
+                                   <p class="expProTextDesc">En tant qu’alternant à l’ITSRA, j’effectue des tâches
+                                        d’administration
+                                        Réseaux et systèmes dans le cadre de mes études à l’IUT d’Aubière.</p>
+                              </div>
 
-                         <div class="expProText">
-                              <h2 class="expProTextTitle">ITSRA</h2>
-                              <p class="expProTextDesc">En tant qu’alternant à l’ITSRA, j’effectue des tâches
-                                   d’administration
-                                   Réseaux et systèmes dans le cadre de mes études à l’IUT d’Aubière.</p>
-                         </div>
+                              <div class="expProAction">
+                                   <p class="expProActionText">Lire plus</p>
+                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+                              </div>
+                         </button>
+                         <!-- FIN EXP PRO 2 -->
 
-                         <div class="expProAction">
-                              <p class="expProActionText">Lire plus</p>
-                              <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                         </div>
-                    </button>
-                    <!-- FIN EXP PRO 2 -->
+                         <!-- EXP PRO 3 -->
+                         <button class="card-item swiper-slide" id="expPro" data-expPro=2>
+                              <img class="expProIll" src="assets/images/image_cdlr.png" alt="photo d'enfant">
 
-                    <!-- EXP PRO 3 -->
-                    <button class="expPro" id="expPro" data-expPro=2>
-                         <img class="expProIll" src="assets/images/image_cdlr.png" alt="photo d'enfant">
+                              <div class="expProText">
+                                   <h2 class="expProTextTitle">Cordée de la réussite</h2>
+                                   <p class="expProTextDesc">En tant qu’étudiant, j’ai pu aider des lycéens issus d’un
+                                        baccalauréat
+                                        Professionnelles à préparer leurs orals de fin d’année.</p>
+                              </div>
 
-                         <div class="expProText">
-                              <h2 class="expProTextTitle">Cordée de la réussite</h2>
-                              <p class="expProTextDesc">En tant qu’étudiant, j’ai pu aider des lycéens issus d’un
-                                   baccalauréat
-                                   Professionnelles à préparer leurs orals de fin d’année.</p>
-                         </div>
+                              <div class="expProAction">
+                                   <p class="expProActionText">Lire plus</p>
+                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+                              </div>
+                         </button>
+                         <!-- FIN EXP PRO 3 -->
 
-                         <div class="expProAction">
-                              <p class="expProActionText">Lire plus</p>
-                              <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                         </div>
-                    </button>
-                    <!-- FIN EXP PRO 3 -->
+                         <!-- EXP PRO 4 -->
+                         <button class="card-item swiper-slide" id="expPro" data-expPro=3>
+                              <img class="expProIll" src="assets/images/image_inter.png" alt="photo d'enfant">
 
-                    <!-- EXP PRO 4 -->
-                    <button class="expPro" id="expPro" data-expPro=3>
-                         <img class="expProIll" src="assets/images/image_inter.png" alt="photo d'enfant">
+                              <div class="expProText">
+                                   <h2 class="expProTextTitle">Intermarché</h2>
+                                   <p class="expProTextDesc">En tant que saisonnier, j’ai fait de la caisse afin d’aider
+                                        les
+                                        salariés, aussi grâce à mes compétences techniques, j’ai pu améliorer la gestion
+                                        du
+                                        magasin.</p>
+                              </div>
 
-                         <div class="expProText">
-                              <h2 class="expProTextTitle">Intermarché</h2>
-                              <p class="expProTextDesc">En tant que saisonnier, j’ai fait de la caisse afin d’aider
-                                   les
-                                   salariés, aussi grâce à mes compétences techniques, j’ai pu améliorer la gestion
-                                   du
-                                   magasin.</p>
-                         </div>
+                              <div class="expProAction">
+                                   <p class="expProActionText">Lire plus</p>
+                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+                              </div>
+                         </button>
+                         <!-- FIN EXP PRO 4 -->
+                    </div>
 
-                         <div class="expProAction">
-                              <p class="expProActionText">Lire plus</p>
-                              <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                         </div>
-                    </button>
-                    <!-- FIN EXP PRO 4 -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
                </div>
           </div>
 
@@ -496,7 +512,6 @@
                          que freelance sur la plateforme Fiverr.
                     </p>
                </div>
-
                <div class="overlayInfoText">
                     <!-- =SECOND TITLE= -->
                     <div class="ssTitleOverlay">
@@ -513,7 +528,6 @@
                          besoins et à leurs attentes.
                     </p>
                </div>
-
                <div class="overlayInfoText">
                     <!-- =SECOND TITLE= -->
                     <div class="ssTitleOverlay">
@@ -540,7 +554,6 @@
                          rendre uniques et attractifs.
                     </p>
                </div>
-
                <div class="overlayInfoText">
                     <!-- =SECOND TITLE= -->
                     <div class="ssTitleOverlay">
@@ -854,21 +867,6 @@
           </div>
           <!-- =FIN EXP PRO= -->
 
-          <div class="expProControler">
-               <button class="expProControlerBtn" id="expProBtnLeft">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M15 19L8 12L15 5" stroke="#F5F8F6" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                    </svg>
-               </button>
-               <div class="expProControlerPoint"></div>
-               <button class="expProControlerBtn" id="expProBtnRight">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M9 5.11108L16 12.1111L9 19.1111" stroke="#F5F8F6" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-               </button>
-          </div>
      </section>
      <!-- ==FIN SETION 3 - Exp Pro== -->
 
@@ -1233,6 +1231,7 @@
      <!-- ==FIN FOOTER== -->
 
      <!-- ==JAVASCRIPT== -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script src="js/data.js"></script>
      <script src="js/function_navbar.js"></script>
      <script src="js/function_expPro.js"></script>

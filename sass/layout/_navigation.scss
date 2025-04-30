@@ -45,9 +45,6 @@
 // ===FIN NAVIGATION=== //
 
 // ===NAVIGATION RESPONSIVE=== //
-.btnNavResponsive {
-     display: none;
-}
 
 @media all and (max-width: 1090px) {
      .nav .mainNav {
@@ -55,7 +52,7 @@
      }
 
      .btnNavResponsive {
-          display: block;
+          display: block !important;
           cursor: pointer;
      }
 }

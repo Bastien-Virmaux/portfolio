@@ -216,16 +216,12 @@ a {
   transform-origin: 0 50%;
 }
 
-.btnNavResponsive {
-  display: none;
-}
-
 @media all and (max-width: 1090px) {
   .nav .mainNav {
     display: none;
   }
   .btnNavResponsive {
-    display: block;
+    display: block !important;
     cursor: pointer;
   }
 }
@@ -451,38 +447,39 @@ a {
   transform: translate(0, 12px);
 }
 
-.expProContainer {
-  position: relative;
+.slider-wrapper {
   overflow: hidden;
+  margin: 0 64px 48px;
 }
-.expProContainer::before, .expProContainer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 32px;
-  background: linear-gradient(to right, #344E47, transparent);
-  z-index: 1;
+.slider-wrapper .swiper-pagination-bullet {
+  background: #F5F8F6;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
 }
-.expProContainer::after {
-  right: 0;
-  transform: rotate(180deg);
+.slider-wrapper swiper-pagination-bullet-active {
+  opacity: 1;
 }
-.expProContainer::before {
-  left: 0;
+.slider-wrapper .swiper-slide-button {
+  color: rgba(245, 248, 246, 0.24);
+  margin-top: -56px;
+  transition: 0.2s ease;
 }
-.expProContainer .expPros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 56px;
-  flex-direction: row;
-  transition: transform 0.5s ease-in-out;
+.slider-wrapper .swiper-slide-button:hover {
+  color: #F5F8F6;
 }
-.expProContainer .expPros .expPro {
-  width: 380px;
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 8px 40px;
+  }
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+.card-list .card-item {
   position: relative;
-  padding: 16px;
+  padding: 16px 24px;
   background-color: rgba(221, 234, 229, 0.24);
   border: 2px solid #F5F8F6;
   border-radius: 24px;
@@ -494,32 +491,32 @@ a {
   cursor: pointer;
   transform: scale(0.9);
 }
-.expProContainer .expPros .expPro .expProIll {
+.card-list .card-item .expProIll {
   width: 100%;
   border-radius: 8px;
 }
-.expProContainer .expPros .expPro .expProText {
+.card-list .card-item .expProText {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   flex-direction: column;
 }
-.expProContainer .expPros .expPro .expProText .expProTextTitle {
+.card-list .card-item .expProText .expProTextTitle {
   color: #F5F8F6;
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 1px;
   text-align: left;
 }
-.expProContainer .expPros .expPro .expProText .expProTextDesc {
+.card-list .card-item .expProText .expProTextDesc {
   color: #F5F8F6;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: left;
 }
-.expProContainer .expPros .expPro .expProAction {
+.card-list .card-item .expProAction {
   width: inherit;
   padding: 16px 16px 0 16px;
   border-top: 2px solid #F5F8F6;
@@ -529,38 +526,18 @@ a {
   gap: 8px;
   flex-direction: row;
 }
-.expProContainer .expPros .expPro .expProAction .expProActionText {
+.card-list .card-item .expProAction .expProActionText {
   color: #F5F8F6;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: left;
 }
-.expProContainer .expPros .expPro .expProAction .expProActionIcon {
+.card-list .card-item .expProAction .expProActionIcon {
   transition: transform 0.3s ease-out;
 }
-.expProContainer .expPros .expPro:hover .expProAction .expProActionIcon {
+.card-list .card-item:hover .expProAction .expProActionIcon {
   transform: translate(8px, 0);
-}
-
-.expProControler {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  flex-direction: row;
-}
-.expProControler .expProControlerBtn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.expProControler .expProControlerPoint {
-  width: 8px;
-  height: 8px;
-  border-radius: 100px;
-  background-color: #F5F8F6;
 }
 
 .compNav {
@@ -1009,6 +986,17 @@ a {
 }
 
 /* ===FIN BUTTON G=== */
+/* ===BUTTON NAVBAR RESPONSIVE=== */
+.btnNavResponsive {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: unset;
+  border: unset;
+  display: none;
+}
+
+/* ===FIN BUTTON NAVBAR RESPONSIVE=== */
 /* ===BUTTON OVERLAY=== */
 .btn-round {
   padding: 8px;

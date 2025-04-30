@@ -1,3 +1,5 @@
+/* ===NAVIGATION SCROLL=== */
+
 const header = document.querySelector("#header");
 
 // On écoute l'événement de scroll sur la fenêtre
@@ -13,3 +15,14 @@ window.addEventListener("scroll", function () {
         header.classList.remove("scroll");
     }
 });
+
+/* ===FIN NAVIGATION SCROLL=== */
+
+/* ===NAVIGATION RESPONSIVE=== */
+
+const navbtn = document.querySelector("#toogle");
+
+
+
+/* ===FIN NAVIGATION RESPONSIVE=== */
+
