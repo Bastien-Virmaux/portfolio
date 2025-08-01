@@ -11,7 +11,7 @@
           @include flex(space-around, 24px, column);
 
           .diverTitle {
-               @include text($color-50, $sousTitre, $semibold1);
+               @include text($color-50, $sousTitre, $bold);
           }
 
           .diverParagraphe {
@@ -19,7 +19,7 @@
 
                .infoParagraphDiver {
                     color: $color-100;
-                    font-weight: $semibold1;
+                    font-weight: $bold;
                }
           }
      }

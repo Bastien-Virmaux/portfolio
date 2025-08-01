@@ -127,3 +127,21 @@
 }
 
 /* ===FIN BUTTON PROJET===*/
+
+/* ===POP UP BTN=== */
+
+.popUpBtn{
+     padding: 16px;
+     background-color: $color-700;
+     border: none;
+     border-radius: 8px;
+     @include text($color-50, $paragraphe2, $regular);
+     cursor: pointer;
+     transition: background-color 0.5s;
+
+     &:hover{
+          background-color: $color-500;
+     }
+}
+
+/* ===FIN POP UP BTN=== */

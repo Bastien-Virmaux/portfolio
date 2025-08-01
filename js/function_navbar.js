@@ -17,12 +17,3 @@ window.addEventListener("scroll", function () {
 });
 
 /* ===FIN NAVIGATION SCROLL=== */
-
-/* ===NAVIGATION RESPONSIVE=== */
-
-const navbtn = document.querySelector("#toogle");
-
-
-
-/* ===FIN NAVIGATION RESPONSIVE=== */
-

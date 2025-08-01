@@ -1,53 +1,48 @@
-const navBtnHum = document.querySelector('#compNavBtnHum'); //NAV BUTTON compétence : Humain
-const navBtnHumText = document.querySelector('#compNavBtnTextHum') //NAV TEXT compétence : Humain
-const navBtnTech = document.querySelector('#compNavBtnTech'); //NAV BUTTON compétence : Technique
-const navBtnTechText = document.querySelector('#compNavBtnTextTech') //NAV TEXT compétence : Technique
-const navRectAnim = document.querySelector('.compNavBtnRect'); //NAV DIV animation : Rectangle
-const ctQualite = document.querySelector('#ctQualite'); //CONTAINEUR DIV : Qualite
-const ctTechnique = document.querySelector('#ctTechnique'); //CONTAINEUR DIV : Technique
-let comps = [...compsData];
-
-
-const compNavList = document.querySelector("#compNavList");
-const firstElement = document.querySelector(".elementsCompNav");
-const title = document.querySelector('#titleCompetence');
-const compContent = document.querySelector("#comps");
-const btnComp = document.querySelectorAll("#compButton");
-const contentComp = document.querySelectorAll("#compContent");
-const jaugeText = document.querySelector("#jaugeText");
-const jauge = document.querySelector("#jauge");
-
-//==============================================================================
-//==============================================================================
-//==============================================================================
-
-
-
 /* ===COMPETENCES NAVIGATION=== */
+const btnCompHum = document.querySelector("#compNavBtnHum");
+const btnCompTech = document.querySelector("#compNavBtnTech");
+const compNavBtnRect = document.querySelector("#compNavBtnRect");
 
-navRectAnim.style.transform = 'translateX(-92px)';
-navBtnHumText.style.color = '#F5F8F6';
+compNavBtnRect.style.transform = 'translateX(-92px)';
+btnCompHum.querySelector('.compNavBtnText').style.color = '#F5F8F6';
 
-navBtnHum.addEventListener('click', () => {
-     navRectAnim.style.transform = 'translateX(-92px)';
-     navBtnTechText.style.color = '#344E47'
-     navBtnHumText.style.color = '#F5F8F6'
+btnCompHum.addEventListener('click', () => {
+     compNavBtnRect.style.transform = 'translateX(-92px)';
+     document.querySelectorAll('.compNavBtnText').forEach(btn => {
+          btn.style.color = '#344E47';
+     });
+     btnCompHum.querySelector('.compNavBtnText').style.color = '#F5F8F6';
+});
 
+btnCompTech.addEventListener('click', () => {
+     compNavBtnRect.style.transform = 'translateX(92px)';
+     document.querySelectorAll('.compNavBtnText').forEach(btn => {
+          btn.style.color = '#344E47';
+     });
+     btnCompTech.querySelector('.compNavBtnText').style.color = '#F5F8F6';
+});
+/* ===FIN COMPETENCES NAVIGATION=== */
+
+
+
+/* ===AFFICHAGE COMPETENCE=== */
+
+const ctQualite = document.querySelector('#ctQualite');
+const ctTechnique = document.querySelector('#ctTechnique');
+const btncompNavBtnHum = document.querySelector('#compNavBtnHum');
+const btncompNavBtnTech = document.querySelector('#compNavBtnTech');
+
+btncompNavBtnHum.addEventListener('click', () => {
      ctQualite.style.display = 'grid';
      ctTechnique.style.display = 'none';
 });
 
-navBtnTech.addEventListener('click', () => {
-     navRectAnim.style.transform = 'translateX(92px)';
-     navBtnHumText.style.color = '#344E47'
-     navBtnTechText.style.color = '#F5F8F6'
-
+btncompNavBtnTech.addEventListener('click', () => {
      ctQualite.style.display = 'none';
      ctTechnique.style.display = 'flex';
-
 });
 
-/* ===FIN COMPETENCES NAVIGATION=== */
+/* ==FIN AFFICHAGE COMPETENCE== */
 
 
 
@@ -59,8 +54,19 @@ navBtnTech.addEventListener('click', () => {
 
 /* ===COMPETENCES TECHNIQUES=== */
 
-/* ==GENERATION BOUTON TECHNIQUES== */
+let comps = [...compsData];
+const compNavList = document.querySelector("#compNavList");
+const firstElement = document.querySelector(".elementsCompNav");
+const title = document.querySelector('#titleCompetence');
+const compContent = document.querySelector("#comps");
+const btnComp = document.querySelectorAll("#compButton");
+const contentComp = document.querySelectorAll("#compContent");
+const jaugeText = document.querySelector("#jaugeText");
+const jauge = document.querySelector("#jauge");
 
+
+
+/* ==GENERE BUTTON TECHNIQUES== */
 for (let i = 0; i < comps.length; i++) {
      const newButton = document.createElement('button');
 
@@ -78,8 +84,7 @@ for (let i = 0; i < comps.length; i++) {
 
 //pour générer la problèmatique d'ordre des élements
 compNavList.append(firstElement);
-
-/* ==FINGENERATION BOUTON TECHNIQUES== */
+/* ==FIN GENERE BUTTON TECHNIQUES== */
 
 
 
@@ -150,7 +155,8 @@ function updateCompContent(index) {
 
 document.querySelectorAll('.btnJS').forEach(element => {
      element.addEventListener('click', () => {
-          updateCompContent(index - 1);
+          let index = element.getAttribute('data-comp') - 1;
+          updateCompContent(index);
      });
 });
 
@@ -158,7 +164,8 @@ document.querySelectorAll('.btnJS').forEach(element => {
 document.addEventListener('DOMContentLoaded', () => {
      let activeElement = document.querySelector('.btnJS.active');
      if (activeElement) {
-          updateCompContent(activeElement.getAttribute('data-comp') - 1);
+          let index = activeElement.getAttribute('data-comp') - 1;
+          updateCompContent(index);
      }
 });
 /* ==FIN CHANGER CONTENU TECHNIQUES== */
@@ -182,7 +189,7 @@ document.addEventListener('click', (event) => {
           });
 
           this.index == undefined ? this.index = 1 : this.index;
-          valueJauge = comps[index - 1].compétences[btnDataBtn - 1].jauge;
+          valueJauge = comps[this.index - 1].compétences[btnDataBtn - 1].jauge;
           document.querySelector('.noteJauge').style.display = 'block';
           jaugeText.innerText = valueJauge + "%";
           jauge.style.width = valueJauge + "%";
@@ -194,3 +201,9 @@ document.addEventListener('click', (event) => {
 
 
 /* ===FIN CHANGER CONTENU TECHNIQUES== */
+
+
+
+//==============================================================================
+//==============================================================================
+//==============================================================================

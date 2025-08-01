@@ -1,972 +1,1090 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Home - VIRMAUX Bastien</title>
-     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-     <link rel="icon" href="assets/icons/icon_logo.svg">
-</head>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Home - VIRMAUX Bastien</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+          <link rel="icon" href="assets/icons/icon_logo.svg">
 
-<body>
-     <!-- ==HEADER== -->
-     <header class="header" id="header">
-          <img class="logo" src="assets/icons/icon_logo.svg" alt="Logo de mon portfolio" />
+     </head>
 
-          <nav class="nav">
-               <button class="btnNavResponsive" id="toogle">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M5.33331 8H26.6666M5.33331 16H26.6666M5.33331 24H14.6666" stroke="#344E47"
-                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-               </button>
-               <div class="mainNav">
-                    <a href="#aPropos" class="navLink">À propos de moi</a>
-                    <a href="#formation" class="navLink">Formation</a>
-                    <a href="#expProId" class="navLink">Expériences</a>
-                    <a href="#compétences" class="navLink">Compétences</a>
-                    <a href="#mesProjet" class="navLink">Projets</a>
-                    <a href="#divers" class="navLink">Divers</a>
-                    <a href="#cv" class="navLink">C.V</a>
-                    <a href="#meContacter" class="navLink">Contact</a>
-               </div>
-          </nav>
-     </header>
-     <!-- ==FIN HEADER== -->
-
-     <!-- ==SECTION1 - A propos== -->
-     <section class="section" id="aPropos">
-          <!-- =MAIN TITLE= -->
-          <div class="title" id="aProposTitle">
-               <h1 class="textTitle">A propos de moi</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <!-- =SECTION1 - Contenu -->
-          <div class="sec1Container1">
-               <div class="left">
-                    <div class="lfTextTitle">
-                         <p class="lfTitle">Je suis <span class="name">Bastien Virmaux</span></p>
-                         <p class="lfTitleSecond">Étudiant en 2ème année de BUT Réseaux et Télécommunications et
-                              Alternant à l’ITSRA</p>
-                    </div>
-
-                    <p class="lfTextPara">J’ai 20 ans, je viens de Montluçon dans l’Allier (03).
-                    </p>
-
-                    <p class="lfTextPara"> Au sein de ma formation à l'IUT d'Aubière, j'apprends les concepts
-                         fondamentaux des réseaux, de la sécurité et des télécommunications à travers des cours, des
-                         travaux dirigés (TD), des travaux pratiques (TP) et des projets tutorés. Cette formation me
-                         permet d'acquérir des bases solides, que je peux ensuite réutiliser et approfondir dans le
-                         monde professionnel. </p>
-
-                    <p class="lfTextPara"> J'ai choisi de poursuivre ma deuxième année en alternance afin de découvrir
-                         le monde professionnel, de gagner en expérience dans la communication avec les salariés et les
-                         clients et d'appliquer les compétences acquises à l'IUT ou en autodidacte, tout en en
-                         développant de nouvelles. C'est dans cette optique que j'ai signé un contrat d’alternance pour
-                         la période 2024-2026, avec un rythme d’un mois en entreprise et un mois en formation à l’ITSRA
-                         (Institut de Travail Social de la Région Auvergne). </p>
-
-                    <p class="lfTextPara"> Dès septembre 2026, je prévois d'intégrer une école d'ingénieurs.</p>
-               </div>
-
-               <div class="right">
-                    <div class="circleContainer">
-                         <div class="circleChild"></div>
-                    </div>
-
-                    <img class="rgImg" src="assets/images/image_me.png" alt="photo de bastien virmaux">
-               </div>
-          </div>
-          <!-- =FIN SECTION1 - Contenu -->
-     </section>
-     <!-- ==FIN SECTION1 - A propos== -->
-
-     <!-- ==SECTION2 - formation== -->
-     <section class="section" id="formation">
-
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Mes Formations</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <!-- =FORMATION= -->
-
-          <!-- FORMATION 1 -->
-          <button class="actionBarFormation" id="btnFormation" data-formation=0>
-               <div class="actionBarFormationInfo">
-                    <img src="assets/images/image_logoIUT.png" alt="logo de l'IUT" class="actionBarFormationLogo">
-                    <div class="actionBarFormationText">
-                         <p class="actionBarFormationNom">IUT Clermont Auvergne</p>
-                         <p class="actionBarFormationDate">2023 - Présent</p>
-                    </div>
-               </div>
-
-               <svg class="actionBarFormationArrow" width="48" height="48" viewBox="0 0 18 22" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6" stroke-width="1"
-                         stroke-linecap="round" stroke-linejoin="round" />
-               </svg>
-          </button>
-          <div class="overlayInfo" id="overlayInfoForm" data-formation=0>
-               <button class="btn-round" id="btnCloseOverlay">
-                    <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                    </svg>
-               </button>
-
-               <div class="overlayInfoHeader">
-                    <img src="assets/images/image_logoIUT.png" alt="logo de l'IUT" class="overlayInfoLogo">
-                    <div class="overlayInfoBref">
-                         <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">IUT Clermont
-                                   Auvergne</span></p>
-                         <p class="overlayInfoBrefText">Année : <span class="infoBref">2023 - Présent</span></p>
-                         <p class="overlayInfoBrefText">Obtention du diplôme : <span class="infoBref">En cours</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Formation : <span class="infoBref">BUT Réseaux et
-                                   Télécommunications - Alternance</span></p>
-                         <p class="overlayInfoBrefText">Statut de l’étudiant : <span class="infoBref">2ème année en
-                                   alternance à l’ITSRA</span></p>
-                    </div>
-               </div>
-
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Objectif de la Formation</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-
-                    <p class="overlayInfoTextPara">
-                         Le BUT Réseaux et Télécommunications est une formation en 3 ans, accessible après le
-                         baccalauréat. Cette formation vise
-                         à former des techniciens supérieurs compétents dans les domaines des réseaux informatiques, des
-                         télécommunications et de
-                         la cybersécurité.
-                    </p>
-               </div>
-
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Pourquoi l’IUT d’Aubière ?</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-
-                    <p class="overlayInfoTextPara">
-                         J’ai choisi de faire cette formation à l’Institut Universitaire et Technologique d’Aubière afin
-                         d’avoir une formation de
-                         qualité avec un programme pédagogique complet et actualisé, en accord avec les besoins du
-                         marché du travail. Cette
-                         formation aborde plusieurs compétences techniques mais aussi des compétences transversales
-                         indispensables (gestion de
-                         projet, communication…).
-                    </p>
-
-                    <p class="overlayInfoTextPara">
-                         La formation propose des périodes de stages et de l’alternance, ainsi que des projets tutorés,
-                         qui permettent aux
-                         étudiants de mettre en pratique leurs acquis et de développer l’autonomie.
-                    </p>
-               </div>
-
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Et maintenant ?</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         Après avoir validé ma première année dans cette formation, j’ai choisi de continuer dans le
-                         cursus en alternance.
-                         Depuis septembre 2024, je suis salarié à l’Institut de Travail Social de la Région Auvergne.
-                    </p>
-
-                    <div class="overlayDownload">
-                         <a class="overlayDownloadDocument" href="assets/documents/rlv1_VIRMAUX-Bastien_IUT.pdf"
-                              download="assets/documents/rlv1_VIRMAUX-Bastien_IUT">
-                              <div class="overlayDownloadContainer">
-                                   <div class="overlayDownloadIcon">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <g id="Icon/Solid/download">
-                                                  <path id="Icon" fill-rule="evenodd" clip-rule="evenodd"
-                                                       d="M3 17C3 16.4477 3.44772 16 4 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H4C3.44772 18 3 17.5523 3 17ZM6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289L9 10.5858L9 3C9 2.44772 9.44771 2 10 2C10.5523 2 11 2.44771 11 3L11 10.5858L12.2929 9.29289C12.6834 8.90237 13.3166 8.90237 13.7071 9.29289C14.0976 9.68342 14.0976 10.3166 13.7071 10.7071L10.7071 13.7071C10.5196 13.8946 10.2652 14 10 14C9.73478 14 9.48043 13.8946 9.29289 13.7071L6.29289 10.7071C5.90237 10.3166 5.90237 9.68342 6.29289 9.29289Z"
-                                                       fill="#344E47" />
-                                             </g>
-                                        </svg>
-                                   </div>
-
-                                   <p class="overlayDownloadText">Téléchargement du
-                                        relevé de note n°1</p>
-                              </div>
-
-                              <div class="overlayDownloadAction">
-                                   <p class="overlayDownloadActionText">Téléchargé</p>
-                              </div>
-                         </a>
-                    </div>
-               </div>
-          </div>
-
-          <!-- FIN FORMATION 1 -->
-
-          <!-- FORMATION 2 -->
-          <button class="actionBarFormation" id="btnFormation" data-formation=1>
-               <div class="actionBarFormationInfo">
-                    <img src="assets/images/image_logoLPC.svg" alt="logo de LPC" class="actionBarFormationLogo">
-                    <div class="actionBarFormationText">
-                         <p class="actionBarFormationNom">Lycée Polyvalent Paul Constans</p>
-                         <p class="actionBarFormationDate">2020 - 2023</p>
-                    </div>
-               </div>
-
-               <svg class="actionBarFormationArrow" width="48" height="48" viewBox="0 0 18 22" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6" stroke-width="1"
-                         stroke-linecap="round" stroke-linejoin="round" />
-               </svg>
-          </button>
-          <div class="overlayInfo" id="overlayInfoForm" data-formation=1>
-               <button class="btn-round" id="btnCloseOverlay">
-                    <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                    </svg>
-               </button>
-
-               <div class="overlayInfoHeader">
-                    <img src="assets/images/image_logoLPC.svg" alt="logo de LPC" class="overlayInfoLogo">
-                    <div class="overlayInfoBref">
-                         <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">Lycée
-                                   Polyvalent Paul Constans</span></p>
-                         <p class="overlayInfoBrefText">Année : <span class="infoBref">2020 - 2023</span></p>
-                         <p class="overlayInfoBrefText">Obtention du diplôme : <span class="infoBref">OUI - Mention
-                                   Assez Bien</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Formation : <span class="infoBref">STI2D - SIN</span></p>
-                         <p class="overlayInfoBrefText">Statut de l’étudiant : <span class="infoBref">2ème année en
-                                   alternance à l’ITSRA</span></p>
-                    </div>
-               </div>
-
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Objectif de la Formation</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-
-                    <p class="overlayInfoTextPara">
-                         Le parcours STI2D (Sciences et Technologies de l’Industrie et du Développement Durable) est
-                         accessible dès la première. En terminale j’ai dû choisir entre plusieurs spécialités, j’ai
-                         choisi : SIN (Système d’Information Numérique).
-                         Ce parcours “permet d’acquérir des compétences technologiques étendues, transversales à tous
-                         les
-                         domaines industriels, ainsi que des
-                         compétences approfondies dans un champ de spécialité.”.
-
-                    </p>
-               </div>
-
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Pourquoi la STI2D ?</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-
-                    <p class="overlayInfoTextPara">
-                         En première, j’ai choisi de suivre mon cursus en STI2D-SIN car j’étais passionné par
-                         l’informatique, les réseaux et le monde numérique en général. Je voulais comprendre comment le
-                         monde est connecté, en savoir plus sur le fonctionnement des systèmes d’information, des
-                         réseaux, des objets connectés, etc. Je voulais aussi en apprendre plus sur le monde industriel
-                         et le développement durable avec les nouvelles énergies et innovations.
-                    </p>
-               </div>
-
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Et maintenant ?</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-
-                    <p class="overlayInfoTextPara">
-                         J’ai obtenu mon baccalauréat mention assez bien et un bagage de compétences en programmation,
-                         en électronique, en réseaux, en traitement du signal, etc. Aussi j’ai obtenu des compétences
-                         transversales en résolution de problèmes, en travail d’équipe, en communication, en gestion de
-                         projet, etc.
-                    </p>
-
-                    <div class="overlayDownload">
-                         <a class="overlayDownloadDocument" href="assets/documents/rlv1_VIRMAUX-Bastien_LPC.pdf"
-                              download="assets/documents/rlv1_VIRMAUX-Bastien_LPC">
-                              <div class="overlayDownloadContainer">
-                                   <div class="overlayDownloadIcon">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <g id="Icon/Solid/download">
-                                                  <path id="Icon" fill-rule="evenodd" clip-rule="evenodd"
-                                                       d="M3 17C3 16.4477 3.44772 16 4 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H4C3.44772 18 3 17.5523 3 17ZM6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289L9 10.5858L9 3C9 2.44772 9.44771 2 10 2C10.5523 2 11 2.44771 11 3L11 10.5858L12.2929 9.29289C12.6834 8.90237 13.3166 8.90237 13.7071 9.29289C14.0976 9.68342 14.0976 10.3166 13.7071 10.7071L10.7071 13.7071C10.5196 13.8946 10.2652 14 10 14C9.73478 14 9.48043 13.8946 9.29289 13.7071L6.29289 10.7071C5.90237 10.3166 5.90237 9.68342 6.29289 9.29289Z"
-                                                       fill="#344E47" />
-                                             </g>
-                                        </svg>
-                                   </div>
-
-                                   <p class="overlayDownloadText">Téléchargement du
-                                        relevé de note</p>
-                              </div>
-
-                              <div class="overlayDownloadAction">
-                                   <p class="overlayDownloadActionText">Téléchargé</p>
-                              </div>
-                         </a>
-                    </div>
-               </div>
-          </div>
-          <!-- FIN FORMATION 2 -->
-
-          <!-- =FIN FORMATION= -->
-
-     </section>
-     <!-- ==FIN SECTION2 - formation== -->
-
-     <!-- ==SECTION 3 - Exp Pro== -->
-     <section class="section" id="expProId">
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Mes Expériences</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <!-- =EXP PRO= -->
-          <div class="container swiper">
-               <div class="slider-wrapper">
-                    <div class="card-list swiper-wrapper">
-                         <!-- EXP PRO 1 -->
-                         <button class="card-item swiper-slide" id="expPro" data-expPro=0>
-                              <img class="expProIll" src="assets/images/image_fiverr.png" alt="photo de fiverr">
-
-                              <div class="expProText">
-                                   <h2 class="expProTextTitle">Fiverr</h2>
-                                   <p class="expProTextDesc" id="expProTextDesc">En tant que freelance sur Fiverr,
-                                        j’aide mes
-                                        clients à transformer leurs idées en projets concrets avec
-                                        professionnalisme et créativité.</p>
-                              </div>
-
-                              <div class="expProAction">
-                                   <p class="expProActionText">Lire plus</p>
-                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                   </svg>
-                              </div>
-                         </button>
-                         <!-- FIN EXP PRO 1 -->
-
-                         <!-- EXP PRO 2 -->
-                         <button class="card-item swiper-slide" id="expPro" data-expPro=1>
-                              <img class="expProIll" src="assets/images/image_itsra.png" alt="photo de cordée">
-
-                              <div class="expProText">
-                                   <h2 class="expProTextTitle">ITSRA</h2>
-                                   <p class="expProTextDesc">En tant qu’alternant à l’ITSRA, j’effectue des tâches
-                                        d’administration
-                                        Réseaux et systèmes dans le cadre de mes études à l’IUT d’Aubière.</p>
-                              </div>
-
-                              <div class="expProAction">
-                                   <p class="expProActionText">Lire plus</p>
-                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                   </svg>
-                              </div>
-                         </button>
-                         <!-- FIN EXP PRO 2 -->
-
-                         <!-- EXP PRO 3 -->
-                         <button class="card-item swiper-slide" id="expPro" data-expPro=2>
-                              <img class="expProIll" src="assets/images/image_cdlr.png" alt="photo d'enfant">
-
-                              <div class="expProText">
-                                   <h2 class="expProTextTitle">Cordée de la réussite</h2>
-                                   <p class="expProTextDesc">En tant qu’étudiant, j’ai pu aider des lycéens issus d’un
-                                        baccalauréat
-                                        Professionnelles à préparer leurs orals de fin d’année.</p>
-                              </div>
-
-                              <div class="expProAction">
-                                   <p class="expProActionText">Lire plus</p>
-                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                   </svg>
-                              </div>
-                         </button>
-                         <!-- FIN EXP PRO 3 -->
-
-                         <!-- EXP PRO 4 -->
-                         <button class="card-item swiper-slide" id="expPro" data-expPro=3>
-                              <img class="expProIll" src="assets/images/image_inter.png" alt="photo d'enfant">
-
-                              <div class="expProText">
-                                   <h2 class="expProTextTitle">Intermarché</h2>
-                                   <p class="expProTextDesc">En tant que saisonnier, j’ai fait de la caisse afin d’aider
-                                        les
-                                        salariés, aussi grâce à mes compétences techniques, j’ai pu améliorer la gestion
-                                        du
-                                        magasin.</p>
-                              </div>
-
-                              <div class="expProAction">
-                                   <p class="expProActionText">Lire plus</p>
-                                   <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
-                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                   </svg>
-                              </div>
-                         </button>
-                         <!-- FIN EXP PRO 4 -->
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-slide-button swiper-button-prev"></div>
-                    <div class="swiper-slide-button swiper-button-next"></div>
-               </div>
-          </div>
-
-          <div class="overlayInfo" id="overlayInfoExp" data-expPro=0>
-               <button class="btn-round" id="btnCloseOverlay">
-                    <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                    </svg>
-               </button>
-               <div class="overlayInfoHeader">
-                    <svg class="overlayInfoLogo" width="89" height="27" viewBox="0 0 89 27" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <g fill="#404145">
-                              <path
-                                   d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
-                              </path>
+     <body>
+          <!-- ==POP UP== -->
+          <div class="popUpOverlay" id="popUpOverlay">
+               <div class="popUp" id="popUp">
+                    <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <g filter="url(#filter0_i_680_1235)">
+                              <path d="M87.4997 61.6146V90.7813M96.5858 25.2204L105.489 32.8073C107.732 34.7188 110.517 35.8743 113.454 36.1088L125.114 37.038C131.969 37.585 137.414 43.0266 137.961 49.8818L138.888 61.5434C139.122 64.481 140.282 67.2699 142.194 69.5129L149.777 78.4133C154.238 83.6474 154.238 91.3466 149.778 96.5807L142.194 105.483C140.283 107.725 139.125 110.515 138.89 113.453L137.957 125.113C137.41 131.968 131.974 137.413 125.119 137.96L113.455 138.891C110.517 139.125 107.73 140.278 105.487 142.189L96.5858 149.776C91.3516 154.237 83.6477 154.238 78.4136 149.777L69.5126 142.19C67.2696 140.278 64.482 139.124 61.5445 138.889L49.8806 137.96C43.0255 137.413 37.5889 131.969 37.0419 125.114L36.1091 113.454C35.8746 110.516 34.7165 107.729 32.805 105.486L25.2214 96.5811C20.7609 91.347 20.7588 83.6502 25.2193 78.4161L32.8098 69.5115C34.7212 67.2686 35.8683 64.481 36.1027 61.5434L37.0355 49.8831C37.5825 43.028 43.0348 37.5843 49.8899 37.0373L61.5409 36.108C64.4785 35.8736 67.2674 34.719 69.5104 32.8075L78.4143 25.2204C83.6484 20.7599 91.3516 20.7599 96.5858 25.2204ZM87.8628 112.656V113.385L87.1365 113.383V112.656H87.8628Z"
+                                   stroke="url(#paint0_linear_680_1235)" stroke-width="10" stroke-linecap="round"
+                                   stroke-linejoin="round" />
                          </g>
-                         <g fill="#1dbf73">
-                              <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z">
-                              </path>
-                         </g>
+                         <defs>
+                              <filter id="filter0_i_680_1235" x="0" y="0" width="175" height="179"
+                                   filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                   <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                   <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                   <feOffset dy="4" />
+                                   <feGaussianBlur stdDeviation="2" />
+                                   <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                   <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                   <feBlend mode="normal" in2="shape" result="effect1_innerShadow_680_1235" />
+                              </filter>
+                              <linearGradient id="paint0_linear_680_1235" x1="87.4989" y1="21.875" x2="87.4989"
+                                   y2="153.122" gradientUnits="userSpaceOnUse">
+                                   <stop stop-color="#DDEAE5" />
+                                   <stop offset="1" stop-color="#7D8481" />
+                              </linearGradient>
+                         </defs>
                     </svg>
-                    <div class="alert">
-                         <div class="headerAlert error">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
 
-                              <p class="titleAlert">Activité temporairement inactive</p>
+                    <h2 class="popUpTitle">
+                         Pour votre information
+                    </h2>
+
+                    <p class="popUpContent">
+                         Afin d'identifier ma montée en compétences entre le semestre 3 et le semestre 4, une <span
+                              class="popUpColor">bordure</span> indiquera les nouveautés sur le portfolio.
+                    </p>
+
+                    <button class="popUpBtn" id="btnPopUp">
+                         J'ai compris
+                    </button>
+               </div>
+          </div>
+          <!-- ==FIN POP UP== -->
+
+          <!-- ==HEADER== -->
+          <header class="header" id="header">
+               <img class="logo" src="assets/icons/icon_logo.svg" alt="Logo de mon portfolio" />
+
+               <nav class="nav">
+                    <button class="btnNavResponsive" id="toogle">
+                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.33331 8H26.6666M5.33331 16H26.6666M5.33331 24H14.6666" stroke="#344E47"
+                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                    </button>
+                    <div class="mainNav">
+                         <a href="#aPropos" class="navLink">À propos de moi</a>
+                         <a href="#formation" class="navLink">Formation</a>
+                         <a href="#expProId" class="navLink">Expériences</a>
+                         <a href="#compétences" class="navLink">Compétences</a>
+                         <a href="#mesProjet" class="navLink">Projets</a>
+                         <a href="#divers" class="navLink">Divers</a>
+                         <a href="#cv" class="navLink">C.V</a>
+                         <a href="#meContacter" class="navLink">Contact</a>
+                    </div>
+               </nav>
+          </header>
+          <!-- ==FIN HEADER== -->
+
+          <!-- ==SECTION1 - A propos== -->
+          <section class="section" id="aPropos">
+               <!-- =MAIN TITLE= -->
+               <div class="title" id="aProposTitle">
+                    <h1 class="textTitle">A propos de moi</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
+
+               <!-- =SECTION1 - Contenu -->
+               <div class="sec1Container1">
+                    <div class="left">
+                         <div class="lfTextTitle">
+                              <p class="lfTitle">Je suis <span class="name">Bastien Virmaux</span></p>
+                              <p class="lfTitleSecond">Étudiant en 2ème année de BUT Réseaux et Télécommunications et
+                                   Alternant à l’ITSRA</p>
                          </div>
 
-                         <p class="message">
-                              En raison de mon alternance et afin d’éviter une surcharge de travail, je ne
-                              prends plus de commandes sur Fiverr pour le moment.
+                         <p class="lfTextPara">J’ai 20 ans, je viens de Montluçon dans l’Allier (03).
                          </p>
-                    </div>
-                    <div class="overlayInfoBref">
-                         <p class="overlayInfoBrefText">Nom de l’entreprise : <span class="infoBref">Fiverr</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Statut : <span class="infoBref">Freelance</span></p>
-                    </div>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Situation initiale</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
 
-                    <p class="overlayInfoTextPara">
-                         Depuis que je suis au lycée, j’ai toujours été passioné par le développement web
-                         et
-                         la création d’interface (design system). En 2023, en arrivant à Clermont-Ferrand
-                         dans
-                         le câdre de ma formation en BUT Réseaux et Télécommunications à l’IUT d’Aubière,
-                         je
-                         voulais mettre à profits mes compétences en développement web et en design pour
-                         aider
-                         des clients à réaliser leurs projets. C’est pourquoi j’ai décidé de me lancer en
-                         tant
-                         que freelance sur la plateforme Fiverr.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">But</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
+                         <p class="lfTextPara"> Au sein de ma formation à l'IUT d'Aubière, j'apprends les concepts
+                              fondamentaux des réseaux, de la sécurité et des télécommunications à travers des cours,
+                              des
+                              travaux dirigés (TD), des travaux pratiques (TP) et des projets tutorés. Cette formation
+                              me
+                              permet d'acquérir des bases solides, que je peux ensuite réutiliser et approfondir dans le
+                              monde professionnel. </p>
 
-                    <p class="overlayInfoTextPara">
-                         Mon but en tant que freelance est d’aider mes clients à transformer leurs idées
-                         en
-                         projets concrets avec professionnalisme et créativité. J’accompagne mes clients
-                         dans
-                         la réalisation de leurs projets en leur proposant des solutions adaptées à leurs
-                         besoins et à leurs attentes.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Tâches</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         En tant que freelance sur Fiverr. Je réalise des sites web, des applications
-                         web, des
-                         maquettes graphiques, etc via différents outils tels que Visual Studio Code et
-                         Figma
-                         en respectant des délai.Je travaille en étroite collaboration avec mes clients
-                         pour
-                         leur offrir des solutions sur-mesure et de qualité. Je m’adapte à leurs besoins
-                         et à
-                         leurs attentes pour leur proposer des projets qui répondent à leurs objectifs.
-                    </p>
+                         <p class="lfTextPara"> J'ai choisi de poursuivre ma deuxième année en alternance afin de
+                              découvrir
+                              le monde professionnel, de gagner en expérience dans la communication avec les salariés et
+                              les
+                              clients et d'appliquer les compétences acquises à l'IUT ou en autodidacte, tout en en
+                              développant de nouvelles. C'est dans cette optique que j'ai signé un contrat d’alternance
+                              pour
+                              la période 2024-2026, avec un rythme d’un mois en entreprise et un mois en formation à
+                              l’ITSRA
+                              (Institut de Travail Social de la Région Auvergne). </p>
 
-                    <p class="overlayInfoTextPara">
-                         Plus généralement, je reste en veille constante sur les nouvelles technologies
-                         et les
-                         tendances pour proposer des solutions innovantes et performantes à mes
-                         clients. J’apporte également un regard neuf et créatif sur les projets pour les
-                         rendre uniques et attractifs.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Valeur ajoutée</h2>
+                         <p class="lfTextPara"> Dès septembre 2026, je prévois d'intégrer une école d'ingénieurs.</p>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         Être freelance sur Fiverr me permet de mettre en pratique mes compétences en
-                         design
-                         et en développement web tout en proposant des solutions innovantes et
-                         performantes.
-                         J’apprends également à gérer des projets de A à Z, de la prise de contact avec
-                         le
-                         client à la livraison du projet final. Cela me permet de développer mon
-                         autonomie, ma
-                         créativité et ma capacité à m’adapter à des situations variées. C’est une
-                         expérience
-                         qui me permet de me challenger et de progresser dans un domaine qui reste un
-                         luby.
-                    </p>
+
+                    <div class="right">
+                         <div class="circleContainer">
+                              <div class="circleChild"></div>
+                         </div>
+
+                         <img class="rgImg" src="assets/images/image_me.png" alt="photo de bastien virmaux">
+                    </div>
                </div>
-          </div>
-          <div class="overlayInfo" id="overlayInfoExp" data-expPro=1>
-               <button class="btn-round" id="btnCloseOverlay">
-                    <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+               <!-- =FIN SECTION1 - Contenu -->
+          </section>
+          <!-- ==FIN SECTION1 - A propos== -->
+
+          <!-- ==SECTION2 - formation== -->
+          <section class="section" id="formation">
+
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Mes Formations</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
+
+               <!-- =FORMATION= -->
+
+               <!-- FORMATION 1 -->
+               <button class="actionBarFormation" id="btnFormation" data-formation=0>
+                    <div class="actionBarFormationInfo">
+                         <img src="assets/images/image_logoIUT.png" alt="logo de l'IUT" class="actionBarFormationLogo">
+                         <div class="actionBarFormationText">
+                              <p class="actionBarFormationNom">IUT Clermont Auvergne</p>
+                              <p class="actionBarFormationDate">2023 - Présent</p>
+                         </div>
+                    </div>
+
+                    <svg class="actionBarFormationArrow" width="48" height="48" viewBox="0 0 18 22" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
+                         <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6" stroke-width="1"
+                              stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                </button>
-               <div class="overlayInfoHeader">
-                    <img src="assets/images/image_itsra.png" alt="logo de l'IUT" class="overlayInfoLogo"
-                         style="width: unset;">
-                    <div class="overlayInfoBref">
-                         <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">Institut de
-                                   Travail Social
-                                   de la Région Auvergne</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Année : <span class="infoBref">2024 - Présent</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Statut : <span class="infoBref">Alternant</span>
-                         </p>
-                    </div>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Situation initiale</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
+               <div class="overlayInfo" id="overlayInfoForm" data-formation=0>
+                    <button class="btn-round" id="btnCloseOverlay">
+                         <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+                    </button>
 
-                    <p class="overlayInfoTextPara">
-                         Durant ma première année en BUT Réseaux et Télécommunications à l’IUT d’Aubière, J'ai
-                         du choisir si je souhaité continuer en alternance ou en formation initiale
-                         (stage). J’ai choisi de continuer en alternance pour pouvoir mettre en pratique mes
-                         compétences en entreprise et pour avoir une expérience professionnelle significative.
-                         J’ai donc postulé à l’ITSRA pour un poste d’alternant en administration Réseaux et
-                         systèmes après avoir vu une annonce sur Linkedin. J’ai été retenu pour le poste et je
-                         travaille actuellement à l’ITSRA en tant qu’alternant.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">But</h2>
+                    <div class="overlayInfoHeader">
+                         <img src="assets/images/image_logoIUT.png" alt="logo de l'IUT" class="overlayInfoLogo">
+                         <div class="overlayInfoBref">
+                              <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">IUT
+                                        Clermont
+                                        Auvergne</span></p>
+                              <p class="overlayInfoBrefText">Année : <span class="infoBref">2023 - Présent</span></p>
+                              <p class="overlayInfoBrefText">Obtention du diplôme : <span class="infoBref">En
+                                        cours</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Formation : <span class="infoBref">BUT Réseaux et
+                                        Télécommunications - Alternance</span></p>
+                              <p class="overlayInfoBrefText">Statut de l’étudiant : <span class="infoBref">2ème année en
+                                        alternance à l’ITSRA</span></p>
+                         </div>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
 
-                    <p class="overlayInfoTextPara">
-                         Mon but en tant qu’alternant à l’ITSRA est de mettre en pratique mes compétences en
-                         administration Réseaux et Systèmes acquis à l’IUT d’Aubière dans un environnement
-                         professionnel et d’acquérir de nouvelles compétences et savoir-faire en travaillant
-                         sur des projets concrets et en étant en contact avec des professionnels du secteur.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Tâches</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         En tant qu’alternant à l’ITSRA, je travaille en étroite collaboration avec
-                         l’ensembles des services de l’entreprise pour assurer le bon fonctionnement des
-                         réseaux et des systèmes informatiques. Je suis en charge de la maintenance des
-                         équipements, de la gestion des tickets, de la mise en place de la sécurité
-                         informatique, de la gestion des droits d’accès, etc. Je travaille également sur des
-                         projets de déploiement de nouveaux équipements et logiciel, de migration de serveurs,
-                         de mise en place de nouvelles solutions, etc.
-                    </p>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Objectif de la Formation</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
 
-                    <p class="overlayInfoTextPara">
-                         Au quotidien, je suis en contact avec les salarié et étudiants pour les aider à
-                         résoudre leurs problèmes informatiques et à les accompagner dans l’utilisation des
-                         outils informatiques (ERP, Microsoft Office).
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Valeur ajoutée</h2>
+                         <p class="overlayInfoTextPara">
+                              Le BUT Réseaux et Télécommunications est une formation en 3 ans, accessible après le
+                              baccalauréat. Cette formation vise
+                              à former des techniciens supérieurs compétents dans les domaines des réseaux
+                              informatiques, des
+                              télécommunications et de
+                              la cybersécurité.
+                         </p>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         Être alternant à l’ITSRA me permet de mettre en pratique mes compétences en
-                         administration Réseaux et Systèmes dans un environnement professionnel et de
-                         développer de nouvelles compétences et savoir-faire. Je travaille en équipe et en
-                         autonomie sur des projets variés et concrets qui me permettent de progresser et
-                         d’acquérir de l’expérience. C’est une expérience enrichissante qui me permet de
-                         mettre en pratique mes acquis et de me préparer à mon insertion professionnelle.
-                    </p>
+
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Pourquoi l’IUT d’Aubière ?</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              J’ai choisi de faire cette formation à l’Institut Universitaire et Technologique d’Aubière
+                              afin
+                              d’avoir une formation de
+                              qualité avec un programme pédagogique complet et actualisé, en accord avec les besoins du
+                              marché du travail. Cette
+                              formation aborde plusieurs compétences techniques mais aussi des compétences transversales
+                              indispensables (gestion de
+                              projet, communication…).
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              La formation propose des périodes de stages et de l’alternance, ainsi que des projets
+                              tutorés,
+                              qui permettent aux
+                              étudiants de mettre en pratique leurs acquis et de développer l’autonomie.
+                         </p>
+                    </div>
+
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Et maintenant ?</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Après avoir validé ma première année dans cette formation, j’ai choisi de continuer dans
+                              le
+                              cursus en alternance.
+                              Depuis septembre 2024, je suis salarié à l’Institut de Travail Social de la Région
+                              Auvergne.
+                         </p>
+
+                         <div class="overlayDownload">
+                              <a class="overlayDownloadDocument" href="assets/documents/rlv1_VIRMAUX-Bastien_IUT.pdf"
+                                   download="assets/documents/rlv1_VIRMAUX-Bastien_IUT">
+                                   <div class="overlayDownloadContainer">
+                                        <div class="overlayDownloadIcon">
+                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g id="Icon/Solid/download">
+                                                       <path id="Icon" fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M3 17C3 16.4477 3.44772 16 4 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H4C3.44772 18 3 17.5523 3 17ZM6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289L9 10.5858L9 3C9 2.44772 9.44771 2 10 2C10.5523 2 11 2.44771 11 3L11 10.5858L12.2929 9.29289C12.6834 8.90237 13.3166 8.90237 13.7071 9.29289C14.0976 9.68342 14.0976 10.3166 13.7071 10.7071L10.7071 13.7071C10.5196 13.8946 10.2652 14 10 14C9.73478 14 9.48043 13.8946 9.29289 13.7071L6.29289 10.7071C5.90237 10.3166 5.90237 9.68342 6.29289 9.29289Z"
+                                                            fill="#344E47" />
+                                                  </g>
+                                             </svg>
+                                        </div>
+
+                                        <p class="overlayDownloadText">Téléchargement du
+                                             relevé de note n°1</p>
+                                   </div>
+
+                                   <div class="overlayDownloadAction">
+                                        <p class="overlayDownloadActionText">Téléchargé</p>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
                </div>
-          </div>
-          <div class="overlayInfo" id="overlayInfoExp" data-expPro=2>
-               <button class="btn-round" id="btnCloseOverlay">
-                    <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+
+               <!-- FIN FORMATION 1 -->
+
+               <!-- FORMATION 2 -->
+               <button class="actionBarFormation" id="btnFormation" data-formation=1>
+                    <div class="actionBarFormationInfo">
+                         <img src="assets/images/image_logoLPC.svg" alt="logo de LPC" class="actionBarFormationLogo">
+                         <div class="actionBarFormationText">
+                              <p class="actionBarFormationNom">Lycée Polyvalent Paul Constans</p>
+                              <p class="actionBarFormationDate">2020 - 2023</p>
+                         </div>
+                    </div>
+
+                    <svg class="actionBarFormationArrow" width="48" height="48" viewBox="0 0 18 22" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
+                         <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6" stroke-width="1"
+                              stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                </button>
-               <div class="overlayInfoHeader">
-                    <img src="assets/images/image_cdlr.png" alt="logo de la cordée" class="overlayInfoLogo"
-                         style="width: unset;">
-                    <div class="overlayInfoBref">
-                         <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">Lycée
-                                   Gergovie | IUT Clermont Auvergne site d’Aubière</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Année : <span class="infoBref">2023 - 2024</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Statut : <span class="infoBref">Étudiant en 1er année
-                                   de Réseaux et Télécommunications</span>
-                         </p>
-                    </div>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Situation initiale</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
+               <div class="overlayInfo" id="overlayInfoForm" data-formation=1>
+                    <button class="btn-round" id="btnCloseOverlay">
+                         <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+                    </button>
 
-                    <p class="overlayInfoTextPara">
-                         En tant qu’étudiant en 1ère année de BUT Réseaux et Télécommunications à l’IUT
-                         d’Aubière, j’ai eu l’opportunité de participer à la Cordée de la Réussite. La
-                         Cordée de la Réussite est un dispositif qui vise à accompagner des lycéens dans leur
-                         orientation et leur insertion dans l’enseignement supérieur. J’ai été sollicité pour
-                         aider des lycéens en baccalauréat Professionnelles à préparer leurs oraux de fin
-                         d’année.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">But</h2>
+                    <div class="overlayInfoHeader">
+                         <img src="assets/images/image_logoLPC.svg" alt="logo de LPC" class="overlayInfoLogo">
+                         <div class="overlayInfoBref">
+                              <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">Lycée
+                                        Polyvalent Paul Constans</span></p>
+                              <p class="overlayInfoBrefText">Année : <span class="infoBref">2020 - 2023</span></p>
+                              <p class="overlayInfoBrefText">Obtention du diplôme : <span class="infoBref">OUI - Mention
+                                        Assez Bien</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Formation : <span class="infoBref">STI2D - SIN</span></p>
+                              <p class="overlayInfoBrefText">Statut de l’étudiant : <span class="infoBref">2ème année en
+                                        alternance à l’ITSRA</span></p>
+                         </div>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
 
-                    <p class="overlayInfoTextPara">
-                         Mon but en tant qu’étudiant à la Cordée de la Réussite était d’aider des lycéens en
-                         baccalauréat Professionnelles à préparer leurs oraux de fin d’année. Les étudiants
-                         devait préparer un oral sur le stage qu’ils avaient effectué en entreprise. Mon rôle
-                         était de les conseiller et de les aider à améliorer leur discours et leur
-                         présentation en leur donnant des conseils et des astuces.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Tâches</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         En tant qu’étudiant à la Cordée de la Réussite, j’ai écouter 5 lycéens en
-                         baccalauréat Professionnelles pour les aider à préparer leur oral de fin d’année.
-                         J’ai écouté, leur ai posé des questions pour les aider à structurer
-                         leur présentation et leur ai donné des conseils pour améliorer leur discours et leur
-                         présentation. J’ai également donnée une note et des commentaires écrits pour les
-                         aider à progresser.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Valeur ajoutée</h2>
-                    </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         Être étudiant à la Cordée de la Réussite m’a permis de mettre en pratique mes
-                         compétences en communication et en pédagogie en aidant des lycéens à préparer leur
-                         oral de fin d’année. J’ai pu partager mon expérience et mes connaissances avec
-                         d’autres étudiants issue de la même filière que moi. Cela m’a permis de développer ma
-                         capacité à écouter, à conseiller et à aider les autres. C’est une expérience
-                         enrichissante qui m’a permis de progresser et de me challenger.
-                    </p>
-               </div>
-          </div>
-          <div class="overlayInfo" id="overlayInfoExp" data-expPro=3>
-               <button class="btn-round" id="btnCloseOverlay">
-                    <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                    </svg>
-               </button>
-               <div class="overlayInfoHeader">
-                    <img src="assets/images/image_inter.png" alt="logo d'intermarché" class="overlayInfoLogo"
-                         style="width: unset;">
-                    <div class="overlayInfoBref">
-                         <p class="overlayInfoBrefText">Nom de l’établissement : <span
-                                   class="infoBref">Intermarché</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Année : <span class="infoBref">2023 - 2024</span>
-                         </p>
-                         <p class="overlayInfoBrefText">Statut : <span class="infoBref">Saisonnier</span>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Objectif de la Formation</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              Le parcours STI2D (Sciences et Technologies de l’Industrie et du Développement Durable)
+                              est
+                              accessible dès la première. En terminale j’ai dû choisir entre plusieurs spécialités, j’ai
+                              choisi : SIN (Système d’Information Numérique).
+                              Ce parcours “permet d’acquérir des compétences technologiques étendues, transversales à
+                              tous
+                              les
+                              domaines industriels, ainsi que des
+                              compétences approfondies dans un champ de spécialité.”.
+
                          </p>
                     </div>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Situation initiale</h2>
+
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Pourquoi la STI2D ?</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              En première, j’ai choisi de suivre mon cursus en STI2D-SIN car j’étais passionné par
+                              l’informatique, les réseaux et le monde numérique en général. Je voulais comprendre
+                              comment le
+                              monde est connecté, en savoir plus sur le fonctionnement des systèmes d’information, des
+                              réseaux, des objets connectés, etc. Je voulais aussi en apprendre plus sur le monde
+                              industriel
+                              et le développement durable avec les nouvelles énergies et innovations.
+                         </p>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
 
-                    <p class="overlayInfoTextPara">
-                         Durant l’été 2023, j’ai travaillé en tant que saisonnier à Intermarché en tant que
-                         caissier pour aider les salariés durant la période des vacances scolaires.
-                    </p>
-               </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">But</h2>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Et maintenant ?</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              J’ai obtenu mon baccalauréat mention assez bien et un bagage de compétences en
+                              programmation,
+                              en électronique, en réseaux, en traitement du signal, etc. Aussi j’ai obtenu des
+                              compétences
+                              transversales en résolution de problèmes, en travail d’équipe, en communication, en
+                              gestion de
+                              projet, etc.
+                         </p>
+
+                         <div class="overlayDownload">
+                              <a class="overlayDownloadDocument" href="assets/documents/rlv1_VIRMAUX-Bastien_LPC.pdf"
+                                   download="assets/documents/rlv1_VIRMAUX-Bastien_LPC">
+                                   <div class="overlayDownloadContainer">
+                                        <div class="overlayDownloadIcon">
+                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g id="Icon/Solid/download">
+                                                       <path id="Icon" fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M3 17C3 16.4477 3.44772 16 4 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H4C3.44772 18 3 17.5523 3 17ZM6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289L9 10.5858L9 3C9 2.44772 9.44771 2 10 2C10.5523 2 11 2.44771 11 3L11 10.5858L12.2929 9.29289C12.6834 8.90237 13.3166 8.90237 13.7071 9.29289C14.0976 9.68342 14.0976 10.3166 13.7071 10.7071L10.7071 13.7071C10.5196 13.8946 10.2652 14 10 14C9.73478 14 9.48043 13.8946 9.29289 13.7071L6.29289 10.7071C5.90237 10.3166 5.90237 9.68342 6.29289 9.29289Z"
+                                                            fill="#344E47" />
+                                                  </g>
+                                             </svg>
+                                        </div>
+
+                                        <p class="overlayDownloadText">Téléchargement du
+                                             relevé de note</p>
+                                   </div>
+
+                                   <div class="overlayDownloadAction">
+                                        <p class="overlayDownloadActionText">Téléchargé</p>
+                                   </div>
+                              </a>
+                         </div>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
-
-                    <p class="overlayInfoTextPara">
-                         Mon but en tant que saisonnier à Intermarché était d’aider les salariés durant la
-                         période des vacances scolaires en caisse.
-                    </p>
                </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Tâches</h2>
+               <!-- FIN FORMATION 2 -->
+
+               <!-- =FIN FORMATION= -->
+
+          </section>
+          <!-- ==FIN SECTION2 - formation== -->
+
+          <!-- ==SECTION 3 - Exp Pro== -->
+          <section class="section" id="expProId">
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Mes Expériences</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
+
+               <!-- =EXP PRO= -->
+               <div class="container swiper">
+                    <div class="slider-wrapper">
+                         <div class="card-list swiper-wrapper">
+                              <!-- EXP PRO 1 -->
+                              <button class="card-item swiper-slide" id="expPro" data-expPro=0>
+                                   <img class="expProIll" src="assets/images/image_fiverr.png" alt="photo de fiverr">
+
+                                   <div class="expProText">
+                                        <h2 class="expProTextTitle">Fiverr</h2>
+                                        <p class="expProTextDesc" id="expProTextDesc">En tant que freelance sur Fiverr,
+                                             j’aide mes
+                                             clients à transformer leurs idées en projets concrets avec
+                                             professionnalisme et créativité.</p>
+                                   </div>
+
+                                   <div class="expProAction">
+                                        <p class="expProActionText">Lire plus</p>
+                                        <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22"
+                                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </div>
+                              </button>
+                              <!-- FIN EXP PRO 1 -->
+
+                              <!-- EXP PRO 2 -->
+                              <button class="card-item swiper-slide newContent" id="expPro" data-expPro=1>
+                                   <img class="expProIll" src="assets/images/image_itsra.png" alt="photo de cordée">
+
+                                   <div class="expProText">
+                                        <h2 class="expProTextTitle">ITSRA</h2>
+                                        <p class="expProTextDesc">En tant qu’alternant à l’ITSRA, j’effectue des tâches
+                                             d’administration
+                                             Réseaux et systèmes dans le cadre de mes études à l’IUT d’Aubière.</p>
+                                   </div>
+
+                                   <div class="expProAction">
+                                        <p class="expProActionText">Lire plus</p>
+                                        <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22"
+                                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </div>
+                              </button>
+                              <!-- FIN EXP PRO 2 -->
+
+                              <!-- EXP PRO 3 -->
+                              <button class="card-item swiper-slide" id="expPro" data-expPro=2>
+                                   <img class="expProIll" src="assets/images/image_cdlr.png" alt="photo d'enfant">
+
+                                   <div class="expProText">
+                                        <h2 class="expProTextTitle">Cordée de la réussite</h2>
+                                        <p class="expProTextDesc">En tant qu’étudiant, j’ai pu aider des lycéens issus
+                                             d’un
+                                             baccalauréat
+                                             Professionnelles à préparer leurs orals de fin d’année.</p>
+                                   </div>
+
+                                   <div class="expProAction">
+                                        <p class="expProActionText">Lire plus</p>
+                                        <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22"
+                                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </div>
+                              </button>
+                              <!-- FIN EXP PRO 3 -->
+
+                              <!-- EXP PRO 4 -->
+                              <button class="card-item swiper-slide" id="expPro" data-expPro=3>
+                                   <img class="expProIll" src="assets/images/image_inter.png" alt="photo d'enfant">
+
+                                   <div class="expProText">
+                                        <h2 class="expProTextTitle">Intermarché</h2>
+                                        <p class="expProTextDesc">En tant que saisonnier, j’ai fait de la caisse afin
+                                             d’aider
+                                             les
+                                             salariés, aussi grâce à mes compétences techniques, j’ai pu améliorer la
+                                             gestion
+                                             du
+                                             magasin.</p>
+                                   </div>
+
+                                   <div class="expProAction">
+                                        <p class="expProActionText">Lire plus</p>
+                                        <svg class="expProActionIcon" width="18" height="22" viewBox="0 0 18 22"
+                                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M15 11L10.2 6.41667M15 11L10.2 15.5833M15 11H3" stroke="#F5F8F6"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </div>
+                              </button>
+                              <!-- FIN EXP PRO 4 -->
+                         </div>
+
+                         <div class="swiper-pagination"></div>
+                         <div class="swiper-slide-button swiper-button-prev"></div>
+                         <div class="swiper-slide-button swiper-button-next"></div>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         En tant que saisonnier à Intermarché, j’ai travaillé en caisse pour aider les
-                         salariés durant la période des vacances scolaires. J’ai encaissé les clients,
-                         géré les paiements, les tickets de caisse, les bons de réductions, etc. J’ai
-                         également aidé les clients à trouver les produits dont ils avaient besoin et à
-                         répondre à leurs questions.
-                    </p>
-
-                    <p class="overlayInfoTextPara">
-                         Après avoir discuté avec les responsables du magasin, j’ai décelé un problème d’organisation.
-                         Quand nous sommes nouveaux, nous avons du mal avec certaines procédures de caisse qui peuvent
-                         paraître compliquées. Nous faisons donc appel à un autre salarié pour nous aider. Or ceci fait
-                         perdre beaucoup de temps aux équipes car le salarié est le plus souvent en caisse au même
-                         moment et cela amène donc à faire patienter les clients. <br><br> J’ai proposé de créer une
-                         procédure de caisse simplifiée, placée dans toutes les caisses du magasin afin de permettre à
-                         chaque salarié d’acquérir l’autonomie. Cette procédure entièrement écrite par moi-même et
-                         validée par la direction du magasin, a permis de réduire le temps d’attente des clients.
-                         <br><br> Pour maximiser l’autonomie des nouveaux collaborateurs en caisse, ces procédures sont
-                         désormais prêtées à chaque nouveau salarié avant leur début de poste afin qu’ils s’approprient
-                         le fonctionnement. <br><br> Au final, cette procédure a trouvé son succès auprès des salariés
-                         et des responsables de magasin qui ont vu une amélioration du temps d’attente des clients.
-                    </p>
-
-                    <p class="overlayInfoTextPara">
-                         Toujours dans le cadre de l’autonomie, j’ai décelé un autre problème. Le magasin Intermarché
-                         vend des fromages locaux, mais les étiquettes de prix subissent l’humidité du rayon et se
-                         décollent. Ce qui amène les collaborateurs en caisse à devoir chercher le prix du fromage ou le
-                         code-barres en rayon et donc faire patienter les clients. <br><br> J’ai donc proposé de créer
-                         une feuille contenant les informations sur les fromages subissant ce problème de façon
-                         récurrente. Cette feuille contient plusieurs informations telles que : le nom du fromage, le
-                         prix, le code-barres, la date et le poids. <br><br> Cette feuille est placée dans un classeur
-                         dans toutes les caisses. Ainsi, les collaborateurs peuvent facilement et rapidement trouver les
-                         informations sur les fromages. <br><br> Cette feuille est maintenue à jour par le responsable
-                         du rayon frais (fromage) et est consultable par tous les salariés. <br><br> Les salariés et
-                         responsables du magasin ont été très ravis de cette initiative qui a permis de réduire le temps
-                         d’attente des clients.
-                    </p>
                </div>
-               <div class="overlayInfoText">
-                    <!-- =SECOND TITLE= -->
-                    <div class="ssTitleOverlay">
-                         <h2 class="textTitle">Valeur ajoutée</h2>
+
+               <div class="overlayInfo" id="overlayInfoExp" data-expPro=0>
+                    <button class="btn-round" id="btnCloseOverlay">
+                         <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+                    </button>
+                    <div class="overlayInfoHeader">
+                         <svg class="overlayInfoLogo" width="89" height="27" viewBox="0 0 89 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g fill="#404145">
+                                   <path
+                                        d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+                                   </path>
+                              </g>
+                              <g fill="#1dbf73">
+                                   <path
+                                        d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z">
+                                   </path>
+                              </g>
+                         </svg>
+                         <div class="alert">
+                              <div class="headerAlert error">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+
+                                   <p class="titleAlert">Activité temporairement inactive</p>
+                              </div>
+
+                              <p class="message">
+                                   En raison de mon alternance et afin d’éviter une surcharge de travail, je ne
+                                   prends plus de commandes sur Fiverr pour le moment.
+                              </p>
+                         </div>
+                         <div class="overlayInfoBref">
+                              <p class="overlayInfoBrefText">Nom de l’entreprise : <span class="infoBref">Fiverr</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Statut : <span class="infoBref">Freelance</span></p>
+                         </div>
                     </div>
-                    <!-- =FIN SECOND TITLE= -->
-                    <p class="overlayInfoTextPara">
-                         Être saisonnier à Intermarché m’a permis de mettre en pratique mes compétences en
-                         caisse et en relation client dans un environnement professionnel. J’ai pu aider les
-                         salariés et les clients en proposant des solutions innovantes et performantes pour
-                         améliorer l’organisation du magasin et réduire le temps d’attente des clients. J’ai
-                         également appris à travailler en équipe et en autonomie. C’est une expérience
-                         enrichissante qui m’a permis de me challenger et de progresser.
-                    </p>
-               </div>
-          </div>
-          <!-- =FIN EXP PRO= -->
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Situation initiale</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
 
-     </section>
-     <!-- ==FIN SETION 3 - Exp Pro== -->
+                         <p class="overlayInfoTextPara">
+                              Depuis que je suis au lycée, j’ai toujours été passioné par le développement web
+                              et
+                              la création d’interface (design system). En 2023, en arrivant à Clermont-Ferrand
+                              dans
+                              le câdre de ma formation en BUT Réseaux et Télécommunications à l’IUT d’Aubière,
+                              je
+                              voulais mettre à profits mes compétences en développement web et en design pour
+                              aider
+                              des clients à réaliser leurs projets. C’est pourquoi j’ai décidé de me lancer en
+                              tant
+                              que freelance sur la plateforme Fiverr.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">But</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
 
-     <!-- ==SECTION 4 - Compétences -->
-     <section class="section" id="compétences">
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Mes compétences</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Mon but en tant que freelance est d’aider mes clients à transformer leurs idées
+                              en
+                              projets concrets avec professionnalisme et créativité. J’accompagne mes clients
+                              dans
+                              la réalisation de leurs projets en leur proposant des solutions adaptées à leurs
+                              besoins et à leurs attentes.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Tâches</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              En tant que freelance sur Fiverr. Je réalise des sites web, des applications
+                              web, des
+                              maquettes graphiques, etc via différents outils tels que Visual Studio Code et
+                              Figma
+                              en respectant des délai.Je travaille en étroite collaboration avec mes clients
+                              pour
+                              leur offrir des solutions sur-mesure et de qualité. Je m’adapte à leurs besoins
+                              et à
+                              leurs attentes pour leur proposer des projets qui répondent à leurs objectifs.
+                         </p>
 
-          <div class="compNav">
-               <button class="compNavBtn" id="compNavBtnHum">
-                    <h2 class="compNavBtnText">Humaines</h2>
-               </button>
-               <button class="compNavBtn" id="compNavBtnTech">
-                    <h2 class="compNavBtnText">Techniques</h2>
-               </button>
-               <div class="compNavBtnRect" id="compNavBtnRect"></div>
-          </div>
-
-          <!-- =CONTAINER QUALITÉS= -->
-          <div class="containerQualite" id="ctQualite">
-               <div class="cardQualite card1">
-                    <svg class="cardQualiteIcon" width="124" height="124" viewBox="0 0 124 124" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path d="M91.227 86.0604C84.649 92.6384 68.3134 108.974 63.4121 113.875C62.6311 114.656 61.3678 114.655 60.5867 113.874C55.7573 109.045 39.8194 93.107 32.7729 86.0604C16.6312 69.9187 16.6312 43.7479 32.7729 27.6063C48.9146 11.4646 75.0854 11.4646 91.227 27.6063C107.369 43.7479 107.369 69.9187 91.227 86.0604Z"
-                              stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                         <path d="M77.5 56.8333C77.5 65.3938 70.5604 72.3333 62 72.3333C53.4395 72.3333 46.5 65.3938 46.5 56.8333C46.5 48.2729 53.4395 41.3333 62 41.3333C70.5604 41.3333 77.5 48.2729 77.5 56.8333Z"
-                              stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div class="cardQualiteInfo">
-                         <p class="cardQualiteTextTitle">Assiduité</p>
-                         <p class="cardQualiteTextPara">Je prépare mon travail de manière à respecter les exigences de
-                              qualité,
-                              d’efficacité et d’échéancier.
+                         <p class="overlayInfoTextPara">
+                              Plus généralement, je reste en veille constante sur les nouvelles technologies
+                              et les
+                              tendances pour proposer des solutions innovantes et performantes à mes
+                              clients. J’apporte également un regard neuf et créatif sur les projets pour les
+                              rendre uniques et attractifs.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Valeur ajoutée</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Être freelance sur Fiverr me permet de mettre en pratique mes compétences en
+                              design
+                              et en développement web tout en proposant des solutions innovantes et
+                              performantes.
+                              J’apprends également à gérer des projets de A à Z, de la prise de contact avec
+                              le
+                              client à la livraison du projet final. Cela me permet de développer mon
+                              autonomie, ma
+                              créativité et ma capacité à m’adapter à des situations variées. C’est une
+                              expérience
+                              qui me permet de me challenger et de progresser dans un domaine qui reste un
+                              luby.
                          </p>
                     </div>
                </div>
-               <div class="cardQualite card2">
-                    <svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M47.2071 71.6262C46.8166 71.2357 46.1834 71.2357 45.7929 71.6262C45.4023 72.0168 45.4023 72.6499 45.7929 73.0404L47.2071 71.6262ZM56.8333 82.6667L56.1262 83.3738C56.5167 83.7643 57.1499 83.7643 57.5404 83.3738L56.8333 82.6667ZM78.2071 62.7071C78.5976 62.3166 78.5976 61.6834 78.2071 61.2929C77.8166 60.9024 77.1834 60.9024 76.7929 61.2929L78.2071 62.7071ZM97.1666 36.1667V98.1667H99.1666V36.1667H97.1666ZM87.8333 107.5H36.1666V109.5H87.8333V107.5ZM26.8333 98.1667V36.1667H24.8333V98.1667H26.8333ZM36.1666 26.8333H46.5V24.8333H36.1666V26.8333ZM77.5 26.8333H87.8333V24.8333H77.5V26.8333ZM36.1666 107.5C31.012 107.5 26.8333 103.321 26.8333 98.1667H24.8333C24.8333 104.426 29.9074 109.5 36.1666 109.5V107.5ZM97.1666 98.1667C97.1666 103.321 92.988 107.5 87.8333 107.5V109.5C94.0925 109.5 99.1666 104.426 99.1666 98.1667H97.1666ZM99.1666 36.1667C99.1666 29.9074 94.0925 24.8333 87.8333 24.8333V26.8333C92.988 26.8333 97.1666 31.012 97.1666 36.1667H99.1666ZM26.8333 36.1667C26.8333 31.012 31.012 26.8333 36.1666 26.8333V24.8333C29.9074 24.8333 24.8333 29.9074 24.8333 36.1667H26.8333ZM45.7929 73.0404L56.1262 83.3738L57.5404 81.9596L47.2071 71.6262L45.7929 73.0404ZM57.5404 83.3738L78.2071 62.7071L76.7929 61.2929L56.1262 81.9596L57.5404 83.3738ZM56.8333 16.5H67.1666V14.5H56.8333V16.5ZM67.1666 35.1667H56.8333V37.1667H67.1666V35.1667ZM56.8333 35.1667C51.6787 35.1667 47.5 30.988 47.5 25.8333H45.5C45.5 32.0926 50.5741 37.1667 56.8333 37.1667V35.1667ZM76.5 25.8333C76.5 30.988 72.3213 35.1667 67.1666 35.1667V37.1667C73.4259 37.1667 78.5 32.0926 78.5 25.8333H76.5ZM67.1666 16.5C72.3213 16.5 76.5 20.6787 76.5 25.8333H78.5C78.5 19.5741 73.4259 14.5 67.1666 14.5V16.5ZM56.8333 14.5C50.5741 14.5 45.5 19.5741 45.5 25.8333H47.5C47.5 20.6787 51.6787 16.5 56.8333 16.5V14.5Z"
-                              fill="#F5F8F6" />
-                    </svg>
-                    <div class="cardQualiteInfo">
-                         <p class="cardQualiteTextTitle">Organisation</p>
-                         <p class="cardQualiteTextPara">J’ai toujours une présence active
-                              régulière et soutenue à l’endroit où j’ai des obligations à remplir.
-                         </p>
+               <div class="overlayInfo" id="overlayInfoExp" data-expPro=1>
+                    <button class="btn-round" id="btnCloseOverlay">
+                         <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+                    </button>
+                    <div class="overlayInfoHeader">
+                         <img src="assets/images/image_itsra.png" alt="logo de l'IUT" class="overlayInfoLogo"
+                              style="width: unset;">
+                         <div class="overlayInfoBref">
+                              <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">Institut de
+                                        Travail Social
+                                        de la Région Auvergne</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Année : <span class="infoBref">2024 - Présent</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Statut : <span class="infoBref">Alternant</span>
+                              </p>
+                         </div>
                     </div>
-               </div>
-               <div class="cardQualite card3">
-                    <svg width="124" height="125" viewBox="0 0 124 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M20.6667 21V46.8333H23.6712M103.014 57.1667C100.471 36.7774 83.078 21 62 21C44.6536 21 29.8029 31.6855 23.6712 46.8333M23.6712 46.8333H46.5M103.333 103.667V77.8333H100.329M100.329 77.8333C94.1972 92.9811 79.3465 103.667 62 103.667C40.922 103.667 23.529 87.8893 20.9865 67.5M100.329 77.8333H77.5"
-                              stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div class="cardQualiteInfo">
-                         <p class="cardQualiteTextTitle">Patience</p>
-                         <p class="cardQualiteTextPara">Je garde mon calme de façon
-                              constante dans des situations particulières, tout en persévérant dans ma tâche.
-                         </p>
-                    </div>
-               </div>
-               <div class="cardQualite card4">
-                    <svg width="124" height="125" viewBox="0 0 124 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M25.8333 16.1666V36.8333M15.5 26.5H36.1667M31 88.5V109.167M20.6667 98.8333H41.3333M67.1667 16.1666L78.9762 51.5952L108.5 62.6666L78.9762 73.7381L67.1667 109.167L55.3571 73.7381L25.8333 62.6666L55.3571 51.5952L67.1667 16.1666Z"
-                              stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div class="cardQualiteInfo">
-                         <p class="cardQualiteTextTitle">Efficacité</p>
-                         <p class="cardQualiteTextPara">Je réalise mon travail selon les
-                              attentes exprimées de temps, de quantité ou de qualité.
-                         </p>
-                    </div>
-               </div>
-               <div class="cardQualite card5">
-                    <svg width="124" height="125" viewBox="0 0 124 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M87.8334 104H113.667V93.6666C113.667 85.1062 106.727 78.1666 98.1667 78.1666C93.2294 78.1666 88.8313 80.475 85.9928 84.0715M87.8334 104H36.1667M87.8334 104V93.6666C87.8334 90.276 87.1802 87.038 85.9928 84.0715M36.1667 104H10.3334V93.6666C10.3334 85.1062 17.273 78.1666 25.8334 78.1666C30.7707 78.1666 35.1688 80.475 38.0073 84.0715M36.1667 104V93.6666C36.1667 90.276 36.8199 87.038 38.0073 84.0715M38.0073 84.0715C41.8165 74.5552 51.1233 67.8333 62 67.8333C72.8768 67.8333 82.1836 74.5552 85.9928 84.0715M77.5 36.8333C77.5 45.3937 70.5605 52.3333 62 52.3333C53.4396 52.3333 46.5 45.3937 46.5 36.8333C46.5 28.2728 53.4396 21.3333 62 21.3333C70.5605 21.3333 77.5 28.2728 77.5 36.8333ZM108.5 52.3333C108.5 58.0402 103.874 62.6666 98.1667 62.6666C92.4598 62.6666 87.8334 58.0402 87.8334 52.3333C87.8334 46.6263 92.4598 41.9999 98.1667 41.9999C103.874 41.9999 108.5 46.6263 108.5 52.3333ZM36.1667 52.3333C36.1667 58.0402 31.5403 62.6666 25.8334 62.6666C20.1264 62.6666 15.5 58.0402 15.5 52.3333C15.5 46.6263 20.1264 41.9999 25.8334 41.9999C31.5403 41.9999 36.1667 46.6263 36.1667 52.3333Z"
-                              stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div class="cardQualiteInfo">
-                         <p class="cardQualiteTextTitle">Esprit d’équipe</p>
-                         <p class="cardQualiteTextPara">Je travaille avec les autres
-                              de manière solidaire en contribuant au travail de l’équipe par ses idées et ses
-                              efforts.
-                         </p>
-                    </div>
-               </div>
-               <div class="cardQualite card6">
-                    <svg width="124" height="125" viewBox="0 0 124 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M67.1667 36.5H108.5M108.5 36.5V77.8333M108.5 36.5L67.1667 77.8333L46.5 57.1667L15.5 88.1667"
-                              stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div class="cardQualiteInfo">
-                         <p class="cardQualiteTextTitle">Prévenance</p>
-                         <p class="cardQualiteTextPara">J’ai le souci constant de la recherche de la qualité.
-                         </p>
-                    </div>
-               </div>
-          </div>
-          <!-- =FIN CONTAINER QUALITÉS= -->
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Situation initiale</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
 
-          <!-- =CONTAINER TECHNIQUES= -->
-          <div class="containerTechnique" id="ctTechnique">
-               <div class="competences">
+                         <p class="overlayInfoTextPara">
+                              Durant ma première année en BUT Réseaux et Télécommunications à l’IUT d’Aubière, J'ai
+                              du choisir si je souhaité continuer en alternance ou en formation initiale
+                              (stage). J’ai choisi de continuer en alternance pour pouvoir mettre en pratique mes
+                              compétences en entreprise et pour avoir une expérience professionnelle significative.
+                              J’ai donc postulé à l’ITSRA pour un poste d’alternant en administration Réseaux et
+                              systèmes après avoir vu une annonce sur Linkedin. J’ai été retenu pour le poste et je
+                              travaille actuellement à l’ITSRA en tant qu’alternant.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">But</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              L'objecif de cette alternance est d'approfondir est d'acquérir de nouvelles compétences
+                              techniques dans le domaine de l'administration systèmes et réseaux, tout en développant
+                              également mes compétences humaines. Mon rôle est de répondre aux besoins des utilisateurs,
+                              de proposer des solutions techniques adaptées afin de garantir la qualité de service
+                              (QoS), la sécurité et la maintenabilité de l'infrastructure informatique.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Tâches</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Je participe à plusieurs activités au sein du service informatique. Cela inclut des tâches
+                              quotidiennes telles que le suppport utilisateur pour les salariés, via un outil de gestion
+                              de tickets, ainsi que pour le sétudiants, via une adresse e-mail dédiée.
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              En parallèle, je suis impliqué dans différents projets internes au service informatique ou
+                              en collaboration avec d'autres services de l'institution. Actuellement, je travaille sur
+                              tois projets principaux :
+
+                         <ul class="listContainer">
+                              <li class="list">la mise en place d'un outil de supervision pour assurer le suivi et le
+                                   bon fonctionnement de l'infrastructure informatique;</li>
+                              <li class="list">l'installation d'une station blanche, dans le but de protéger
+                                   l'infrastructure contre les menaces potentielles provenant de support amovibles;</li>
+                              <li class="list">la collaboration avec le service communication pour la création d'un
+                                   nouveau site internet pour l'ITSRA.</li>
+                         </ul>
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              J'apporte au service informatique, et plus largement à l'institution, les compétences que
+                              j'ai acquises à l'IUT ainsi que celles développées de manière autodidacte.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Valeur ajoutée</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Cette alternance, et plus généralement l'environnement de l'ITSRA, m'apporte énormément,
+                              aussi bien sur le plan technique que sur le plan humain.
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              Sur le plan technique, j'ai appris à manipuler un ERP, à en comprendre le fonctionnement
+                              ainsi que les enjeux liés à son utilisation. J'ai également développé des compétences dans
+                              l'usage dela suite Office 365 (administrateur), en lien avec Azure Active Directory, dans
+                              la gestion des sauvegardes via Veeam, ainsi que dans la virtualisation avec VMware
+                              VSphere.
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              Sur le plan humain, l'ITSRA est un excellent environnement pour progresser en
+                              communication. En effet, une grande partie du personnel et des apprenants ne sont pas
+                              issue d'un domaine technique et rencontre parfois des difficultés avec l'informatique. Il
+                              est donc essentiel de savoir vulgariser les propos pour être compris de tous. Par
+                              ailleurs, la prise de parole devant un groupe, qu'il s'agisse d'apprenants ou de salariés,
+                              est fréquente, ce qui m'a permis de gagner en aissance. L'institut exige également
+                              rigueur, travail d'équipe et sens de l'écoute, autant de qualité que je m'efforce de
+                              développer au quotidien.
+                         </p>
+                    </div>
+               </div>
+               <div class="overlayInfo" id="overlayInfoExp" data-expPro=2>
+                    <button class="btn-round" id="btnCloseOverlay">
+                         <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+                    </button>
+                    <div class="overlayInfoHeader">
+                         <img src="assets/images/image_cdlr.png" alt="logo de la cordée" class="overlayInfoLogo"
+                              style="width: unset;">
+                         <div class="overlayInfoBref">
+                              <p class="overlayInfoBrefText">Nom de l’établissement : <span class="infoBref">Lycée
+                                        Gergovie | IUT Clermont Auvergne site d’Aubière</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Année : <span class="infoBref">2023 - 2024</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Statut : <span class="infoBref">Étudiant en 1er année
+                                        de Réseaux et Télécommunications</span>
+                              </p>
+                         </div>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Situation initiale</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              En tant qu’étudiant en 1ère année de BUT Réseaux et Télécommunications à l’IUT
+                              d’Aubière, j’ai eu l’opportunité de participer à la Cordée de la Réussite. La
+                              Cordée de la Réussite est un dispositif qui vise à accompagner des lycéens dans leur
+                              orientation et leur insertion dans l’enseignement supérieur. J’ai été sollicité pour
+                              aider des lycéens en baccalauréat Professionnelles à préparer leurs oraux de fin
+                              d’année.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">But</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              Mon but en tant qu’étudiant à la Cordée de la Réussite était d’aider des lycéens en
+                              baccalauréat Professionnelles à préparer leurs oraux de fin d’année. Les étudiants
+                              devait préparer un oral sur le stage qu’ils avaient effectué en entreprise. Mon rôle
+                              était de les conseiller et de les aider à améliorer leur discours et leur
+                              présentation en leur donnant des conseils et des astuces.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Tâches</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              En tant qu’étudiant à la Cordée de la Réussite, j’ai écouter 5 lycéens en
+                              baccalauréat Professionnelles pour les aider à préparer leur oral de fin d’année.
+                              J’ai écouté, leur ai posé des questions pour les aider à structurer
+                              leur présentation et leur ai donné des conseils pour améliorer leur discours et leur
+                              présentation. J’ai également donnée une note et des commentaires écrits pour les
+                              aider à progresser.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Valeur ajoutée</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Être étudiant à la Cordée de la Réussite m’a permis de mettre en pratique mes
+                              compétences en communication et en pédagogie en aidant des lycéens à préparer leur
+                              oral de fin d’année. J’ai pu partager mon expérience et mes connaissances avec
+                              d’autres étudiants issue de la même filière que moi. Cela m’a permis de développer ma
+                              capacité à écouter, à conseiller et à aider les autres. C’est une expérience
+                              enrichissante qui m’a permis de progresser et de me challenger.
+                         </p>
+                    </div>
+               </div>
+               <div class="overlayInfo" id="overlayInfoExp" data-expPro=3>
+                    <button class="btn-round" id="btnCloseOverlay">
+                         <svg class="btn-round-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 33L33 1M1 1L33 33" stroke="#344E47" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round" />
+                         </svg>
+                    </button>
+                    <div class="overlayInfoHeader">
+                         <img src="assets/images/image_inter.png" alt="logo d'intermarché" class="overlayInfoLogo"
+                              style="width: unset;">
+                         <div class="overlayInfoBref">
+                              <p class="overlayInfoBrefText">Nom de l’établissement : <span
+                                        class="infoBref">Intermarché</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Année : <span class="infoBref">2023 - 2024</span>
+                              </p>
+                              <p class="overlayInfoBrefText">Statut : <span class="infoBref">Saisonnier</span>
+                              </p>
+                         </div>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Situation initiale</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              Durant l’été 2023, j’ai travaillé en tant que saisonnier à Intermarché en tant que
+                              caissier pour aider les salariés durant la période des vacances scolaires.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">But</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+
+                         <p class="overlayInfoTextPara">
+                              Mon but en tant que saisonnier à Intermarché était d’aider les salariés durant la
+                              période des vacances scolaires en caisse.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Tâches</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              En tant que saisonnier à Intermarché, j’ai travaillé en caisse pour aider les
+                              salariés durant la période des vacances scolaires. J’ai encaissé les clients,
+                              géré les paiements, les tickets de caisse, les bons de réductions, etc. J’ai
+                              également aidé les clients à trouver les produits dont ils avaient besoin et à
+                              répondre à leurs questions.
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              Après avoir discuté avec les responsables du magasin, j’ai décelé un problème
+                              d’organisation.
+                              Quand nous sommes nouveaux, nous avons du mal avec certaines procédures de caisse qui
+                              peuvent
+                              paraître compliquées. Nous faisons donc appel à un autre salarié pour nous aider. Or ceci
+                              fait
+                              perdre beaucoup de temps aux équipes car le salarié est le plus souvent en caisse au même
+                              moment et cela amène donc à faire patienter les clients. <br><br> J’ai proposé de créer
+                              une
+                              procédure de caisse simplifiée, placée dans toutes les caisses du magasin afin de
+                              permettre à
+                              chaque salarié d’acquérir l’autonomie. Cette procédure entièrement écrite par moi-même et
+                              validée par la direction du magasin, a permis de réduire le temps d’attente des clients.
+                              <br><br> Pour maximiser l’autonomie des nouveaux collaborateurs en caisse, ces procédures
+                              sont
+                              désormais prêtées à chaque nouveau salarié avant leur début de poste afin qu’ils
+                              s’approprient
+                              le fonctionnement. <br><br> Au final, cette procédure a trouvé son succès auprès des
+                              salariés
+                              et des responsables de magasin qui ont vu une amélioration du temps d’attente des clients.
+                         </p>
+
+                         <p class="overlayInfoTextPara">
+                              Toujours dans le cadre de l’autonomie, j’ai décelé un autre problème. Le magasin
+                              Intermarché
+                              vend des fromages locaux, mais les étiquettes de prix subissent l’humidité du rayon et se
+                              décollent. Ce qui amène les collaborateurs en caisse à devoir chercher le prix du fromage
+                              ou le
+                              code-barres en rayon et donc faire patienter les clients. <br><br> J’ai donc proposé de
+                              créer
+                              une feuille contenant les informations sur les fromages subissant ce problème de façon
+                              récurrente. Cette feuille contient plusieurs informations telles que : le nom du fromage,
+                              le
+                              prix, le code-barres, la date et le poids. <br><br> Cette feuille est placée dans un
+                              classeur
+                              dans toutes les caisses. Ainsi, les collaborateurs peuvent facilement et rapidement
+                              trouver les
+                              informations sur les fromages. <br><br> Cette feuille est maintenue à jour par le
+                              responsable
+                              du rayon frais (fromage) et est consultable par tous les salariés. <br><br> Les salariés
+                              et
+                              responsables du magasin ont été très ravis de cette initiative qui a permis de réduire le
+                              temps
+                              d’attente des clients.
+                         </p>
+                    </div>
+                    <div class="overlayInfoText">
+                         <!-- =SECOND TITLE= -->
+                         <div class="ssTitleOverlay">
+                              <h2 class="textTitle">Valeur ajoutée</h2>
+                         </div>
+                         <!-- =FIN SECOND TITLE= -->
+                         <p class="overlayInfoTextPara">
+                              Être saisonnier à Intermarché m’a permis de mettre en pratique mes compétences en
+                              caisse et en relation client dans un environnement professionnel. J’ai pu aider les
+                              salariés et les clients en proposant des solutions innovantes et performantes pour
+                              améliorer l’organisation du magasin et réduire le temps d’attente des clients. J’ai
+                              également appris à travailler en équipe et en autonomie. C’est une expérience
+                              enrichissante qui m’a permis de me challenger et de progresser.
+                         </p>
+                    </div>
+               </div>
+               <!-- =FIN EXP PRO= -->
+
+          </section>
+          <!-- ==FIN SETION 3 - Exp Pro== -->
+
+          <!-- ==SECTION 4 - Compétences -->
+          <section class="section" id="compétences">
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Mes compétences</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
+
+               <div class="compNav">
+                    <button class="compNavBtn" id="compNavBtnHum">
+                         <h2 class="compNavBtnText" id="compNavBtnTextHum">Humaines</h2>
+                    </button>
+                    <button class="compNavBtn" id="compNavBtnTech">
+                         <h2 class="compNavBtnText" id="compNavBtnTextTech">Techniques</h2>
+                    </button>
+                    <div class="compNavBtnRect" id="compNavBtnRect"></div>
+               </div>
+
+               <!-- =CONTAINER QUALITÉS= -->
+               <div class="containerQualite" id="ctQualite">
+                    <div class="cardQualite card1">
+                         <svg class="cardQualiteIcon" width="124" height="124" viewBox="0 0 124 124" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M91.227 86.0604C84.649 92.6384 68.3134 108.974 63.4121 113.875C62.6311 114.656 61.3678 114.655 60.5867 113.874C55.7573 109.045 39.8194 93.107 32.7729 86.0604C16.6312 69.9187 16.6312 43.7479 32.7729 27.6063C48.9146 11.4646 75.0854 11.4646 91.227 27.6063C107.369 43.7479 107.369 69.9187 91.227 86.0604Z"
+                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M77.5 56.8333C77.5 65.3938 70.5604 72.3333 62 72.3333C53.4395 72.3333 46.5 65.3938 46.5 56.8333C46.5 48.2729 53.4395 41.3333 62 41.3333C70.5604 41.3333 77.5 48.2729 77.5 56.8333Z"
+                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                         <div class="cardQualiteInfo">
+                              <p class="cardQualiteTextTitle">Assiduité</p>
+                              <p class="cardQualiteTextPara">Je prépare mon travail de manière à respecter les exigences
+                                   de
+                                   qualité,
+                                   d’efficacité et d’échéancier.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="cardQualite card2">
+                         <svg width="124" height="124" viewBox="0 0 124 124" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M47.2071 71.6262C46.8166 71.2357 46.1834 71.2357 45.7929 71.6262C45.4023 72.0168 45.4023 72.6499 45.7929 73.0404L47.2071 71.6262ZM56.8333 82.6667L56.1262 83.3738C56.5167 83.7643 57.1499 83.7643 57.5404 83.3738L56.8333 82.6667ZM78.2071 62.7071C78.5976 62.3166 78.5976 61.6834 78.2071 61.2929C77.8166 60.9024 77.1834 60.9024 76.7929 61.2929L78.2071 62.7071ZM97.1666 36.1667V98.1667H99.1666V36.1667H97.1666ZM87.8333 107.5H36.1666V109.5H87.8333V107.5ZM26.8333 98.1667V36.1667H24.8333V98.1667H26.8333ZM36.1666 26.8333H46.5V24.8333H36.1666V26.8333ZM77.5 26.8333H87.8333V24.8333H77.5V26.8333ZM36.1666 107.5C31.012 107.5 26.8333 103.321 26.8333 98.1667H24.8333C24.8333 104.426 29.9074 109.5 36.1666 109.5V107.5ZM97.1666 98.1667C97.1666 103.321 92.988 107.5 87.8333 107.5V109.5C94.0925 109.5 99.1666 104.426 99.1666 98.1667H97.1666ZM99.1666 36.1667C99.1666 29.9074 94.0925 24.8333 87.8333 24.8333V26.8333C92.988 26.8333 97.1666 31.012 97.1666 36.1667H99.1666ZM26.8333 36.1667C26.8333 31.012 31.012 26.8333 36.1666 26.8333V24.8333C29.9074 24.8333 24.8333 29.9074 24.8333 36.1667H26.8333ZM45.7929 73.0404L56.1262 83.3738L57.5404 81.9596L47.2071 71.6262L45.7929 73.0404ZM57.5404 83.3738L78.2071 62.7071L76.7929 61.2929L56.1262 81.9596L57.5404 83.3738ZM56.8333 16.5H67.1666V14.5H56.8333V16.5ZM67.1666 35.1667H56.8333V37.1667H67.1666V35.1667ZM56.8333 35.1667C51.6787 35.1667 47.5 30.988 47.5 25.8333H45.5C45.5 32.0926 50.5741 37.1667 56.8333 37.1667V35.1667ZM76.5 25.8333C76.5 30.988 72.3213 35.1667 67.1666 35.1667V37.1667C73.4259 37.1667 78.5 32.0926 78.5 25.8333H76.5ZM67.1666 16.5C72.3213 16.5 76.5 20.6787 76.5 25.8333H78.5C78.5 19.5741 73.4259 14.5 67.1666 14.5V16.5ZM56.8333 14.5C50.5741 14.5 45.5 19.5741 45.5 25.8333H47.5C47.5 20.6787 51.6787 16.5 56.8333 16.5V14.5Z"
+                                   fill="#F5F8F6" />
+                         </svg>
+                         <div class="cardQualiteInfo">
+                              <p class="cardQualiteTextTitle">Organisation</p>
+                              <p class="cardQualiteTextPara">J’ai toujours une présence active
+                                   régulière et soutenue à l’endroit où j’ai des obligations à remplir.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="cardQualite card3">
+                         <svg width="124" height="125" viewBox="0 0 124 125" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20.6667 21V46.8333H23.6712M103.014 57.1667C100.471 36.7774 83.078 21 62 21C44.6536 21 29.8029 31.6855 23.6712 46.8333M23.6712 46.8333H46.5M103.333 103.667V77.8333H100.329M100.329 77.8333C94.1972 92.9811 79.3465 103.667 62 103.667C40.922 103.667 23.529 87.8893 20.9865 67.5M100.329 77.8333H77.5"
+                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                         <div class="cardQualiteInfo">
+                              <p class="cardQualiteTextTitle">Patience</p>
+                              <p class="cardQualiteTextPara">Je garde mon calme de façon
+                                   constante dans des situations particulières, tout en persévérant dans ma tâche.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="cardQualite card4">
+                         <svg width="124" height="125" viewBox="0 0 124 125" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M25.8333 16.1666V36.8333M15.5 26.5H36.1667M31 88.5V109.167M20.6667 98.8333H41.3333M67.1667 16.1666L78.9762 51.5952L108.5 62.6666L78.9762 73.7381L67.1667 109.167L55.3571 73.7381L25.8333 62.6666L55.3571 51.5952L67.1667 16.1666Z"
+                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                         <div class="cardQualiteInfo">
+                              <p class="cardQualiteTextTitle">Efficacité</p>
+                              <p class="cardQualiteTextPara">Je réalise mon travail selon les
+                                   attentes exprimées de temps, de quantité ou de qualité.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="cardQualite card5">
+                         <svg width="124" height="125" viewBox="0 0 124 125" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M87.8334 104H113.667V93.6666C113.667 85.1062 106.727 78.1666 98.1667 78.1666C93.2294 78.1666 88.8313 80.475 85.9928 84.0715M87.8334 104H36.1667M87.8334 104V93.6666C87.8334 90.276 87.1802 87.038 85.9928 84.0715M36.1667 104H10.3334V93.6666C10.3334 85.1062 17.273 78.1666 25.8334 78.1666C30.7707 78.1666 35.1688 80.475 38.0073 84.0715M36.1667 104V93.6666C36.1667 90.276 36.8199 87.038 38.0073 84.0715M38.0073 84.0715C41.8165 74.5552 51.1233 67.8333 62 67.8333C72.8768 67.8333 82.1836 74.5552 85.9928 84.0715M77.5 36.8333C77.5 45.3937 70.5605 52.3333 62 52.3333C53.4396 52.3333 46.5 45.3937 46.5 36.8333C46.5 28.2728 53.4396 21.3333 62 21.3333C70.5605 21.3333 77.5 28.2728 77.5 36.8333ZM108.5 52.3333C108.5 58.0402 103.874 62.6666 98.1667 62.6666C92.4598 62.6666 87.8334 58.0402 87.8334 52.3333C87.8334 46.6263 92.4598 41.9999 98.1667 41.9999C103.874 41.9999 108.5 46.6263 108.5 52.3333ZM36.1667 52.3333C36.1667 58.0402 31.5403 62.6666 25.8334 62.6666C20.1264 62.6666 15.5 58.0402 15.5 52.3333C15.5 46.6263 20.1264 41.9999 25.8334 41.9999C31.5403 41.9999 36.1667 46.6263 36.1667 52.3333Z"
+                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                         <div class="cardQualiteInfo">
+                              <p class="cardQualiteTextTitle">Esprit d’équipe</p>
+                              <p class="cardQualiteTextPara">Je travaille avec les autres
+                                   de manière solidaire en contribuant au travail de l’équipe.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="cardQualite card6 newContent">
+                         <svg width="124" height="125" viewBox="0 0 124 125" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M67.1667 36.5H108.5M108.5 36.5V77.8333M108.5 36.5L67.1667 77.8333L46.5 57.1667L15.5 88.1667"
+                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                         </svg>
+                         <div class="cardQualiteInfo">
+                              <p class="cardQualiteTextTitle">Prévenance</p>
+                              <p class="cardQualiteTextPara">J’ai le souci constant de la recherche de la qualité.</p>
+                         </div>
+                    </div>
+               </div>
+               <!-- =FIN CONTAINER QUALITÉS= -->
+
+               <!-- =CONTAINER TECHNIQUES= -->
+               <div class="containerTechnique newContent" id="ctTechnique">
                     <div class="compNavigation">
                          <div class="compNavList" id="compNavList">
                               <div class="elementsCompNav">
-                                   <p class="compNavInfo">La jauge ne se comprend que par les professeurs en BUT R&T
+                                   <p class="compNavInfo">La jauge ne se comprend que par les professeurs en BUT
+                                        R&T
                                    </p>
                               </div>
                          </div>
@@ -993,244 +1111,234 @@
                          </div>
                     </div>
                </div>
-          </div>
-          <!-- =FIN CONTAINER TECHNIQUES= -->
-     </section>
-     <!-- ==FIN SECTION 4 - Compétences -->
+               <!-- =FIN CONTAINER TECHNIQUES= -->
+          </section>
+          <!-- ==FIN SECTION 4 - Compétences -->
 
-     <!-- ==SECTION 5 - Mes projets== -->
-     <section class="section" id="mesProjet">
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Mes projets</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <!-- =CONTAINER PROJET= -->
-          <div class="projets" id="projets">
-               <div class="projetsNavigation">
-                    <button class="projetNavigationButton" id="btnTop">
-                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M10.667 18.6667L16.0003 13.3333L21.3337 18.6667" stroke="#344E47"
-                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                         </svg>
-                    </button>
-
-                    <button class="projetNavigationButton" id="btnBottom">
-                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M21.3337 13.3333L16.0003 18.6667L10.667 13.3333" stroke="#344E47"
-                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                         </svg>
-                    </button>
+          <!-- ==SECTION 5 - Mes projets== -->
+          <section class="section" id="mesProjet">
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Mes projets</h1>
                </div>
-          </div>
-          <!-- =FIN CONTAINER PROJET= -->
-     </section>
-     <!-- ==FIN SECTION 5 - Mes projets== -->
+               <!-- =FIN MAIN TITLE= -->
 
-     <!-- ==SECTION 6 - Divers== -->
-     <section class="section" id="divers">
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Divers</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <div class="divers">
-
-               <div class="diver">
-                    <p class="diverTitle">
-                         Lecture
-                    </p>
-
-                    <p class="diverParagraphe">
-                         J’aime bien lire des livres et des revues sur des sujets divers. Lire me permet de pouvoir
-                         sortir des écrans, qui sont mon quotidien. Je n’ai pas de préférences en matière de
-                         livres, j’aime autant lire des livres de science-fiction que des mangas
-                         ou des livres de personnalités connues telles que Simone Veil.<br><br>
-                         En ce moment, je relis un livre que j’ai dû étudier au lycée écrit par <span
-                              class="infoParagraphDiver">Daniel Keyes</span> qui se nomme : <span
-                              class="infoParagraphDiver">Des Fleurs Pour Algernon</span>. Dans ce livre, on se
-                         plonge dans le journal intime d’un simple esprit handicapé, qui va voir sa vie
-                         radicalement changer.
-                    </p>
-
-                    <a class="btn" href="assets/images/image_diverDFPA.jpg" target="_blank">Voir
-                         couverture</a>
-               </div>
-
-               <div class="diver">
-                    <p class="diverTitle">
-                         Informatique
-                    </p>
-
-                    <p class="diverParagraphe">
-                         Je me tiens constamment à jour sur les sujets liés à l’informatique, la cybersécurité et
-                         le web qui sont des sujets qui évoluent très vite grâce aux progrès de l’humanité.
-                         <br><br>
-                         En parallèle de cette veille technologique, je vais mettre en place un certain nombre de
-                         services informatiques hébergés exclusivement chez moi. En commençant par un serveur web
-                         qui hébergera le portfolio avec un nom de domaine, puis un NAS pour sauvegarder l’ensemble
-                         de mes données et celles de ma famille avec pour objectif de pouvoir avoir accès à mes
-                         services à distance pour faire la gestion.
-                    </p>
-               </div>
-
-               <div class="diver">
-                    <p class="diverTitle">
-                         Cuisine
-                    </p>
-
-                    <p class="diverParagraphe">
-                         Grâce à mes Grands-Parents, j’ai toujours aimé cuisiné des Desserts (Gateaux, Tartes,
-                         Buches…). Une activité qui n’est pas régulière mais quand elle à lieu m’apporte joie,
-                         bonheure et satisfaction. Je ne prend jamais en photo mes plats, mais il y a beaucoup
-                         d’heureux.<br><br>
-                         J’ai été missioné cet année pour faire la bûche de noël pour toute ma familles. Je n’avais
-                         jamais fais de bûches jusqu’ici car c’est assez techniques, mais toutefois, j’ai réussit.
-                    </p>
-
-                    <a class="btn" href="assets/images/image_temp.jpg" target="_blank">Voir
-                         photo</a>
-               </div>
-          </div>
-     </section>
-     <!-- ==FIN SECTION 6 - Divers== -->
-
-     <!-- ==SECTION 7 - Mon C.V== -->
-     <section class="section" id="cv">
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Mon C.V</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <div class="containerCv">
-               <img class="cv" src="assets/images/image_CV.jpg" alt="C.V">
-               <a href="assets/documents/cv_VIRMAUX_Bastien.pdf" download="assets/documents/cv_VIRMAUX_Bastien.pdf"
-                    target="_blank">
-                    <button class="btn">Télécharger CV</button>
-               </a>
-          </div>
-     </section>
-     <!-- ==FIN SECTION 7 - Mon C.V== -->
-
-     <!-- ==SECTION 8 - Me contacter== -->
-     <section class="section" id="meContacter">
-          <!-- =MAIN TITLE= -->
-          <div class="title">
-               <h1 class="textTitle">Me contacter</h1>
-          </div>
-          <!-- =FIN MAIN TITLE= -->
-
-          <div class="messageContact">
-               <p class="textMessage">Prenez votre téléphone ou envoyez-moi un e-mail pour tout renseignement
-                    complémentaire :
-               </p>
-          </div>
-
-          <ul class="contacts">
-               <li class="contact">
-                    <div class="contactContainerText">
-                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Icon/Outline/phone">
-                                   <path id="Icon"
-                                        d="M3 5.5C3 4.39543 3.89543 3.5 5 3.5H8.27924C8.70967 3.5 9.09181 3.77543 9.22792 4.18377L10.7257 8.67721C10.8831 9.14932 10.6694 9.66531 10.2243 9.88787L7.96701 11.0165C9.06925 13.4612 11.0388 15.4308 13.4835 16.533L14.6121 14.2757C14.8347 13.8306 15.3507 13.6169 15.8228 13.7743L20.3162 15.2721C20.7246 15.4082 21 15.7903 21 16.2208V19.5C21 20.6046 20.1046 21.5 19 21.5H18C9.71573 21.5 3 14.7843 3 6.5V5.5Z"
-                                        stroke="#F5F8F6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                              </g>
-                         </svg>
-
-                         <p class="contactText">Téléphone</p>
-                    </div>
-
-                    <p class="informationContact">06 33 12 31 87</p>
-               </li>
-
-               <li class="contact">
-                    <div class="contactContainerText">
-                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Icon/Outline/mail">
-                                   <path id="Icon"
-                                        d="M3 8.5L10.8906 13.7604C11.5624 14.2083 12.4376 14.2083 13.1094 13.7604L21 8.5M5 19.5H19C20.1046 19.5 21 18.6046 21 17.5V7.5C21 6.39543 20.1046 5.5 19 5.5H5C3.89543 5.5 3 6.39543 3 7.5V17.5C3 18.6046 3.89543 19.5 5 19.5Z"
-                                        stroke="#F5F8F6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                              </g>
-                         </svg>
-
-                         <p class="contactText">E-mail</p>
-                    </div>
-
-                    <p class="informationContact">bastien.virmaux@etu.uca.fr</p>
-               </li>
-
-               <li class="contact">
-                    <div class="contactContainerText">
-                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M21 12C21 16.9706 16.9706 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12H3M12 21C7.02944 21 3 16.9706 3 12M12 21C13.6569 21 15 16.9706 15 12C15 7.02944 13.6569 3 12 3M12 21C10.3431 21 9 16.9706 9 12C9 7.02944 10.3431 3 12 3M3 12C3 7.02944 7.02944 3 12 3"
-                                   stroke="#F5F8F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                         </svg>
-                         <p class="contactText">Réseaux Sociaux</p>
-                    </div>
-
-                    <div class="networkSocial">
-                         <a href="https://www.linkedin.com/in/bastien-virmaux-06a476270/" target="_blank">
+               <!-- =CONTAINER PROJET= -->
+               <div class="projets newContent" id="projets">
+                    <div class="projetsNavigation">
+                         <button class="projetNavigationButton" id="btnTop">
                               <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
-                                   <rect x="2" y="2" width="28" height="28" rx="14" fill="#1275B1" />
-                                   <path d="M12.6186 9.69215C12.6186 10.6267 11.8085 11.3843 10.8093 11.3843C9.81004 11.3843 9 10.6267 9 9.69215C9 8.7576 9.81004 8 10.8093 8C11.8085 8 12.6186 8.7576 12.6186 9.69215Z"
-                                        fill="white" />
-                                   <path d="M9.24742 12.6281H12.3402V22H9.24742V12.6281Z" fill="white" />
-                                   <path d="M17.3196 12.6281H14.2268V22H17.3196C17.3196 22 17.3196 19.0496 17.3196 17.2049C17.3196 16.0976 17.6977 14.9855 19.2062 14.9855C20.911 14.9855 20.9008 16.4345 20.8928 17.5571C20.8824 19.0244 20.9072 20.5219 20.9072 22H24V17.0537C23.9738 13.8954 23.1508 12.4401 20.4433 12.4401C18.8354 12.4401 17.8387 13.1701 17.3196 13.8305V12.6281Z"
-                                        fill="white" />
+                                   <path d="M10.667 18.6667L16.0003 13.3333L21.3337 18.6667" stroke="#344E47"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                               </svg>
-                         </a>
+                         </button>
 
-                         <a href="https://github.com/bastien-virmaux" target="_blank">
-                              <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                         <button class="projetNavigationButton" id="btnBottom">
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
-                                   <g clip-path="url(#clip0_910_21)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                             d="M24.0199 0C10.7375 0 0 10.8167 0 24.1983C0 34.895 6.87988 43.9495 16.4241 47.1542C17.6174 47.3951 18.0545 46.6335 18.0545 45.9929C18.0545 45.4319 18.0151 43.509 18.0151 41.5055C11.3334 42.948 9.94198 38.6209 9.94198 38.6209C8.86818 35.8164 7.27715 35.0956 7.27715 35.0956C5.09022 33.6132 7.43645 33.6132 7.43645 33.6132C9.86233 33.7735 11.1353 36.0971 11.1353 36.0971C13.2824 39.7827 16.7422 38.7413 18.1341 38.1002C18.3328 36.5377 18.9695 35.456 19.6455 34.8552C14.3163 34.2942 8.70937 32.211 8.70937 22.9161C8.70937 20.2719 9.66321 18.1086 11.1746 16.4261C10.9361 15.8253 10.1008 13.3409 11.4135 10.0157C11.4135 10.0157 13.4417 9.3746 18.0146 12.4996C19.9725 11.9699 21.9916 11.7005 24.0199 11.6982C26.048 11.6982 28.1154 11.979 30.0246 12.4996C34.5981 9.3746 36.6262 10.0157 36.6262 10.0157C37.9389 13.3409 37.1031 15.8253 36.8646 16.4261C38.4158 18.1086 39.3303 20.2719 39.3303 22.9161C39.3303 32.211 33.7234 34.2539 28.3544 34.8552C29.2296 35.6163 29.9848 37.0583 29.9848 39.3421C29.9848 42.5871 29.9454 45.1915 29.9454 45.9924C29.9454 46.6335 30.383 47.3951 31.5758 47.1547C41.12 43.9491 47.9999 34.895 47.9999 24.1983C48.0392 10.8167 37.2624 0 24.0199 0Z"
-                                             fill="#24292F" />
-                                   </g>
-                                   <defs>
-                                        <clipPath id="clip0_910_21">
-                                             <rect width="48" height="48" fill="white" />
-                                        </clipPath>
-                                   </defs>
+                                   <path d="M21.3337 13.3333L16.0003 18.6667L10.667 13.3333" stroke="#344E47"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                               </svg>
-                         </a>
+                         </button>
                     </div>
-               </li>
-          </ul>
-     </section>
-     <!-- ==FIN SECTION 8 - Me contacter== -->
+               </div>
+               <!-- =FIN CONTAINER PROJET= -->
+          </section>
+          <!-- ==FIN SECTION 5 - Mes projets== -->
 
-     <!-- ==FOOTER== -->
-     <footer class="footer">
-          <svg class="logo" width="48" height="64" viewBox="0 0 48 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 10.1053V0H32.8024C36.665 0 40.3728 1.67045 43.1261 4.65106C45.801 7.54678 47.4699 11.3816 47.8433 15.4898L47.9103 16.2271C48.029 17.5321 48.029 18.8469 47.9103 20.1519L47.9018 20.2462C47.5078 24.5804 45.8799 28.6638 43.2544 31.916C45.8672 35.0107 47.4999 38.957 47.9025 43.1643C48.0264 44.4593 48.0322 45.7646 47.92 47.0609L47.8363 48.0284C47.4765 52.1852 45.8451 56.0846 43.209 59.0885C40.4545 62.2273 36.6592 64 32.6937 64H0V26.9474H34.9335L36.2764 25.3405C37.6835 23.6569 38.556 21.5165 38.7628 19.2407L38.7714 19.1464C38.8292 18.51 38.8292 17.8689 38.7714 17.2326L38.7044 16.4953C38.5445 14.7362 37.8298 13.0942 36.6845 11.8542C35.6491 10.7334 34.2549 10.1053 32.8024 10.1053H0ZM34.9998 37.0526H9.18455V53.8947H32.6937C34.1674 53.8947 35.5779 53.2359 36.6016 52.0694C37.7931 50.7117 38.5305 48.9492 38.6931 47.0703L38.7769 46.1028C38.831 45.4772 38.8282 44.8472 38.7684 44.2222C38.5683 42.1311 37.7386 40.1737 36.4112 38.661L34.9998 37.0526Z"
-                    fill="#F5F8F6" />
-          </svg>
-          <div class="textFooter">
-               <p class="textMessage">Portfolio crée avec ❤️</p>
-               <p class="copyright">© 2025 VIRMAUX Bastien</p>
-          </div>
-     </footer>
-     <!-- ==FIN FOOTER== -->
+          <!-- ==SECTION 6 - Divers== -->
+          <section class="section" id="divers">
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Divers</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
 
-     <!-- ==JAVASCRIPT== -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-     <script src="js/data.js"></script>
-     <script src="js/function_navbar.js"></script>
-     <script src="js/function_expPro.js"></script>
-     <script src="js/function_comp.js"></script>
-     <script src="js/function_projet.js"></script>
-     <script src="js/function_overlay.js"></script>
-     <!-- ==FIN JAVASCRIPT== -->
+               <div class="divers">
 
-</body>
+                    <div class="diver">
+                         <p class="diverTitle">
+                              Lecture
+                         </p>
+
+                         <p class="diverParagraphe">
+                              J’aime bien lire des livres et des revues sur des sujets divers. Lire me permet de pouvoir
+                              sortir des écrans, qui sont mon quotidien. Je n’ai pas de préférences en matière de
+                              livres, j’aime autant lire des livres de science-fiction que des mangas
+                              ou des livres de personnalités connues telles que Simone Veil.<br><br>
+                              En ce moment, je relis un livre que j’ai dû étudier au lycée écrit par <span
+                                   class="infoParagraphDiver">Daniel Keyes</span> qui se nomme : <span
+                                   class="infoParagraphDiver">Des Fleurs Pour Algernon</span>. Dans ce livre, on se
+                              plonge dans le journal intime d’un simple esprit handicapé, qui va voir sa vie
+                              radicalement changer.
+                         </p>
+
+                         <a class="btn" href="assets/images/image_diverDFPA.jpg" target="_blank">Voir
+                              couverture</a>
+                    </div>
+
+                    <div class="diver">
+                         <p class="diverTitle">
+                              Informatique
+                         </p>
+
+                         <p class="diverParagraphe">
+                              Je me tiens constamment à jour sur les sujets liés à l’informatique, la cybersécurité et
+                              le web qui sont des sujets qui évoluent très vite grâce aux progrès de l’humanité.
+                              <br><br>
+                              En parallèle de cette veille technologique, je vais mettre en place un certain nombre de
+                              services informatiques hébergés exclusivement chez moi. En commençant par un serveur web
+                              qui hébergera le portfolio avec un nom de domaine, puis un NAS pour sauvegarder l’ensemble
+                              de mes données et celles de ma famille avec pour objectif de pouvoir avoir accès à mes
+                              services à distance pour faire la gestion.
+                         </p>
+                    </div>
+
+                    <div class="diver">
+                         <p class="diverTitle">
+                              Cuisine
+                         </p>
+
+                         <p class="diverParagraphe">
+                              Grâce à mes Grands-Parents, j’ai toujours aimé cuisiné des Desserts (Gateaux, Tartes,
+                              Buches…). Une activité qui n’est pas régulière mais quand elle à lieu m’apporte joie,
+                              bonheure et satisfaction. Je ne prend jamais en photo mes plats, mais il y a beaucoup
+                              d’heureux.<br><br>
+                              J’ai été missioné cet année pour faire la bûche de noël pour toute ma familles. Je n’avais
+                              jamais fais de bûches jusqu’ici car c’est assez techniques, mais toutefois, j’ai réussit.
+                         </p>
+
+                         <a class="btn" href="assets/images/image_temp.jpg" target="_blank">Voir
+                              photo</a>
+                    </div>
+               </div>
+          </section>
+          <!-- ==FIN SECTION 6 - Divers== -->
+
+          <!-- ==SECTION 7 - Mon C.V== -->
+          <section class="section" id="cv">
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Mon C.V</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
+
+               <div class="containerCv">
+                    <img class="cv" src="assets/images/image_CV.jpg" alt="C.V">
+                    <a href="assets/documents/cv_VIRMAUX_Bastien.pdf" download="assets/documents/cv_VIRMAUX_Bastien.pdf"
+                         target="_blank">
+                         <button class="btn">Télécharger CV</button>
+                    </a>
+               </div>
+          </section>
+          <!-- ==FIN SECTION 7 - Mon C.V== -->
+
+          <!-- ==SECTION 8 - Me contacter== -->
+          <section class="section" id="meContacter">
+               <!-- =MAIN TITLE= -->
+               <div class="title">
+                    <h1 class="textTitle">Me contacter</h1>
+               </div>
+               <!-- =FIN MAIN TITLE= -->
+
+               <div class="messageContact">
+                    <p class="textMessage">Prenez votre téléphone ou envoyez-moi un e-mail pour tout renseignement
+                         complémentaire :
+                    </p>
+               </div>
+
+               <ul class="contacts">
+
+                    <li class="contact">
+                         <div class="contactContainerText">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <g id="Icon/Outline/mail">
+                                        <path id="Icon"
+                                             d="M3 8.5L10.8906 13.7604C11.5624 14.2083 12.4376 14.2083 13.1094 13.7604L21 8.5M5 19.5H19C20.1046 19.5 21 18.6046 21 17.5V7.5C21 6.39543 20.1046 5.5 19 5.5H5C3.89543 5.5 3 6.39543 3 7.5V17.5C3 18.6046 3.89543 19.5 5 19.5Z"
+                                             stroke="#F5F8F6" stroke-width="2" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </g>
+                              </svg>
+
+                              <p class="contactText">E-mail</p>
+                         </div>
+
+                         <p class="informationContact">bastien.virmaux@etu.uca.fr</p>
+                    </li>
+
+                    <li class="contact">
+                         <div class="contactContainerText">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M21 12C21 16.9706 16.9706 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12H3M12 21C7.02944 21 3 16.9706 3 12M12 21C13.6569 21 15 16.9706 15 12C15 7.02944 13.6569 3 12 3M12 21C10.3431 21 9 16.9706 9 12C9 7.02944 10.3431 3 12 3M3 12C3 7.02944 7.02944 3 12 3"
+                                        stroke="#F5F8F6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                              </svg>
+                              <p class="contactText">Réseaux Sociaux</p>
+                         </div>
+
+                         <div class="networkSocial">
+                              <a href="https://www.linkedin.com/in/bastien-virmaux-06a476270/" target="_blank">
+                                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="2" width="28" height="28" rx="14" fill="#1275B1" />
+                                        <path d="M12.6186 9.69215C12.6186 10.6267 11.8085 11.3843 10.8093 11.3843C9.81004 11.3843 9 10.6267 9 9.69215C9 8.7576 9.81004 8 10.8093 8C11.8085 8 12.6186 8.7576 12.6186 9.69215Z"
+                                             fill="white" />
+                                        <path d="M9.24742 12.6281H12.3402V22H9.24742V12.6281Z" fill="white" />
+                                        <path d="M17.3196 12.6281H14.2268V22H17.3196C17.3196 22 17.3196 19.0496 17.3196 17.2049C17.3196 16.0976 17.6977 14.9855 19.2062 14.9855C20.911 14.9855 20.9008 16.4345 20.8928 17.5571C20.8824 19.0244 20.9072 20.5219 20.9072 22H24V17.0537C23.9738 13.8954 23.1508 12.4401 20.4433 12.4401C18.8354 12.4401 17.8387 13.1701 17.3196 13.8305V12.6281Z"
+                                             fill="white" />
+                                   </svg>
+                              </a>
+
+                              <a href="https://github.com/bastien-virmaux" target="_blank">
+                                   <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_910_21)">
+                                             <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M24.0199 0C10.7375 0 0 10.8167 0 24.1983C0 34.895 6.87988 43.9495 16.4241 47.1542C17.6174 47.3951 18.0545 46.6335 18.0545 45.9929C18.0545 45.4319 18.0151 43.509 18.0151 41.5055C11.3334 42.948 9.94198 38.6209 9.94198 38.6209C8.86818 35.8164 7.27715 35.0956 7.27715 35.0956C5.09022 33.6132 7.43645 33.6132 7.43645 33.6132C9.86233 33.7735 11.1353 36.0971 11.1353 36.0971C13.2824 39.7827 16.7422 38.7413 18.1341 38.1002C18.3328 36.5377 18.9695 35.456 19.6455 34.8552C14.3163 34.2942 8.70937 32.211 8.70937 22.9161C8.70937 20.2719 9.66321 18.1086 11.1746 16.4261C10.9361 15.8253 10.1008 13.3409 11.4135 10.0157C11.4135 10.0157 13.4417 9.3746 18.0146 12.4996C19.9725 11.9699 21.9916 11.7005 24.0199 11.6982C26.048 11.6982 28.1154 11.979 30.0246 12.4996C34.5981 9.3746 36.6262 10.0157 36.6262 10.0157C37.9389 13.3409 37.1031 15.8253 36.8646 16.4261C38.4158 18.1086 39.3303 20.2719 39.3303 22.9161C39.3303 32.211 33.7234 34.2539 28.3544 34.8552C29.2296 35.6163 29.9848 37.0583 29.9848 39.3421C29.9848 42.5871 29.9454 45.1915 29.9454 45.9924C29.9454 46.6335 30.383 47.3951 31.5758 47.1547C41.12 43.9491 47.9999 34.895 47.9999 24.1983C48.0392 10.8167 37.2624 0 24.0199 0Z"
+                                                  fill="#24292F" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_910_21">
+                                                  <rect width="48" height="48" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                              </a>
+                         </div>
+                    </li>
+               </ul>
+          </section>
+          <!-- ==FIN SECTION 8 - Me contacter== -->
+
+          <!-- ==FOOTER== -->
+          <footer class="footer">
+               <svg class="logo" width="48" height="64" viewBox="0 0 48 64" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                         d="M0 10.1053V0H32.8024C36.665 0 40.3728 1.67045 43.1261 4.65106C45.801 7.54678 47.4699 11.3816 47.8433 15.4898L47.9103 16.2271C48.029 17.5321 48.029 18.8469 47.9103 20.1519L47.9018 20.2462C47.5078 24.5804 45.8799 28.6638 43.2544 31.916C45.8672 35.0107 47.4999 38.957 47.9025 43.1643C48.0264 44.4593 48.0322 45.7646 47.92 47.0609L47.8363 48.0284C47.4765 52.1852 45.8451 56.0846 43.209 59.0885C40.4545 62.2273 36.6592 64 32.6937 64H0V26.9474H34.9335L36.2764 25.3405C37.6835 23.6569 38.556 21.5165 38.7628 19.2407L38.7714 19.1464C38.8292 18.51 38.8292 17.8689 38.7714 17.2326L38.7044 16.4953C38.5445 14.7362 37.8298 13.0942 36.6845 11.8542C35.6491 10.7334 34.2549 10.1053 32.8024 10.1053H0ZM34.9998 37.0526H9.18455V53.8947H32.6937C34.1674 53.8947 35.5779 53.2359 36.6016 52.0694C37.7931 50.7117 38.5305 48.9492 38.6931 47.0703L38.7769 46.1028C38.831 45.4772 38.8282 44.8472 38.7684 44.2222C38.5683 42.1311 37.7386 40.1737 36.4112 38.661L34.9998 37.0526Z"
+                         fill="#F5F8F6" />
+               </svg>
+               <div class="textFooter">
+                    <p class="textMessage">Portfolio crée avec ❤️</p>
+                    <p class="copyright">© 2025 VIRMAUX Bastien</p>
+               </div>
+          </footer>
+          <!-- ==FIN FOOTER== -->
+
+          <!-- ==JAVASCRIPT== -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="js/data.js"></script>
+          <script src="js/function_navbar.js"></script>
+          <script src="js/function_expPro.js"></script>
+          <script src="js/function_comp.js"></script>
+          <script src="js/function_projet.js"></script>
+          <script src="js/function_overlay.js"></script>
+          <script src="js/function_popUp.js"></script>
+          <!-- ==FIN JAVASCRIPT== -->
+
+     </body>
 
 </html>

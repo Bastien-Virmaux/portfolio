@@ -31,7 +31,7 @@
                }
 
                .thémeText {
-                    @include text($color-950, 16px, $semibold1)
+                    @include text($color-950, 16px, $bold)
                }
           }
      }

@@ -10,7 +10,7 @@
           align-items: flex-start;
 
           .titleProjet {
-               @include text($color-700, $titre, $semibold1);
+               @include text($color-700, $titre, $bold);
           }
 
 
@@ -31,6 +31,7 @@
 
      .right {
           width: 480px;
+          max-width: unset;
      }
 }
 
@@ -45,15 +46,6 @@
 
           .infoText {
                @include text($color-50, $paragraphe2, $regular);
-          }
-
-          .listContainer {
-               list-style: disc;
-               margin-left: 40px;
-
-               .list {
-                    @include text($color-50, $paragraphe2, $regular);
-               }
           }
      }
 }
@@ -76,5 +68,5 @@
 }
 
 .note {
-     @include text($color-50, $paragraphe2, $semibold1);
+     @include text($color-50, $paragraphe2, $bold);
 }

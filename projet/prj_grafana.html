@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Projet - TEST</title>
+     <title>Projet - Grafana</title>
      <link rel="stylesheet" href="../styles.css">
      <link rel="icon" href="../assets/icons/icon_logo.svg">
 </head>
@@ -13,8 +13,8 @@
      <!-- ===CONTEXTE=== -->
      <header class="introProjet">
           <div class="left">
-               <h1 class="titleProjet">TITRE DU PROJET</h1>
-               <p class="textProjet">Contexte du projet</p>
+               <h1 class="titleProjet">Grafana</h1>
+               <p class="textProjet">Durant mon alternance à l’Institut du Travail Social de la Région Auvergne (ITSRA), j’ai mis en place un nouvel outil de visualisation de donnée, Grafana, basé sur les technologies suivantes : Telegraf, InfluxDB.</p>
 
                <div class="btnContainerPrj">
                     <a href="../index.html#mesProjet">
@@ -33,7 +33,7 @@
                     </a> -->
                </div>
           </div>
-          <img class="right" src="../assets/images/image_illProjet3.jpg" alt="immeuble">
+          <img class="right" src="../assets/images/image_prj-grafana.png" alt="grafana">
      </header>
      <!-- ===FIN CONTEXTE=== -->
 
@@ -46,9 +46,13 @@
                </div>
                <!-- =FIN SECOND TITLE= -->
 
-               <p class="infoText">
-                    Objectif du projet
+               <p class="infoText">Au sein de l’infrastructure de l’ITSRA, un outil de supervision était déjà en place, mais présentait plusieurs limites :
+                    <ul class="listContainer">
+                         <li class="listPrj">Une interface vieillissante, peu ergonomique, rendant la lecture et l’interprétation des données difficile ;</li>
+                         <li class="listPrj">Une couverture partielle de l’infrastructure, certains équipements n’étant pas supervisés ou disposant de peu d’informations pertinentes.</li>
+                    </ul>
                </p>
+               <p class="infoText">Face à ces limitations, la mise en place d’un nouvel outil de supervision en complément de l’existant s’est imposée comme une solution efficace. L’objectif est d’offrir une interface moderne via Grafana, d’étendre la supervision à l’ensemble des équipements du réseau, et d’enrichir les données collectées pour améliorer la visibilité et la réactivité du service informatique.</p>
           </div>
           <!-- ===FIN OBJECTIF=== -->
 
@@ -60,9 +64,15 @@
                </div>
                <!-- =FIN SECOND TITLE= -->
 
-               <p class="infoText">
-                    Mission du projet
+               <p class="infoText">Ma mission a consisté à mettre en place un outil moderne de visualisation de données : Grafana.</p>
+               <p class="infoText">Pour cela, j’ai sélectionné deux outils essentiels permettant la collecte et le stockage des métriques à superviser :
+                    <ul class="listContainer">
+                         <li class="listPrj">Telegraf : un agent chargé de collecter des métriques (CPU, mémoire, trafic réseau, services, etc.) à partir de différents équipements et services ;</li>
+                         <li class="listPrj">InfluxDB : une base de données de séries temporelles (TSDB) utilisée pour stocker en continu les métriques collectées par Telegraf.</li>
+                    </ul>
                </p>
+               <p class="infoText">Une fois ces outils déployés, j’ai configuré Grafana pour qu’il interroge InfluxDB et affiche les données de manière dynamique.</p>
+               <p class="infoText">Enfin, j’ai créé plusieurs tableaux de bord (dashboards) adaptés aux besoins du service informatique. Ces dashboards sont organisés de façon claire, avec des indicateurs formatés (en pourcentage, arrondis, seuils critiques, etc.), afin de permettre une lecture rapide et compréhensible de l’état de l’infrastructure.</p>
           </div>
           <!-- ===FIN MISSION=== -->
 
@@ -74,26 +84,9 @@
                </div>
                <!-- =FIN SECOND TITLE= -->
 
-               <p class="infoText">
-                    Résultat du projet
-               </p>
-
-               <table class="containerNotes">
-                    <thead class="containerNotesHeader">
-                         <tr class="containerNotesRow">
-                              <th class="content">Libellé</th>
-                              <th class="content">Note</th>
-                              <th class="content">Classe</th>
-                         </tr>
-                    </thead>
-                    <tbody>
-                         <tr>
-                              <td class="content note">TITRE DU PROJET</td>
-                              <td class="content note">NOTE DU PROJET</td>
-                              <td class="content note">MOYENNE NOTE PROJET</td>
-                         </tr>
-                    </tbody>
-               </table>
+               <p class="infoText">Au final, j’ai réussi à mettre en place un nouvel outil de supervision capable de monitorer l’ensemble des équipements et services de l’infrastructure. Cette solution se distingue par une interface ergonomique, claire, simple à comprendre et précise, permettant une lecture rapide et efficace des données.</p>
+               <p class="infoText">Sur le plan humain, ce projet m’a beaucoup apporté. Grâce à la confiance de mon tuteur, j’ai pu le réaliser en autonomie, tout en restant rigoureux pour garantir une solution maintenable et compréhensible par l’ensemble de l’équipe.</p>
+               <p class="infoText">La patience a été une compétence essentielle : la documentation étant limitée, il m’a souvent fallu analyser, tester, et faire preuve de persévérance pour résoudre des problèmes parfois complexes.</p>
           </div>
           <!-- ===FIN RESULTAT=== -->
      </div>

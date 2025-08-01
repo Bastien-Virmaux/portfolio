@@ -1,0 +1,15 @@
+.listContainer {
+          list-style: disc;
+          margin-left: 40px;
+          margin-bottom: 8px;
+
+          .list {
+                    margin-bottom: 8px;
+                    @include text($color-950, $paragraphe2, $regular);
+          }
+
+          .listPrj {
+                    margin-bottom: 8px;
+                    @include text($color-50, $paragraphe2, $regular);
+          }
+}

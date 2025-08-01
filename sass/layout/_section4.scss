@@ -69,7 +69,7 @@
                @include flex(center, 16px, column);
 
                .cardQualiteTextTitle {
-                    @include text($color-50, $sousTitre, $semibold1);
+                    @include text($color-50, $sousTitre, $bold);
                }
 
                .cardQualiteTextPara {
@@ -84,17 +84,16 @@
 //===TECHNIQUES===//
 
 .containerTechnique {
-     display: none;
-}
-
-.competences {
      width: 100%;
      height: 585px;
      background-color: $color-700;
      border-radius: 40px;
      border: 2px solid $color-100;
-     display: flex;
-     @include flex(flex-start, 0px, row);
+     //ne pas utiliser le @include flex(...) car changement de display dynamiquement
+     display: none;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: row;
      align-items: flex-start;
      flex-wrap: wrap;
 

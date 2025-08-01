@@ -8,7 +8,7 @@
           @include flex(center, 8px, column);
 
           .textMessage {
-               @include text($color-50, $paragraphe1, $semibold1);
+               @include text($color-50, $paragraphe1, $bold);
           }
 
           .copyright {

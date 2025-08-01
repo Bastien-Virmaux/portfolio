@@ -638,31 +638,25 @@ a {
 }
 
 .containerTechnique {
-  display: none;
-}
-
-.competences {
   width: 100%;
   height: 585px;
   background-color: #344E47;
   border-radius: 40px;
   border: 2px solid #DDEAE5;
-  display: flex;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
-  gap: 0px;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.competences .compNavigation {
+.containerTechnique .compNavigation {
   height: 100%;
   padding: 24px;
   border-right: 2px solid #DDEAE5;
   flex: 1;
 }
-.competences .compNavigation .compNavList {
+.containerTechnique .compNavigation .compNavList {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -670,28 +664,28 @@ a {
   flex-direction: column;
   margin: 16px 0;
 }
-.competences .compNavigation .compNavList .elementsCompNav {
+.containerTechnique .compNavigation .compNavList .elementsCompNav {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   flex-direction: column;
 }
-.competences .compNavigation .compNavList .elementsCompNav .line {
+.containerTechnique .compNavigation .compNavList .elementsCompNav .line {
   width: 100%;
   height: 4px;
   border-radius: 100px;
   border: none;
   background-color: #DDEAE5;
 }
-.competences .compNavigation .compNavList .elementsCompNav .compNavInfo {
+.containerTechnique .compNavigation .compNavList .elementsCompNav .compNavInfo {
   color: #DDEAE5;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: left;
 }
-.competences .compBody {
+.containerTechnique .compBody {
   height: 100%;
   position: relative;
   display: flex;
@@ -699,30 +693,30 @@ a {
   align-self: stretch;
   flex: 4;
 }
-.competences .compBody .compsHeader {
+.containerTechnique .compBody .compsHeader {
   width: 100%;
   padding: 24px 32px;
   border-bottom: 2px solid #DDEAE5;
   flex-shrink: 0;
 }
-.competences .compBody .comps {
+.containerTechnique .compBody .comps {
   width: 100%;
   flex-grow: 1;
   padding: 16px;
   overflow: overlay;
 }
-.competences .compBody .comps::-webkit-scrollbar {
+.containerTechnique .compBody .comps::-webkit-scrollbar {
   width: 8px;
 }
-.competences .compBody .comps::-webkit-scrollbar-track {
+.containerTechnique .compBody .comps::-webkit-scrollbar-track {
   background: #344E47;
 }
-.competences .compBody .comps::-webkit-scrollbar-thumb {
+.containerTechnique .compBody .comps::-webkit-scrollbar-thumb {
   background-color: #F5F8F6;
   border-radius: 20px;
   border: 3px solid #344E47;
 }
-.competences .compBody .compJauge {
+.containerTechnique .compBody .compJauge {
   position: relative;
   width: 100%;
   padding: 24px 32px;
@@ -735,7 +729,7 @@ a {
   flex-direction: row;
   flex-shrink: 0;
 }
-.competences .compBody .compJauge .noteJauge {
+.containerTechnique .compBody .compJauge .noteJauge {
   width: 100%;
   height: 32px;
   padding: 4px;
@@ -743,13 +737,13 @@ a {
   border: 2px solid #ddeae5;
   display: none;
 }
-.competences .compBody .compJauge .noteJauge .jaugeNiv1 {
+.containerTechnique .compBody .compJauge .noteJauge .jaugeNiv1 {
   width: 24%;
   height: 100%;
   background-color: #DDEAE5;
   border-radius: 1000px;
 }
-.competences .compBody .compJauge .jaugeText {
+.containerTechnique .compBody .compJauge .jaugeText {
   font-family: "Oxanium", sans-serif;
   color: #DDEAE5;
   font-size: 40px;
@@ -960,6 +954,53 @@ a {
   flex-direction: row;
 }
 
+.popUpOverlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  z-index: 9999;
+}
+.popUpOverlay .popUp {
+  min-width: 32%;
+  padding: 24px;
+  background-color: #F5F8F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+  border: 4px solid #ff7878;
+  border-radius: 24px;
+}
+.popUpOverlay .popUp .popUpTitle {
+  color: #344E47;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.popUpOverlay .popUp .popUpContent {
+  color: #141F1D;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.popUpOverlay .popUp .popUpContent .popUpColor {
+  color: #ff7878;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
 /* ===BUTTON G=== */
 .btn {
   position: relative;
@@ -1102,6 +1143,25 @@ a {
 }
 
 /* ===FIN BUTTON PROJET===*/
+/* ===POP UP BTN=== */
+.popUpBtn {
+  padding: 16px;
+  background-color: #344E47;
+  border: none;
+  border-radius: 8px;
+  color: #F5F8F6;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.popUpBtn:hover {
+  background-color: #517B6F;
+}
+
+/* ===FIN POP UP BTN=== */
 .logo {
   width: 40px;
   height: 40px;
@@ -1342,6 +1402,7 @@ a {
   display: block;
 }
 .compContent .paraCompTechnique {
+  margin-bottom: 8px;
   color: #141F1D;
   font-size: 16px;
   font-weight: 400;
@@ -1564,6 +1625,32 @@ a {
   background-color: rgba(221, 234, 229, 0.24);
 }
 
+.newContent {
+  border: 4px solid #ff7878 !important;
+}
+
+.listContainer {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 8px;
+}
+.listContainer .list {
+  margin-bottom: 8px;
+  color: #141F1D;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.listContainer .listPrj {
+  margin-bottom: 8px;
+  color: #F5F8F6;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
 .introProjet {
   margin: 24px;
   padding: 24px;
@@ -1610,6 +1697,7 @@ a {
 }
 .introProjet .right {
   width: 480px;
+  max-width: unset;
 }
 
 .container {
@@ -1630,17 +1718,6 @@ a {
   align-items: flex-start;
 }
 .container .prjInfo .infoText {
-  color: #F5F8F6;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-align: left;
-}
-.container .prjInfo .listContainer {
-  list-style: disc;
-  margin-left: 40px;
-}
-.container .prjInfo .listContainer .list {
   color: #F5F8F6;
   font-size: 16px;
   font-weight: 400;
@@ -1685,6 +1762,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #344E47;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -1704,6 +1782,7 @@ body::-webkit-scrollbar-thumb {
   align-items: flex-start;
   flex-direction: column;
   gap: 16px;
+  overflow: visible !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

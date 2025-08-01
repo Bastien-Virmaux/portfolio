@@ -25,7 +25,7 @@
                align-items: flex-start;
 
                .projetTitle {
-                    @include text($color-50, 40px, $semibold1);
+                    @include text($color-50, 40px, $bold);
                     font-family: "Libre Caslon Text", serif;
                }
 

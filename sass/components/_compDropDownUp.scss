@@ -44,6 +44,7 @@
      }
 
      .paraCompTechnique {
+          margin-bottom: 8px;
           @include text($color-950, $paragraphe2, $regular);
      }
 }
