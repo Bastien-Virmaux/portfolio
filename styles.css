@@ -1558,10 +1558,10 @@ a {
 .overlayDownload {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 16px;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
 }
 .overlayDownload .overlayDownloadDocument {

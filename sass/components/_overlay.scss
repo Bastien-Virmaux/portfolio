@@ -79,7 +79,7 @@
 
 .overlayDownload {
      width: 100%;
-     @include flex(center, 16px, column);
+     @include flex(flex-start, 16px, row);
      align-items: flex-start;
 
      .overlayDownloadDocument {
