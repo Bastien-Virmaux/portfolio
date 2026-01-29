@@ -35,7 +35,7 @@
 
 ## License
 
-<p>© 2024 VIRMAUX Bastien</p>
+<p>© 2025 VIRMAUX Bastien</p>
 
 
 
