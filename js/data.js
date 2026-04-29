@@ -468,7 +468,7 @@ const compsData = [
 
                //ss-comp 3
                {
-                    "titleCompétence": "Sécuriser Wifi",
+                    "titleCompétence": "DNS",
                     "id": 3,
                     "description": 
                     `
